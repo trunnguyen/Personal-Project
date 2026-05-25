@@ -22,7 +22,4 @@ pyenv.cfg
 *.sln
 *.swp
 
-project/data/job_history.log
-project/data/classifier.pkl
-#project/data/jobs.csv
-#project/data/jobs.db
+Data/AIML Dataset.csv
