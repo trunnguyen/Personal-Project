@@ -101,7 +101,7 @@ workflow = StateGraph(AgentState)
 
 
 workflow.add_node("scrape_linkedin", scrape_node)
-workflow.add_node("retrain_model", retrain_node)
+workflow.add_node("retrain_node", retrain_node)
 workflow.add_node("ranking_job",score_node)
 workflow.add_node("dispatch_alert",alert_node)
 
