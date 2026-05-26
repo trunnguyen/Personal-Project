@@ -40,18 +40,18 @@ jobs:
 
       - name: Execute LangGraph Automation Engine
         env:
-          SMPT_SERVER: ${{secrets.SMTP_SERVER}}
-          SMPT_PORT: ${{secrets.SMTP_PORT}}
+          SMTP_SERVER: ${{secrets.SMTP_SERVER}}
+          SMTP_PORT: ${{secrets.SMTP_PORT}}
           EMAIL_ADDRESS: ${{secrets.EMAIL_ADDRESS}}
           EMAIL_PASSWORD: ${{secrets.EMAIL_PASSWORD}}
         run: |
-          python autonomous_job_finder/src/agent/graph.py
+          python src/agent/graph.py
 
       - name: Commit and Push Database Changes
         run: | 
           git config --local user.email"github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
       
-          git add autonomous_job_finder/data/jobs.db autonomous_job_finder/data/jobs.csv autonomous_job_finder/data/job_history.log || true
+          git add data/jobs.db data/jobs.csv data/job_history.log || true
           
           git diff --quiet && git diff --staged --quiet || (git commit -m "Synchronized scraped data and logs" && git push)
