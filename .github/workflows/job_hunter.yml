@@ -45,7 +45,7 @@ jobs:
           EMAIL_ADDRESS: ${{secrets.EMAIL_ADDRESS}}
           EMAIL_PASSWORD: ${{secrets.EMAIL_PASSWORD}}
         run: |
-          python main.py
+          python autonomous_job_finder/src/agent/graph.py
 
       - name: Commit and Push Database Changes
         run: | 
