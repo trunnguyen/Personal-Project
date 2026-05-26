@@ -54,6 +54,7 @@ class JobDB:
             )
             conn.commit()
             rowcount = cursor.rowcount
+            
         if rowcount > 0:
             self.export_to_csv(self.csv_name)
 
@@ -67,3 +68,31 @@ class JobDB:
             cursor.execute("SELECT * FROM jobs ORDER BY date_found DESC, is_applied DESC")
             return [dict(row) for row in cursor.fetchall()]
 
+
+    def get_unscored_jobs(self):
+        with sqlite3.connect(self.db_name) as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.cursor()
+            cursor.execute(
+                " SELECT * FROM jobs WHERE ai_score = 0.0 ORDER BY date_found DESC"
+            )
+            return [dict(row) for row in cursor.fetchall()]
+
+
+    def update_job_score(self, job_id, ai_score):
+       with sqlite3.connect(self.db_name) as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+            '''
+            UPDATE jobs
+            SET ai_score = ?
+            WHERE id = ?
+            ''',(ai_score,job_id)
+            )
+            conn.commit()
+            rowcount = cursor.rowcount
+
+        if rowcount > 0:
+            self.export_to_csv(self.csv_name)
+
+        return cursor.rowcount
