@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import logging
 
-PROJECT_ROOT = Path(__file__).resolve().parent[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 LOG_DIR= os.path.join(PROJECT_ROOT,"data","job_history.log")
 
 os.makedirs(os.path.dirname(LOG_DIR),exist_ok=True)
