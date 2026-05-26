@@ -54,7 +54,7 @@ class JobDB:
             )
             conn.commit()
             rowcount = cursor.rowcount
-            
+
         if rowcount > 0:
             self.export_to_csv(self.csv_name)
 
@@ -80,7 +80,7 @@ class JobDB:
 
 
     def update_job_score(self, job_id, ai_score):
-       with sqlite3.connect(self.db_name) as conn:
+        with sqlite3.connect(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute(
             '''
@@ -91,7 +91,7 @@ class JobDB:
             )
             conn.commit()
             rowcount = cursor.rowcount
-
+            
         if rowcount > 0:
             self.export_to_csv(self.csv_name)
 
