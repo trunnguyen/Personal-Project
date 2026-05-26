@@ -8,6 +8,9 @@ on:
 jobs:
   run-agent:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     defaults:
       run:
         working-directory: ./autonomous_job_finder
@@ -16,6 +19,7 @@ jobs:
       - name: Check out repo code
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           persist-credentials: true
 
       - name: Set up Python Environment
