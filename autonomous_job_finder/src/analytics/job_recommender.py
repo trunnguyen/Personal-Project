@@ -60,3 +60,7 @@ class Recommender:
                 job['ai_score'] = round(float(similarities[idx][0]), 4)
 
         return sorted(jobs_to_score, key=lambda x: x['ai_score'], reverse=True)
+
+    def update_scores(self, unscored_jobs):
+        for job in unscored_jobs:
+            text_to_score=f"{job}"

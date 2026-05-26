@@ -48,13 +48,13 @@ def score_node(state:AgentState) -> Dict[str, Any]:
         logger.info("No unscored jobs found")
         return{"highly_relevant_jobs":[]}
 
-    recommender.update_scores(unscored)
+    scored_jobs=recommender.update_ai_score(unscored)
 
-    for job in unscored:
-        pass
+    for job in scored_jobs:
+        db.update_job_score(job['id'],job['ai_score'])
 
     high_matches = []
-    for job in unscored:
+    for job in scored_jobs:
         threshold=0.7 if recommender.is_trained else 0.3
         if job.get('ai_score',0.0) >= threshold:
             high_matches.append(job)
