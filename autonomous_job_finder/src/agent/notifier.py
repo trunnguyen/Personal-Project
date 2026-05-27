@@ -39,14 +39,31 @@ class Notifier():
         if not  highly_rated_jobs:
             logger.info("No High-Relevant Jobs Found")
             return
+        
         body="<h3> New AI/ML Intern Roles Matches in Ho Chi Minh City</h3><br>"
-        for job in highly_rated_jobs:
+    
+    GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+    REPO_OWNER=os.getenv("REPO_OWNER")
+    REPO_NAME=("Personal-Project")
+
+    for job in highly_rated_jobs:
+            job_id=job.get('id')
+            dispatch_url=f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/dispatches"
             body +=f"""
-            <div style="border: 1px solid #ccc;padding: 10px;margin-bottom: 10px;">
-                <b>{job['title']}</b> - <i>{job['company']}</i><br>
-                Location: {job['location']}<br>
-                Match Score: {job['ai_score'] :.2%}<br>
-                <a href="{job['job_url']}">Apply via LinkedIn</a>
+            <div style="padding: 15px; border: 1px solid #ddd; margin-bottom: 15px; border-radius: 5px; font-family: Arial, sans-serif;">
+                <h3 style="margin-top: 0; color: #333;">{job['title']} at <span style="color: #0066cc;">{job['company']}</span></h3>
+                <p><strong>Location:</strong> {job['location']} | <strong>Match Score:</strong> {job['ai_score']:.2%}</p>
+                
+                <p style="margin-bottom: 15px;">
+                    <a href="{job['job_url']}" target="_blank" style="color: #0066cc; text-decoration: none; font-weight: bold;">[View Original Job Posting]</a>
+                </p>
+                
+                <p style="margin-top: 10px;">
+                    <a href="https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/dispatches?event_type=mark_job_applied&job_id={job_id}" 
+                       style="background-color: #2ea44f; color: white; padding: 8px 14px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 13px; font-weight: bold;">
+                       Mark as Applied
+                    </a>
+                </p>
             </div>
             """
         msg = MIMEMultipart()

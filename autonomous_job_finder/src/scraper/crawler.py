@@ -28,8 +28,16 @@ async def main(db_path:str = None, csv_path:str = None):
     db = JobDB(db_path,csv_path)
 
     base_url="https://www.linkedin.com/jobs/search"
+    search_keywords = [
+        "AI Intern",
+        "Machine Learning Intern",
+        "Data Science Intern",
+        "Data Engineer Intern",
+        "Data Analyst Intern"
+    ]
+    chosen_keyword = random.choice(search_keywords)
     params={
-        "keywords":"Data Science intern",
+        "keywords": chosen_keyword,
         "location":"Ho Chi Minh City Metropolitan Area",
         "trk":"public_jobs_jobs-search-bar_search-submit",
         "position":"1",

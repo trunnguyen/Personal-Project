@@ -58,6 +58,7 @@ def score_node(state:AgentState) -> Dict[str, Any]:
         threshold=0.7 if recommender.is_trained else 0.3
         if job.get('ai_score',0.0) >= threshold:
             high_matches.append(job)
+            
     return {"highly_relevant_jobs": high_matches}
 
 def alert_node(state:AgentState) -> Dict[str, Any]:
@@ -74,12 +75,19 @@ def alert_node(state:AgentState) -> Dict[str, Any]:
 def route_decision_edge(state:AgentState) -> str:
     high_matches = state.get('highly_relevant_jobs',[])
 
-    high_matches.sort(key=lambda x: x.get('ai_score',0.0),reverse=True)
-    if len(high_matches)>0:
-        logger.info(f"Routing Rule: Found {len(high_matches)} highly relevant jobs")
-        return "trigger_alert"
+    current_day= datetime.now().weekday()
+
+    reporting_days = [1,4]
+
+    if current_day in reporting_days:
+        if len(high_matches) > 0:
+            logger.info(f"Reproting day! Dispatching {len(high_matches)} curated mathcing roles.")
+            return "trigger_alert"
+        else:
+            logger.info("Reporting day! But no new matching jobs")
+            return "finish"
     else:
-        logger.info(f"Routing Rule: No highly relevant jobs found")
+        logger.info("Daily crawl complete. Database updated unitl next schedule")
         return "finish"
 
 def retrain_node(state:AgentState) -> Dict[str, Any]:

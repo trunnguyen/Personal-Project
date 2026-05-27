@@ -12,4 +12,4 @@ logging.basicConfig(level=logging.INFO,format='%(asctime)s - %(name)s - %(leveln
                               logging.StreamHandler()
                               ]
                     )
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__name__)B_
