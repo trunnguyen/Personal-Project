@@ -95,16 +95,16 @@ async def main(db_path:str = None, csv_path:str = None):
 
                     raw_link = link_el["href"] if link_el else "N/A"
 
-                clean_link= raw_link.replace("https://vn.linkedin.com", "https://www.linkedin.com")
-                parsed_job= {
-                    "title": title_el.get_text(strip=True) if title_el else "N/A",
-                    "company": comp_el.get_text(strip=True) if comp_el else "N/A",
-                    "location": loc_el.get_text(strip=True) if loc_el else "N/A",
-                    "time": time_el.get_text(strip=True) if time_el else "N/A",
-                    "link": clean_link,
-                }
-                if parsed_job["title"] != "N/A" and parsed_job["link"] != "N/A":
-                    jobs_to_save.append(parsed_job)
+                    clean_link= raw_link.replace("https://vn.linkedin.com", "https://www.linkedin.com")
+                    parsed_job= {
+                        "title": title_el.get_text(strip=True) if title_el else "N/A",
+                        "company": comp_el.get_text(strip=True) if comp_el else "N/A",
+                        "location": loc_el.get_text(strip=True) if loc_el else "N/A",
+                        "time": time_el.get_text(strip=True) if time_el else "N/A",
+                        "link": clean_link,
+                    }
+                    if parsed_job["title"] != "N/A" and parsed_job["link"] != "N/A":
+                        jobs_to_save.append(parsed_job)
 
                 if jobs_to_save:
                     #update db

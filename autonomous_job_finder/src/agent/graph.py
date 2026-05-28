@@ -81,7 +81,7 @@ def route_decision_edge(state:AgentState) -> str:
 
     if current_day in reporting_days:
         if len(high_matches) > 0:
-            logger.info(f"Reproting day! Dispatching {len(high_matches)} curated mathcing roles.")
+            logger.info(f"Reporting day! Dispatching {len(high_matches)} curated mathcing roles.")
             return "trigger_alert"
         else:
             logger.info("Reporting day! But no new matching jobs")
