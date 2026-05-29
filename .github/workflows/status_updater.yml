@@ -22,30 +22,29 @@ jobs:
         with:
           python-version: '3.11'
 
+
+      - name: Install Runtime Dependencies
+        run: |
+          pip install pandas
+
       - name: Update Database Row
-        working-directory: ./autonomous_job_finder
         run: |
           python -c "
           from src.utils.db_manager import JobDB
-          db = JobDB('data/jobs.db','data/csv')
           
+          # Initialize using your actual repo paths
+          db = JobDB('data/jobs.db', 'data/jobs.csv')
           target_id = ${{ github.event.client_payload.job_id }}
           
-          conn = db.connect()
-          cursor = conn.cursor
-          cursor.execute('UPDATE jobs SET is_applied = 1 WHERE id = ?', (target_id,))
-          conn.commit()
-          conn.close()
-          db._export_to_csv()
-          print(f'Successfully marked job {target_id} as applied.)
+          # This single native method safely handles the SQL update AND the CSV export cleanly!
+          row_count = db.update_score_and_interest(job_id=target_id, is_applied=1)
+          print(f'Successfully updated {row_count} row(s). Job {target_id} is marked as applied.')
           "
 
       - name: Commit and Push Status Change
-        working-directory: ./autonomous_job_finder
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-
           git add data/jobs.db data/jobs.csv
-          git commit -m "chore: mark job ${{ github.event.client_payload.job_id }} as applied [skip ci]"
-          git push origin HEAD:master
+          git diff-index --quiet HEAD || git commit -m "🤖 Auto-Update: Marked Job ${{ github.event.client_payload.job_id }} as Applied [skip ci]"
+          git push
