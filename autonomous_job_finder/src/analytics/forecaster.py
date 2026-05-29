@@ -18,7 +18,7 @@ class JobForecaster:
         try:
             with sqlite3.connect(self.db_path) as conn:
                 df=pd.read_sql_query(
-                    "SELECT date(date_bound) as ds, COUNT(id) as y FROM jobs GROUP BY ds",
+                    "SELECT date(date_found) as ds, COUNT(id) as y FROM jobs GROUP BY ds",
                     conn
                 )
 
