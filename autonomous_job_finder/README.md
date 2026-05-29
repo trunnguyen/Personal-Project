@@ -31,8 +31,8 @@ graph TD
     end
 
     %% Styles and Themes
-    style Cron fill:#f9f,stroke:#333,stroke-width:2px
-    style DB fill:#bbf,stroke:#333,stroke-width:2px
+    style Cron fill:#FFA500,stroke:#333,stroke-width:2px
+    style DB fill:#228B22,stroke:#333,stroke-width:2px,color:#fff
     style LinkedIn fill:#2b82c9,stroke:#333,stroke-width:2px,color:#fff
     style Email fill:#ff9,stroke:#333,stroke-width:2px
     style Action fill:#2ea44f,stroke:#333,stroke-width:2px,color:#fff
