@@ -65,7 +65,7 @@ jobs:
           
           git stash pop || true
           
-          git add autonomous_job_finder/data/jobs.db autonomous_job_finder/data/jobs.csv autonomous_job_finder/data/job_history.log || true
+          git add data/jobs.db data/jobs.csv data/job_history.log || true
           
           # Commit and push cleanly
           git diff --quiet && git diff --staged --quiet || (git commit -m "Synchronized scraped data and logs" && git push origin HEAD:master)
