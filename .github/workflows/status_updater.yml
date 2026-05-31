@@ -28,11 +28,9 @@ jobs:
           python -c "
           from src.utils.db_manager import JobDB
           db = JobDB('data/jobs.db','data/jobs.csv')
-          
           target_id = ${{ github.event.client_payload.job_id }}
-          
           row_count = db.update_score_and_interest(job_id=target_id, is_applied=1)
-          print(f'Successfully updated {row_count} row(s). Job {target_id} is marked as applied.')
+          print(f'Successfully updated {row_count} row(s). Job {target_id} is marked as appliesd.')
           "
 
       - name: Commit and Push Status Change
@@ -40,7 +38,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-
+          
           git add data/jobs.db data/jobs.csv
-          git commit -m "chore: mark job ${{ github.event.client_payload.job_id }} as applied [skip ci]"
-          git push origin HEAD:master
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update job application state via tracker" && git push)
