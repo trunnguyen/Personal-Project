@@ -51,20 +51,26 @@ jobs:
         run: |
           python src/agent/graph.py
 
-      - name: Commit and Push Status Change
-        working-directory: ./autonomous_job_finder
+            - name: Commit and Push Status Change
         run: |
+          # Configure Git from the root repository directory
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          git add data/jobs.db data/jobs.csv data/job_history.log || true
+          # Stage the specific modified files using their full relative paths
+          git add autonomous_job_finder/data/jobs.db autonomous_job_finder/data/jobs.csv autonomous_job_finder/data/job_history.log || true
           
+          # Stash the staged files to make the workspace 100% clean
           git stash
-        
+          
+          # Run the pull and rebase against the correct master tracking branch
           git pull --rebase origin master
           
+          # Pop your modifications back out on top of the fresh history
           git stash pop || true
           
-          git add data/jobs.db data/jobs.csv data/job_history.log || true
+          # Re-stage your final files
+          git add autonomous_job_finder/data/jobs.db autonomous_job_finder/data/jobs.csv autonomous_job_finder/data/job_history.log || true
           
+          # Commit and push cleanly
           git diff --quiet && git diff --staged --quiet || (git commit -m "Synchronized scraped data and logs" && git push origin HEAD:master)
