@@ -57,7 +57,7 @@ class Notifier():
         
         body="<h3> New AI/ML Intern Roles Matches in Ho Chi Minh City</h3><br>"
     
-        GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+        GITHUB_TOKEN = os.getenv("TOKEN")
         REPO_OWNER="trunnguyen"
         REPO_NAME="Personal-Project"
 
