@@ -15,11 +15,11 @@ from src.utils.logger import logger
 class Notifier():
     def __init__(self):
         dotenv.load_dotenv()
-        self.server = os.getenv("SMTP_SERVER")
-        self.port = os.getenv("SMTP_PORT")
-        self.sender = os.getenv("EMAIL_ADDRESS")
-        self.password = os.getenv("EMAIL_PASSWORD")
-        self.receiver = os.getenv("EMAIL_ADDRESS")
+        self.server = os.getenv("SMTP_SERVER", "").strip()
+        self.port = os.getenv("SMTP_PORT", "").strip()
+        self.sender = os.getenv("EMAIL_ADDRESS", "").strip()
+        self.password = os.getenv("EMAIL_PASSWORD", "").strip()
+        self.receiver = os.getenv("EMAIL_ADDRESS", "").strip()
 
         if not all([self.server, self.port, self.sender, self.password, self.receiver]):
             logger.error("Environment variables not set")
