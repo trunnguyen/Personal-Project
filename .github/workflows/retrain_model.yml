@@ -38,10 +38,8 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Use a relative path from inside the autonomous_job_finder directory
           git add data/classifier.pkl || true
           
-          # Safely pull, rebase, and push changes back upstream to master
           git stash
           git pull --rebase origin master
           git stash pop || true
