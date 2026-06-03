@@ -16,7 +16,13 @@ from src.utils.db_manager import JobDB
 from src.utils.logger import logger
 from src.analytics.job_recommender import Recommender
 from src.scraper import crawler as job_crawler
-from src.agent.notifier import Notifier
+from src.agent.notifier import Notifier, validate_env
+
+try:
+    validate_env()
+except EnvironmentError as e:
+    logger.critical(f"LangGraph Init Blocked: {e}")
+    sys.exit(1)
 
 class AgentState(TypedDict):
     found_jobs:List[Dict[str,Any]]

@@ -12,9 +12,19 @@ if PROJECT_ROOT not in sys.path:
 
 from src.utils.logger import logger
 
+dotenv.load_dotenv()
+
+REQUIRED_ENV=["SMTP_SERVER", "SMTP_PORT", "EMAIL_ADDRESS", "EMAIL_PASSWORD"]
+
+def validate_env():
+    missing =[k for k in REQUIRED_ENV if not os.getenv(k, "").strip()]
+    if missing:
+        error_msg=f"Missing or empty environment variables: {missing}"
+        logger.error(error_msg)
+        raise Exception(error_msg)
+
 class Notifier():
     def __init__(self):
-        dotenv.load_dotenv()
         self.server = os.getenv("SMTP_SERVER", "").strip()
         self.port = os.getenv("SMTP_PORT", "").strip()
         self.sender = os.getenv("EMAIL_ADDRESS", "").strip()
