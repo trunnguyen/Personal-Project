@@ -44,10 +44,12 @@ jobs:
 
       - name: Execute LangGraph Automation Engine
         env:
-          SMTP_SERVER: ${{secrets.SMTP_SERVER}}
-          SMTP_PORT: ${{secrets.SMTP_PORT}}
-          EMAIL_ADDRESS: ${{secrets.EMAIL_ADDRESS}}
-          EMAIL_PASSWORD: ${{secrets.EMAIL_PASSWORD}}
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          REPO_OWNER: ${{ secrets.REPO_OWNER }}
+          REPO_NAME: ${{ secrets.REPO_NAME }}
         run: |
           python src/agent/graph.py
 
