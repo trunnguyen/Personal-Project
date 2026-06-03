@@ -1,223 +1,268 @@
-# 🤖 Autonomous AI/ML Job-Hunting Agent
+# Autonomous AI/ML Job-Hunting Agent
 
-An intelligent, production-ready automation ecosystem engineered to seamlessly scrape, evaluate, and forecast localized employment opportunities. Specifically optimized for identifying **AI/ML Intern roles in Ho Chi Minh City**, this application orchestrates a continuous feedback loop between raw web data and machine learning-powered recommendations.
+> A production-ready automation pipeline that scrapes, scores, and forecasts AI/ML internship opportunities in **Ho Chi Minh City** — fully hands-free via GitHub Actions.
+
+---
+
+## Overview
+
+This agent runs on a daily GitHub Actions cron schedule. It crawls LinkedIn for fresh AI/ML intern postings, semantically scores each one against your profile, and emails you only the roles that clear the relevance threshold — every Tuesday and Friday. Your feedback in the Streamlit dashboard continuously improves the scorer over time.
 
 ```mermaid
 graph TD
-    %% Define System Nodes
-    Cron[GitHub Actions Cron Schedule <br> Daily Run] -->|Triggers| Graph[LangGraph Orchestrator]
-    
-    subgraph Data Ingestion Node [src/scraper/crawler.py]
+    Cron[GitHub Actions Cron Schedule<br>Daily @ 01:00 UTC] -->|Triggers| Graph[LangGraph Orchestrator]
+
+    subgraph Data Ingestion [src/scraper/crawler.py]
         Graph --> Scrape[Scrape Node]
         Scrape -->|Playwright / Crawl4AI| Keyword{Keyword Rotation}
         Keyword -->|Selects 1/Day| LinkedIn[(Public LinkedIn Jobs)]
     end
 
-    subgraph Evaluation Node [src/agent/graph.py]
+    subgraph Evaluation [src/agent/graph.py]
         LinkedIn -->|New Ingestions| DB[(SQLite: jobs.db)]
         DB -->|Fetch Unscored| Rank[Ranking Node]
         Rank -->|SBERT Semantic Match| Rec[Job Recommender]
     end
 
-    subgraph Conditional Routing Node [Edge Decisions]
+    subgraph Conditional Routing [Edge Decisions]
         Rec --> Decision{Is it Reporting Day?<br>Tue / Fri}
         Decision -->|No| Finish[Save silently to DB & Close]
         Decision -->|Yes| CheckMatches{Any High Matches?}
         CheckMatches -->|No| Finish
-        CheckMatches -->|Yes >= 0.7| Alert[Dispatch Alert Node]
+        CheckMatches -->|Yes ≥ 0.7| Alert[Dispatch Alert Node]
     end
 
     subgraph Notification & Action Loop [src/agent/notifier.py]
-        Alert -->|Send Outbound SMTP| Email[Your Inbox Email]
+        Alert -->|SMTP HTML Email| Email[Your Inbox]
         Email -->|Click 'Mark as Applied'| Dispatch[GitHub Repository Dispatch API]
         Dispatch -->|Trigger Callback| Action[status_updater.yml]
-        Action -->|SQL UPDATE jobs SET is_applied = 1| DB
+        Action -->|UPDATE jobs SET is_applied=1| DB
     end
 
-    %% Styles and Themes
     style Cron fill:#FFA500,stroke:#333,stroke-width:2px
     style DB fill:#228B22,stroke:#333,stroke-width:2px,color:#fff
     style LinkedIn fill:#2b82c9,stroke:#333,stroke-width:2px,color:#fff
     style Email fill:#ff9,stroke:#333,stroke-width:2px
     style Action fill:#2ea44f,stroke:#333,stroke-width:2px,color:#fff
 ```
-## 🚀 Key FeaturesStateful Agentic Orchestration: 
 
-Structured decision nodes and conditional routing defined via langgraph to cleanly transition from ingestion to scoring and alerting.
+---
 
-Asynchronous Web Scraping: Driven by crawl4ai and playwright utilizing targeted CSS evaluation rules to bypass client-side anti-scraping blocks seamlessly.
+## Key Features
 
-Adaptive Dual-Stage ML Scorer: Transitions dynamically from a cold-start embedding text matcher (SentenceTransformer) to a custom personalized binary classifier (LogisticRegression) built on your labeled historical choices.
+**Stateful Agentic Orchestration** — A `LangGraph` `StateGraph` sequences four explicit nodes: `scrape_linkedin → retrain_node → ranking_job → dispatch_alert`. Conditional routing on the final edge decides whether to alert or terminate silently based on the day of week and match count.
 
-Predictive Market Forecasting: Built-in time-series forecasting via Facebook's prophet package to predict posting density fluctuations over rolling 14-day tracking horizons.
+**Asynchronous Web Scraping** — `crawl4ai`'s `AsyncWebCrawler` with randomized user agents and a `playwright` headless Chromium backend. Rotates across five search keywords daily and deduplicates inserts via `INSERT OR IGNORE` on the job URL.
 
-Full-Loop Interactive Dashboard: A functional streamlit frontend rendering core market tracking metrics, forecasting charts, and a user feedback loop to label jobs instantly.
+**Dual-Stage ML Scorer** — Cold-start mode uses cosine similarity against a fixed anchor profile via `all-MiniLM-L6-v2` SBERT embeddings. Once you accumulate at least 3 positive and 3 negative labels from the dashboard, the pipeline automatically promotes to a `LogisticRegression` classifier trained on your own feedback. The relevance threshold shifts from `0.3` (cold) to `0.7` (warm) accordingly.
 
-Hands-Free CI/CD Architecture: Tri-tier GitHub Workflows managing routine execution runs, automated repository database commits, background retraining, and programmatic repository dispatch status handlers.
+**Weekly Model Retraining** — `training_pipeline.py` runs Stratified 3-Fold cross-validation, prints a full `classification_report`, then serializes the updated weights to `classifier.pkl` — triggered every Sunday via `retrain_model.yml` and committed back to the repository automatically.
 
-## 📂 System Directory
+**Market Forecasting** — `forecaster.py` queries daily posting counts from SQLite and passes them to Facebook `Prophet` to predict posting volume over a rolling 14-day window (lower, mid, upper bounds). Requires at least 5 distinct days of data to activate.
 
+**Interactive Streamlit Dashboard** — Displays the forecast chart, lists all tracked jobs with AI scores, and lets you toggle interest state per listing. State changes write back to `jobs.db` and sync to `jobs.csv` immediately.
 
-github/
-└── workflow/
-    ├── job_hunter.yml          # Triggers daily scheduled crawlers & LangGraph flows
-    ├── retrain_model.yml       # Schedules weekly continuous model parameter updates
-    └── status_updater.yml      # Listens for repository dispatch webhooks from email actions
-Autonomous-hunter-agent/
-├── data/                       # Persistent File-System Volume
-│   ├── classifier.pkl          # Serialized Logistic Regression weights & model object
-│   ├── jobs.csv                # Flat-file operational backup database dump
-│   ├── jobs.db                 # Core transactional SQLite relational database storage
-│   └── job_history.log         # Production system runtime logs
+**Full-Loop Email Actions** — High-match emails contain a `Mark as Applied` button that fires a GitHub Repository Dispatch webhook (`mark_job_applied`), which triggers `status_updater.yml` to set `is_applied = 1` in the database without any manual steps.
+
+---
+
+## Project Structure
+
+```
+.github/
+└── workflows/
+    ├── job_hunter.yml          # Daily scrape, score, alert, commit jobs.db
+    ├── retrain_model.yml       # Weekly retrain, commit classifier.pkl
+    └── status_updater.yml      # repository_dispatch listener → set is_applied=1
+
+autonomous_job_finder/
+├── data/
+│   ├── classifier.pkl          # Serialized LogisticRegression weights
+│   ├── jobs.csv                # Flat-file backup (auto-exported after every write)
+│   ├── jobs.db                 # Core SQLite database
+│   └── job_history.log         # Unified runtime audit log
 ├── src/
 │   ├── scraper/
-│   │   └── crawler.py          # Asynchronous index crawler utilizing multi-keyword rotation
+│   │   └── crawler.py          # Async LinkedIn crawler with keyword rotation
 │   ├── agent/
-│   │   ├── graph.py            # Main StateGraph orchestration workflow & node mappings
-│   │   ├── notifier.py         # Multi-part HTML mail drafting & SMTP transfer execution
-│   │   └── .env                # Secure access keys, email configurations, and secrets
+│   │   ├── graph.py            # LangGraph StateGraph — nodes, edges, routing
+│   │   ├── notifier.py         # HTML email builder & SMTP dispatcher
+│   │   └── .env                # Secrets (not committed)
 │   ├── analytics/
-│   │   ├── job_recommender.py  # Model inference loader (SBERT + Anchor-Similarity/LR)
-│   │   ├── training_pipeline.py# Stratified K-Fold validator & weight optimization pipeline
-│   │   └── forecaster.py       # Time-series prophet analytics worker engine
+│   │   ├── job_recommender.py  # SBERT cold-start + LR warm-start inference
+│   │   ├── training_pipeline.py# Stratified K-Fold trainer & model serializer
+│   │   └── forecaster.py       # Prophet 14-day posting-volume forecaster
 │   └── utils/
-│       ├── db_manager.py       # Relational SQLite transactional CRUD management
-│       └── logger.py           # Unified formatted console & file stream layout
+│       ├── db_manager.py       # SQLite CRUD — upsert, score, interest, export
+│       └── logger.py           # File + console logging (data/job_history.log)
 ├── dashboard/
-│   └── app.py                  # Live analytical Streamlit interactive user interface
-├── docker-compose.yml          # Orchestration layer grouping backend and dashboard nodes
-├── Dockerfile                  # Slim Debian baseline building the Python + Playwright context
-├── requirements.txt            # System dependencies tracking structural library pinning
-└── main.py                     # Long-lived deployment worker daemon (3-day cycle ticker)
+│   └── app.py                  # Streamlit job board & forecast dashboard
+├── docker-compose.yml          # Two services: agent_backend + dashboard_ui
+├── Dockerfile                  # python:3.11-slim + Playwright Chromium
+├── requirements.txt
+└── main.py                     # Long-running daemon (3-day cycle, asyncio loop)
+```
 
-## 🛠️ Core Tech Stack
+---
 
-Workflow Logic: langgraph, langchain-core
+## Tech Stack
 
-Data Scrapers: crawl4ai, playwright, beautifulsoup4
+| Layer | Libraries |
+|---|---|
+| Workflow Orchestration | `langgraph`, `langchain-core` |
+| Web Scraping | `crawl4ai`, `playwright`, `beautifulsoup4` |
+| Machine Learning | `scikit-learn`, `sentence-transformers`, `torch`, `numpy`, `pandas` |
+| Time-Series Forecasting | `prophet` |
+| Frontend Dashboard | `streamlit` |
+| Database | `sqlite3` |
+| Notifications | `smtplib`, `python-dotenv` |
 
-Machine Learning Engine: scikit-learn, sentence-transformers, torch, numpy, pandas
+---
 
-Time Series Analytics: prophet
+## Screenshots
 
-Frontend UI Component: streamlit
+**Interactive Streamlit Dashboard**
 
-Database Management: sqlite3
-
-## 📸 System Demos & Execution Logs
-
-Interactive Streamlit Dashboard Loop
-Provides deep insights into market patterns while supplying the vital UI loop for tracking, application state toggles, and label building.
+Tracks market trends, displays AI scores per listing, and drives the labeling feedback loop.
 
 ![Dashboard](DEMO/dash_board%20(1).png)
-
 ![Dashboard](DEMO/dash_board%20(2).png)
-#
-Continuous Integration Automation Engine
-Runs on a daily cron schedule to configure dependencies, execute the core ingestion loop, and synchronize updates.
 
-![git_action](DEMO/git_action.png)
-#
-Machine Learning Training Pipeline Telemetry
+**GitHub Actions CI/CD**
 
-Evaluates training pass data quality through Stratified 3-Fold cross-validation splits to verify performance scores before finalizing weights.
+Daily cron run configuring dependencies, executing the LangGraph pipeline, and committing `jobs.db` back to the repository.
 
-![training_pipeline](DEMO/training_pipeline.png)
+![GitHub Actions](DEMO/git_action.png)
 
-Operational Production System Audit Log
+**ML Training Pipeline**
 
-Unified execution logs generated during automated background routing steps.
+Stratified 3-Fold cross-validation output verifying classifier quality before weight serialization.
 
-![log](DEMO/log.png)
+![Training Pipeline](DEMO/training_pipeline.png)
 
-## 📦 Setting Up Locally
+**Production Audit Log**
 
-### **Prerequisites**
+Unified runtime logs from `data/job_history.log` generated during automated execution.
 
-Python 3.11+.
-Docker & Docker Compose (Optional, for containerized deployment).
-An active email account with SMTP application-specific passwords generated.
+![Logs](DEMO/log.png)
 
-### Initial Configuration
+---
 
-Create a private application secrets layer configuration file at src/agent/.env mapping these attributes:
+## Getting Started
 
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose *(optional)*
+- A Gmail account with an [App Password](https://support.google.com/accounts/answer/185833) enabled
+
+### Configuration
+
+Create `src/agent/.env`:
+
+```env
 SMTP_SERVER=smtp.gmail.com
 SMTP_PORT=587
 EMAIL_ADDRESS=your_account@gmail.com
 EMAIL_PASSWORD=xxxx_xxxx_xxxx_xxxx
 GITHUB_TOKEN=ghp_YourGitHubPersonalAccessToken
+```
 
-## Option 1: Native Virtual Environment Installation
+---
 
-Bash
-### Provision virtual runtime boundaries
+### Option 1 — Local Virtual Environment
+
+```bash
+# Create and activate virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+source venv/bin/activate        # Windows: venv\Scripts\activate
 
-### Install locked production matrix dependency nodes
+# Install dependencies
 pip install -r requirements.txt
 
-### Download required headless system browser binaries
+# Install Playwright Chromium binaries
 python -m playwright install chromium --with-deps
 
-### Spin up the Interactive Management Panel
+# Launch the dashboard
 streamlit run dashboard/app.py
 
-## Option 2: Docker-Compose Global Containerization
+# Or run the full agent loop (3-day cycle daemon)
+python main.py
+```
 
-Build and provision the multi-service network stack (encapsulating both the daemon agent loop background container and the active Streamlit app layer) simultaneously:
-Bash
+### Option 2 — Docker Compose
+
+Spins up two containers: `agent_backend` (daemon loop) and `dashboard_ui` (Streamlit).
+
+```bash
 docker-compose up --build
-Your analytics panel will be accessible at http://localhost:8501.
+```
 
-## ⚙️ Core Architecture & Operational Deep Dive
+Dashboard available at `http://localhost:8501`. Both containers share the `./data` volume.
 
-#### 1. Data Ingestion Pipeline (crawler.py)
+---
 
-Utilizes AsyncWebCrawler from crawl4ai to scrape job postings using rotated search terms (AI Intern, Machine Learning Intern, etc.). It isolates target HTML structural rows using strict CSS patterns (.jobs-search__results-list, div.base-card), parses relevant attributes, and pushes them safely into the database via INSERT OR IGNORE constraints to prevent item duplication.
+## Architecture Deep Dive
 
-#### 2. State Routing Loop (graph.py)
+### 1. Data Ingestion — `crawler.py`
 
-Manages stateful progression using an index structural layout payload mapping explicit typed arrays:
+On each run, one keyword is randomly selected from the pool (`AI Intern`, `Machine Learning Intern`, `Data Science Intern`, `Data Engineer Intern`, `Data Analyst Intern`) and used to build a LinkedIn public jobs search URL. `AsyncWebCrawler` fetches the page with a random user agent and a 5-second render delay to allow JavaScript to settle. Job cards are parsed via `div.base-card` selectors and inserted into SQLite with `INSERT OR IGNORE` (keyed on `job_url`) to prevent duplicates. The database is immediately exported to `jobs.csv` after every successful write.
 
-Python
-    class AgentState(TypedDict):
+### 2. State Routing — `graph.py`
+
+The pipeline state flows through a typed dictionary:
+
+```python
+class AgentState(TypedDict):
     found_jobs: List[Dict[str, Any]]
     unfound_jobs: List[Dict[str, Any]]
     highly_relevant_jobs: List[Dict[str, Any]]
+```
 
-- Dynamic Decision Edge: Includes conditional routing rules (route_decision_edge). If execution falls on designated alert windows (Tuesdays/Fridays) and features cross acceptable threshold matches ($\ge 0.70$), the state transfers instantly to dispatch_alert. Otherwise, it logs metrics silently to save compute cycles and signals a graceful termination node step (END).
+Node sequence: `scrape_linkedin → retrain_node → ranking_job`, then a conditional edge decides the final step. If today is Tuesday (1) or Friday (4) **and** at least one job cleared the score threshold, the pipeline routes to `dispatch_alert`. Otherwise it terminates at `END`. The `retrain_node` only executes the training loop on Sundays (weekday `6`); on all other days it passes state through unchanged.
 
-#### 3. Dual-Stage Recommender (job_recommender.py & training_pipeline.py)
+### 3. Dual-Stage Recommender — `job_recommender.py` & `training_pipeline.py`
 
-Cold Start Phase: When the database lacks sufficient interaction data, rankings rely on the cosine similarity of text vectors against a localized baseline string profile using the all-MiniLM-L6-v2 embedding model.
+**Cold Start:** Each job is converted to a plain text string (`"Job Opportunity {title} at {company} located in {location}"`), encoded by `all-MiniLM-L6-v2`, and compared against a fixed anchor vector via cosine similarity. Threshold for high-match routing: `0.3`.
 
-Warm Production Handover: Once you interact with roles on the dashboard and mark jobs as interested, db_manager.py switches the tracking record (is_applied = 1).
+**Warm Mode:** Once `classifier.pkl` exists (written by `training_pipeline.py`), `Recommender` loads it on init and switches to `predict_proba` output. Threshold rises to `0.7`.
 
-Online Training Loop: When a balanced set of feedback vectors exists (minimum 3 positive, 3 negative items), training_pipeline.py executes an online optimization pass. It checks predictive quality through a Stratified 3-Fold cross-validation split, trains a customized LogisticRegression model, and saves the refined weights into classifier.pkl.
+**Training trigger:** `training_pipeline.py` reads all jobs from the database, builds labels from `is_applied`, and requires a minimum of 3 positive and 3 negative examples before proceeding. It runs Stratified 3-Fold CV, logs per-fold F1 scores and a full `classification_report`, then fits a final `LogisticRegression(class_weight='balanced')` on the full dataset and serializes it.
 
-#### 4. Direct Webhook Ingestion Notifier (notifier.py)
+### 4. Email Notifier — `notifier.py`
 
-When high-scoring matches surface, the system sends an HTML email newsletter containing direct tracking action triggers. These hyperlinks route directly back into your GitHub Repository Dispatch endpoint:
-Plaintext
-[https://github.com/your-username/your-repo/issues/new?title=Applied+to+Job](https://github.com/your-username/your-repo/issues/new?title=Applied+to+Job)+<id>&body=mark_applied:<id>
-Clicking the action link logs an instantaneous external tracking response payload to trace applied pipelines automatically.
+For each high-match job, an HTML email card is built containing the job title, company, match score, a link to the original posting, and a `Mark as Applied` button. That button links to:
 
-#### 5. Trend Analytics Forecaster (forecaster.py)
+```
+https://github.com/trunnguyen/Personal-Project/issues/new?title=Applied+to+Job+{id}&body=mark_applied:{id}
+```
 
-The system aggregates metrics directly from SQLite database rows using time-series parsing patterns:
+Clicking it fires a `repository_dispatch` event (`mark_job_applied`) which `status_updater.yml` picks up to update the database row.
 
-$$\text{SELECT date(date_found) as ds, COUNT(id) as y FROM jobs GROUP BY ds}$$
+### 5. Market Forecaster — `forecaster.py`
 
-Once 5 distinct active daily historical points compile, it passes dataframes into a Prophet time-series regression instance. This forecasts lower, upper, and mean estimated job-posting density ranges across a rolling 14-day market horizon window.
+Aggregates daily posting counts:
 
-## 🤖 Remote Automated GitHub Actions Workflows
+```sql
+SELECT date(date_found) AS ds, COUNT(id) AS y FROM jobs GROUP BY ds
+```
 
-The automation system relies on three interconnected workflows located in your .github/workflows/ directory:
+With 5+ data points, a `Prophet` model is fit with yearly and daily seasonality disabled, then used to generate a 14-day forward forecast. The dashboard renders `yhat`, `yhat_lower`, and `yhat_upper` as a line chart.
 
-1. Daily Automation Workflow (job_hunter.yml): Automatically executes on a daily cron schedule (0 1 * * *). It configures dependencies, initializes virtual system browser assets, fires the main graph.py node steps, triggers email roundups, and commits the updated jobs.db records directly back to your repository storage.
+---
 
-2. Weekly Retraining Optimization Loop (retrain_model.yml): Fires every Sunday at midnight (0 0 * * 0). It parses all updated historical user feedback tracking points, processes text vector recalculations, trains the predictive parameters, and auto-commits the refreshed classifier.pkl model back into place.
+## GitHub Actions Workflows
 
-3. Application State Synchronizer (status_updater.yml): Listens via repository_dispatch hooks for remote external web event triggers (mark_job_applied). It identifies targeted identifier arguments directly, triggers rapid background query modifications inside the database, sets is_applied=1, and safely syncs state modifications to your permanent records.
+| Workflow | Trigger | What it does |
+|---|---|---|
+| `job_hunter.yml` | Daily @ 01:00 UTC | Installs deps + Chromium, runs `graph.py`, commits `jobs.db`, `jobs.csv`, `job_history.log` |
+| `retrain_model.yml` | Sundays @ 00:00 UTC | Runs `training_pipeline.py`, commits updated `classifier.pkl` |
+| `status_updater.yml` | `repository_dispatch: mark_job_applied` | Calls `db.update_score_and_interest(job_id, is_applied=1)`, commits `jobs.db` + `jobs.csv` |
+
+All three workflows use `git stash → pull --rebase → stash pop` to handle concurrent write conflicts cleanly before pushing.
+
+---
+
+## 📄 License
+
+MIT — see `LICENSE` for details.
