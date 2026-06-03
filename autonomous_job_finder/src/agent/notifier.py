@@ -14,7 +14,12 @@ from src.utils.logger import logger
 
 dotenv.load_dotenv()
 
-REQUIRED_ENV=["SMTP_SERVER", "SMTP_PORT", "EMAIL_ADDRESS", "EMAIL_PASSWORD"]
+REQUIRED_ENV=["SMTP_SERVER",
+    "SMTP_PORT",
+    "EMAIL_ADDRESS",
+    "EMAIL_PASSWORD",
+    "REPO_OWNER",
+    "REPO_NAME"]
 
 def validate_env():
     missing =[k for k in REQUIRED_ENV if not os.getenv(k, "").strip()]
