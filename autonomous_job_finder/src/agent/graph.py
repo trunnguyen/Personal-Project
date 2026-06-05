@@ -61,7 +61,7 @@ def score_node(state:AgentState) -> Dict[str, Any]:
     since = db.get_last_reported_date()
     high_matches = db.get_high_matches_since(threshold, since)
 
-    logger.info(f"Threshold: {'0.4 (trained)' if recommender.is_trained else '0.25 (cold)'} | High matches since {since}: {len(high_matches)}")
+    logger.info(f"Threshold: {'0.5 (trained)' if recommender.is_trained else '0.25 (cold)'} | High matches since {since}: {len(high_matches)}")
     return {"highly_relevant_jobs":high_matches}
 
 
