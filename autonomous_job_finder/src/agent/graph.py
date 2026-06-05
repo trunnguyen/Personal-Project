@@ -73,7 +73,7 @@ def alert_node(state:AgentState) -> Dict[str, Any]:
     notifier.send_report(high_matches)
     notifier.send_notification(high_matches)
 
-    db.set_last_reported_date(datetime.now().strftime("%d-%m-%Y %H:%M:%S"))
+    db.set_last_reported_date(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     logger.info(f"Report sent for {len(high_matches)} jobs. Last reported date updated.")
 
     return {}
