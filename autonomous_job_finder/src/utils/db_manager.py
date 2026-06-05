@@ -23,6 +23,13 @@ class JobDB:
                 )'''
             )
 
+            conn.execute(
+                '''CREATE TABLE IF NOT EXISTS meta (
+                    key TEXT PRIMARY KEY, 
+                    value TEXT
+                )'''
+            )
+
     def upsert_jobs(self, jobs):
         with sqlite3.connect(self.db_name) as conn:
             cursor = conn.cursor()
