@@ -53,7 +53,7 @@ class Recommender:
             for idx, job in enumerate(jobs_to_score):
                 job['ai_score'] = round(float(probabilities[idx]), 4)
         else:
-            anchor_profile = "AI Engineer Intern Machine Learning Python Ho Chi Minh City"
+            anchor_profile = "AI Engineer Intern Machine Learning Intern Data Science Intern Python PyTorch deep learning NLP LLM LangChain RAG computer vision internship entry Ho Chi Minh City Vietnam"
             anchor_vector = self.embedding_model.encode([anchor_profile])
             similarities = cosine_similarity(X_new, anchor_vector)
             for idx, job in enumerate(jobs_to_score):
