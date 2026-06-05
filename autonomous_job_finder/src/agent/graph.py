@@ -50,22 +50,20 @@ async def scrape_node(state:AgentState) -> Dict[str, Any]:
 def score_node(state:AgentState) -> Dict[str, Any]:
     logger.info("Ranking and Filtering Jobs")
     unscored=db.get_unscored_jobs()
-    if not unscored:
+    if unscored:
+        scored_jobs = recommender.update_ai_score(unscored)
+        for job in scored_jobs:
+            db.update_job_score(job['id'],job['ai_score'])
+    else:
         logger.info("No unscored jobs found")
-        return{"highly_relevant_jobs":[]}
 
-    scored_jobs=recommender.update_ai_score(unscored)
+    threshold= 0.5 if recommender.is_trained else 0.25
+    since = db.get_last_reported_date()
+    high_matches = db.get_high_matches_since(threshold, since)
 
-    for job in scored_jobs:
-        db.update_job_score(job['id'],job['ai_score'])
+    logger.info(f"Threshold: {'0.4 (trained)' if recommender.is_trained else '0.25 (cold)'} | High matches since {since}: {len(high_matches)}")
+    return {"highly_relevant_jobs":high_matches}
 
-    high_matches = []
-    for job in scored_jobs:
-        threshold=0.7 if recommender.is_trained else 0.3
-        if job.get('ai_score',0.0) >= threshold:
-            high_matches.append(job)
-            
-    return {"highly_relevant_jobs": high_matches}
 
 def alert_node(state:AgentState) -> Dict[str, Any]:
 
@@ -74,6 +72,9 @@ def alert_node(state:AgentState) -> Dict[str, Any]:
 
     notifier.send_report(high_matches)
     notifier.send_notification(high_matches)
+
+    db.set_last_reported_date(datetime.now().strftime("%d-%m-%Y %H:%M:%S"))
+    logger.info(f"Report sent for {len(high_matches)} jobs. Last reported date updated.")
 
     return {}
 

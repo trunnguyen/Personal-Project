@@ -96,3 +96,38 @@ class JobDB:
             self.export_to_csv(self.csv_name)
 
         return cursor.rowcount
+
+    def get_high_matches_since(self, threshold, since_data):
+        with sqlite3.connect(self.db_name) as conn:
+            conn.row_factory= sqlite3.Row
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT * FROM jobs 
+                WHERE ai_score >= ?
+                AND is_applied = 0
+                AND date_found >= ?
+                ORDER BY date_found DESC
+            """, (threshold, since_data))
+            return [dict(row) for row in cursor.fetchall()]
+
+    def get_last_reported_date(self):
+        with sqlite3.connect(self.db_name) as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT value FROM meta
+                WHERE key ='last_reported_date'
+            """)
+            row = cursor.fetchone()
+            return row[0] if row else '2000-01-01'
+
+    def set_last_reported_date(self, date):
+        with sqlite3.connect(self.db_name) as conn:
+            conn.execute("""
+                        CREATE TABLE IF NOT EXISTS meta 
+                        (key TEXT PRIMARY KEY, value TEXT)
+                         """)
+            conn.execute("""
+                        INSERT OR REPLACE INTO meta (key, value)
+                        VALUES ('last_reported_date', ?)
+                        """,(date,))
+            conn.commit()
