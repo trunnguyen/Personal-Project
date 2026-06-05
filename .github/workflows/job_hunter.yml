@@ -39,12 +39,20 @@ jobs:
           pip install -r requirements.txt
 
       - name: Cache Playwright browsers
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
           key: playwright-chromium-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
           restore-keys: |
             playwright-chromium-${{ runner.os }}-
+
+      - name: Cache Hugging Face Models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-models-${{ runner.os }}-all-MiniLM-L6-v2
+          restore-keys: |
+            hf-models-${{ runner.os }}-
 
       - name: Install Playwright Browser Binaries
         run: |
