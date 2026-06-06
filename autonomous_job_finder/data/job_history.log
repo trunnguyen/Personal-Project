@@ -1571,3 +1571,120 @@ sqlite3.OperationalError: near "jobs": syntax error
 2026-06-05 17:44:42,180 - src.utils.logger - INFO - High-Relevance Positions Found
 2026-06-05 17:44:43,586 - src.utils.logger - INFO - Email notification successfully sent.
 2026-06-05 17:44:43,588 - src.utils.logger - INFO - Report sent for 62 jobs. Last reported date updated.
+2026-06-06 04:58:29,932 - sentence_transformers.base.model - INFO - No device provided, using cpu
+2026-06-06 04:58:29,999 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:30,003 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:30,004 - sentence_transformers.base.model - INFO - Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-06-06 04:58:30,007 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:30,011 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:30,015 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:30,018 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:30,022 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:30,026 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:30,026 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2026-06-06 04:58:30,026 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2026-06-06 04:58:31,030 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:31,030 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2026-06-06 04:58:31,030 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2026-06-06 04:58:33,033 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:33,034 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2026-06-06 04:58:33,034 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2026-06-06 04:58:37,037 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:37,038 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2026-06-06 04:58:37,038 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2026-06-06 04:58:45,088 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:45,088 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2026-06-06 04:58:45,088 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2026-06-06 04:58:53,099 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:53,099 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2026-06-06 04:58:53,103 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:53,213 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:53,217 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:53,217 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json
+2026-06-06 04:58:53,217 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2026-06-06 04:58:54,221 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:54,221 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json
+2026-06-06 04:58:54,221 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2026-06-06 04:58:56,227 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:58:56,227 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json
+2026-06-06 04:58:56,227 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2026-06-06 04:59:00,230 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:00,231 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json
+2026-06-06 04:59:00,231 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2026-06-06 04:59:08,248 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:08,248 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json
+2026-06-06 04:59:08,248 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2026-06-06 04:59:16,260 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:16,260 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json
+2026-06-06 04:59:16,264 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:16,267 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:16,268 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 04:59:16,268 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2026-06-06 04:59:17,272 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:17,272 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 04:59:17,272 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2026-06-06 04:59:19,276 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:19,276 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 04:59:19,276 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2026-06-06 04:59:23,280 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:23,281 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 04:59:23,281 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2026-06-06 04:59:31,326 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:31,327 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 04:59:31,327 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2026-06-06 04:59:39,346 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:39,346 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 04:59:39,350 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:39,353 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:39,353 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json
+2026-06-06 04:59:39,354 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2026-06-06 04:59:40,358 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:40,358 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json
+2026-06-06 04:59:40,358 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2026-06-06 04:59:42,363 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:42,363 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json
+2026-06-06 04:59:42,363 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2026-06-06 04:59:46,366 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:46,367 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json
+2026-06-06 04:59:46,367 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2026-06-06 04:59:54,382 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 04:59:54,382 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json
+2026-06-06 04:59:54,382 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2026-06-06 05:00:02,426 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:02,426 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json
+2026-06-06 05:00:02,430 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:02,434 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:02,435 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 05:00:02,435 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2026-06-06 05:00:03,439 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:03,439 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 05:00:03,439 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2026-06-06 05:00:05,444 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:05,444 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 05:00:05,444 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2026-06-06 05:00:09,448 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:09,449 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 05:00:09,449 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2026-06-06 05:00:17,460 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:17,460 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 05:00:17,460 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2026-06-06 05:00:25,472 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:25,472 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json
+2026-06-06 05:00:25,476 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:25,480 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:25,485 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:25,489 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:25,495 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:25,501 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:25,539 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:25,544 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 429 Too Many Requests"
+2026-06-06 05:00:25,546 - src.utils.logger - INFO - Model successfully loaded from /home/runner/work/Personal-Project/Personal-Project/autonomous_job_finder/data/classifier.pkl
+2026-06-06 05:00:25,551 - src.utils.logger - INFO - LangGraph Node [Scrape]: Triggering Crawler
+2026-06-06 05:00:25,552 - src.utils.logger - INFO - Starting crawler
+2026-06-06 05:00:34,176 - src.utils.logger - INFO - Crawler ran successfully | Time : 6.49 seconds
+2026-06-06 05:00:36,502 - src.utils.logger - INFO - Data Sync: found 60 total jobs. 60 new jobs saved to .db and .csv
+2026-06-06 05:00:36,502 - src.utils.logger - INFO - End Crawler
+2026-06-06 05:00:36,625 - src.utils.logger - INFO - Skip Weekly Retrain
+2026-06-06 05:00:36,626 - src.utils.logger - INFO - Ranking and Filtering Jobs
+2026-06-06 05:00:37,527 - src.utils.logger - INFO - Threshold: 0.5 (trained) | High matches since 2026-06-05 17:44:43: 2
+2026-06-06 05:00:37,528 - src.utils.logger - INFO - Daily crawl complete. Database updated unitl next schedule
