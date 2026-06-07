@@ -54,7 +54,9 @@ graph TD
 
 **Asynchronous Web Scraping** — `crawl4ai`'s `AsyncWebCrawler` with randomized user agents and a `playwright` headless Chromium backend. Rotates across five search keywords daily and deduplicates inserts via `INSERT OR IGNORE` on the job URL.
 
-**Dual-Stage ML Scorer** — Cold-start mode uses cosine similarity against a fixed anchor profile via `all-MiniLM-L6-v2` SBERT embeddings. Once you accumulate at least 3 positive and 3 negative labels from the dashboard, the pipeline automatically promotes to a `LogisticRegression` classifier trained on your own feedback. The relevance threshold shifts from `0.3` (cold) to `0.7` (warm) accordingly.
+**Dual-Stage ML Scorer** — Cold-start mode uses cosine similarity against an expanded anchor profile via `all-MiniLM-L6-v2` SBERT embeddings (threshold `0.25`). Once `classifier.pkl` exists the pipeline promotes to a `LogisticRegression` classifier trained on your own feedback (threshold `0.4`)
+
+**Accumulated Reporting** — Jobs are scored and stored silently every day. On reporting days (Tuesday/Friday) the email covers all high-match jobs found **since the last report**, not just that day's scrape — tracked via a `meta` table with a `last_reported_at` timestamp.
 
 **Weekly Model Retraining** — `training_pipeline.py` runs Stratified 3-Fold cross-validation, prints a full `classification_report`, then serializes the updated weights to `classifier.pkl` — triggered every Sunday via `retrain_model.yml` and committed back to the repository automatically.
 
@@ -63,6 +65,8 @@ graph TD
 **Interactive Streamlit Dashboard** — Displays the forecast chart, lists all tracked jobs with AI scores, and lets you toggle interest state per listing. State changes write back to `jobs.db` and sync to `jobs.csv` immediately.
 
 **Full-Loop Email Actions** — High-match emails contain a `Mark as Applied` button that fires a GitHub Repository Dispatch webhook (`mark_job_applied`), which triggers `status_updater.yml` to set `is_applied = 1` in the database without any manual steps.
+
+**Environment Validation** — `validate_env()` runs at startup and aborts immediately with a clear log message if any required secret is missing or empty, preventing cryptic mid-run failures.
 
 ---
 
@@ -134,6 +138,12 @@ Daily cron run configuring dependencies, executing the LangGraph pipeline, and c
 
 ![GitHub Actions](DEMO/git_action.png)
 
+**Weekly Model Retraining Workflow**
+
+Retraining pipeline completing successfully in 2m 26s — training on labeled feedback and committing updated weights back to the repository.
+
+![Retrain Actions](DEMO/retrain_action.png)
+
 **ML Training Pipeline**
 
 Stratified 3-Fold cross-validation output verifying classifier quality before weight serialization.
@@ -167,6 +177,8 @@ EMAIL_ADDRESS=your_account@gmail.com
 EMAIL_PASSWORD=xxxx_xxxx_xxxx_xxxx
 GITHUB_TOKEN=ghp_YourGitHubPersonalAccessToken
 ```
+
+> ⚠️ No spaces around `=` and no quotes around values. A space like `SMTP_PORT= 587` will cause a startup failure.
 
 ---
 
@@ -204,11 +216,26 @@ Dashboard available at `http://localhost:8501`. Both containers share the `./dat
 
 ## Architecture Deep Dive
 
-### 1. Data Ingestion — `crawler.py`
+### 1. Startup Validation — `graph.py`
+ 
+Before the pipeline starts, `validate_env()` checks all required secrets are present and non-empty:
+ 
+```python
+REQUIRED_ENV = ["SMTP_SERVER", "SMTP_PORT", "EMAIL_ADDRESS", "EMAIL_PASSWORD", "GITHUB_TOKEN"]
+ 
+def validate_env():
+    missing = [k for k in REQUIRED_ENV if not os.getenv(k, "").strip()]
+    if missing:
+        raise EnvironmentError(f"Aborting: missing env vars {missing}")
+```
+ 
+If anything is missing the run aborts immediately with a clear log message rather than failing mid-pipeline.
+
+### 2. Data Ingestion — `crawler.py`
 
 On each run, one keyword is randomly selected from the pool (`AI Intern`, `Machine Learning Intern`, `Data Science Intern`, `Data Engineer Intern`, `Data Analyst Intern`) and used to build a LinkedIn public jobs search URL. `AsyncWebCrawler` fetches the page with a random user agent and a 5-second render delay to allow JavaScript to settle. Job cards are parsed via `div.base-card` selectors and inserted into SQLite with `INSERT OR IGNORE` (keyed on `job_url`) to prevent duplicates. The database is immediately exported to `jobs.csv` after every successful write.
 
-### 2. State Routing — `graph.py`
+### 3. State Routing — `graph.py`
 
 The pipeline state flows through a typed dictionary:
 
@@ -221,7 +248,7 @@ class AgentState(TypedDict):
 
 Node sequence: `scrape_linkedin → retrain_node → ranking_job`, then a conditional edge decides the final step. If today is Tuesday (1) or Friday (4) **and** at least one job cleared the score threshold, the pipeline routes to `dispatch_alert`. Otherwise it terminates at `END`. The `retrain_node` only executes the training loop on Sundays (weekday `6`); on all other days it passes state through unchanged.
 
-### 3. Dual-Stage Recommender — `job_recommender.py` & `training_pipeline.py`
+### 4. Dual-Stage Recommender — `job_recommender.py` & `training_pipeline.py`
 
 **Cold Start:** Each job is converted to a plain text string (`"Job Opportunity {title} at {company} located in {location}"`), encoded by `all-MiniLM-L6-v2`, and compared against a fixed anchor vector via cosine similarity. Threshold for high-match routing: `0.3`.
 
@@ -229,7 +256,29 @@ Node sequence: `scrape_linkedin → retrain_node → ranking_job`, then a condit
 
 **Training trigger:** `training_pipeline.py` reads all jobs from the database, builds labels from `is_applied`, and requires a minimum of 3 positive and 3 negative examples before proceeding. It runs Stratified 3-Fold CV, logs per-fold F1 scores and a full `classification_report`, then fits a final `LogisticRegression(class_weight='balanced')` on the full dataset and serializes it.
 
-### 4. Email Notifier — `notifier.py`
+### 5. Accumulated Reporting — `db_manager.py`
+ 
+Jobs are scored silently every day and stored in `jobs.db`. On reporting days, `score_node` queries only jobs found since the last report:
+ 
+```python
+def get_high_matches_since(self, threshold, since_date):
+    cursor.execute("""
+        SELECT * FROM jobs
+        WHERE ai_score >= ? AND is_applied = 0 AND date_found >= ?
+        ORDER BY ai_score DESC
+    """, (threshold, since_date))
+```
+ 
+After `alert_node` sends the email it stamps the current time into a `meta` table:
+ 
+```python
+def set_last_reported_date(self, date_str):
+    conn.execute("INSERT OR REPLACE INTO meta (key, value) VALUES ('last_reported_at', ?)", (date_str,))
+```
+ 
+This ensures each report covers exactly the window since the last one — no duplicates, no missed jobs.
+
+### 6. Email Notifier — `notifier.py`
 
 For each high-match job, an HTML email card is built containing the job title, company, match score, a link to the original posting, and a `Mark as Applied` button. That button links to:
 
@@ -239,7 +288,7 @@ https://github.com/trunnguyen/Personal-Project/issues/new?title=Applied+to+Job+{
 
 Clicking it fires a `repository_dispatch` event (`mark_job_applied`) which `status_updater.yml` picks up to update the database row.
 
-### 5. Market Forecaster — `forecaster.py`
+### 7. Market Forecaster — `forecaster.py`
 
 Aggregates daily posting counts:
 
@@ -261,8 +310,3 @@ With 5+ data points, a `Prophet` model is fit with yearly and daily seasonality 
 
 All three workflows use `git stash → pull --rebase → stash pop` to handle concurrent write conflicts cleanly before pushing.
 
----
-
-## 📄 License
-
-MIT — see `LICENSE` for details.
