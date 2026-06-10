@@ -831,6 +831,7 @@ sqlite3.OperationalError: near "jobs": syntax error
 2026-05-28 15:51:21,833 - src.utils.logger - INFO - Skip Weekly Retrain
 2026-05-28 15:51:21,834 - src.utils.logger - INFO - Ranking and Filtering Jobs
 2026-05-28 15:51:21,943 - src.utils.logger - INFO - Daily crawl complete. Database updated unitl next schedule
+<<<<<<< Updated upstream
 2026-05-28 16:54:21,390 - sentence_transformers.base.model - INFO - No device provided, using cpu
 2026-05-28 16:54:21,460 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
 2026-05-28 16:54:21,461 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
@@ -1870,3 +1871,5 @@ sqlite3.OperationalError: near "jobs": syntax error
 2026-06-09 05:12:39,139 - src.utils.logger - INFO - High-Relevance Positions Found
 2026-06-09 05:12:39,986 - src.utils.logger - INFO - Email notification successfully sent.
 2026-06-09 05:12:39,987 - src.utils.logger - INFO - Report sent for 8 jobs. Last reported date updated.
+=======
+>>>>>>> Stashed changes
