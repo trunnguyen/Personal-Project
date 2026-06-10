@@ -1,7 +1,31 @@
+# Virtual environments
 env/
+venv/
 myenv/
 Multimodal_emotion_recognition/env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large binaries
 *.dll
 *.pyd
 *.lib
+
+# Data files
 *.csv
+*.tsv
+*.parquet
+*.h5
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
