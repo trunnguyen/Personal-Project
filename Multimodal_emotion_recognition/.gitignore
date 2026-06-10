@@ -1,0 +1,24 @@
+# Virtual environments
+.venv/
+myenv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log
+
+# Model weights (use Git LFS if needed)
+*.pt
+*.pth
+*.ckpt
+
+raw/
