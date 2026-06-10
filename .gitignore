@@ -1,0 +1,7 @@
+env/
+myenv/
+Multimodal_emotion_recognition/env/
+*.dll
+*.pyd
+*.lib
+*.csv
