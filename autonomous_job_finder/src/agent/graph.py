@@ -50,7 +50,6 @@ async def scrape_node(state: AgentState) -> Dict[str, Any]:
 
 def score_node(state: AgentState) -> Dict[str, Any]:
     logger.info("Ranking and Filtering Jobs")
-<<<<<<< Updated upstream
     unscored=db.get_unscored_jobs()
     if unscored:
         scored_jobs = recommender.update_ai_score(unscored)
@@ -66,7 +65,6 @@ def score_node(state: AgentState) -> Dict[str, Any]:
     logger.info(f"Threshold: {'0.5 (trained)' if recommender.is_trained else '0.25 (cold)'} | High matches since {since}: {len(high_matches)}")
     return {"highly_relevant_jobs":high_matches}
 
-=======
     unscored = db.get_unscored_jobs()
     if not unscored:
         logger.info("No unscored jobs found")
@@ -84,9 +82,6 @@ def score_node(state: AgentState) -> Dict[str, Any]:
             high_matches.append(job)
 
     return {"highly_relevant_jobs": high_matches}
->>>>>>> Stashed changes
-
-
 def alert_node(state: AgentState) -> Dict[str, Any]:
     logger.info("LangGraph Node [Alert]: Triggering Alerter")
     high_matches = state.get('highly_relevant_jobs', [])
