@@ -33,15 +33,29 @@ class JobDB:
     def upsert_jobs(self, jobs):
         with sqlite3.connect(self.db_name) as conn:
             cursor = conn.cursor()
-            query='''
-                INSERT OR IGNORE INTO jobs (title, company, location, time_posted, job_url)
-                VALUES (?, ?, ?, ?, ?)
-            '''
-            data=[(j['title'],j['company'],j.get('location','N/A'),j['time'],j['link']) for j in jobs]
-            cursor.executemany(query, data)
-            conn.commit()
 
-            return cursor.rowcount
+            new_count = 0
+            for job in jobs:
+                cursor.execute(
+                    """
+                    SELECT COUNT(*) FROM jobs
+                    WHERE title = ? AND company = ?
+                    AND date_found >= datetime('now', '-7 days')
+                    """, (job['title'],job['company']))
+
+                if cursor.fetchone()[0]>0:
+                    continue
+
+                cursor.execute("""
+                    INSERT OR IGNORE INTO jobs (title, company, location, time_posted, job_url)
+                    VALUES (?, ?, ?, ?, ?)
+                """, (job['title'], job['company'], job.get('location', 'N/A'), job['time'], job['link']))
+
+                if cursor.rowcount > 0:
+                    new_count += 1
+
+            conn.commit()
+            return new_count
 
     def export_to_csv(self, csv_name):
         with sqlite3.connect(self.db_name) as conn:
@@ -113,9 +127,16 @@ class JobDB:
                 WHERE ai_score >= ?
                 AND is_applied = 0
                 AND date_found >= ?
-                ORDER BY date_found DESC
+                ORDER BY ai_score DESC
             """, (threshold, since_data))
-            return [dict(row) for row in cursor.fetchall()]
+            rows = [dict(row) for row in cursor.fetchall()]
+
+        seen ={}
+        for row in rows:
+            key = (row['title'], row['company'])
+            if key not in seen or row['date_found'] > seen[key]['date_found']:
+                seen[key] = row
+        return list(seen.values())
 
     def get_last_reported_date(self):
         with sqlite3.connect(self.db_name) as conn:
