@@ -136,9 +136,10 @@ workflow.add_node("ranking_job", score_node)
 workflow.add_node("dispatch_alert", alert_node)
 
 workflow.set_entry_point("scrape_linkedin")
-workflow.add_edge("scrape_linkedin", "retrain_node")
-workflow.add_edge("retrain_node", "ranking_job")
-
+# workflow.add_edge("scrape_linkedin", "retrain_node")
+# workflow.add_edge("retrain_node", "ranking_job")
+'''Retrain process have been handle by git hub retrain_model actions'''
+workflow.add_edge("scrape_linkedin", "ranking_job")
 workflow.add_conditional_edges(
     "ranking_job",
     route_decision_edge,
