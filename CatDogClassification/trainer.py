@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.optim.lr_scheduler import  ReduceLROnPlateau
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -19,7 +19,7 @@ def train(model, train_loader, val_loader, device,
     optimizer = optim.SGD(model.parameters(), lr=0.001)
 
     scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.5,
-                                  patience=3, verbose=False)
+                                  patience=3)
 
     history= {
         'train_loss': [], 'train_acc': [],
@@ -50,7 +50,7 @@ def train(model, train_loader, val_loader, device,
 
         epoch_loss = running_loss / len(train_loader)
         epoch_acc = 100 * correct / total
-        history['train_los'].append(epoch_loss)
+        history['train_loss'].append(epoch_loss)
         history['train_acc'].append(epoch_acc)
 
         val_loss, val_acc = evaluate(model, val_loader, device, criterion)

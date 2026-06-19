@@ -10,7 +10,7 @@ def main():
     logger.info(f"Using device: {device}")
 
     model = DogCatCNN().to(device)
-    logger.info(f"Model parameters: {sum(p.numel() for p in model.parameters()):, }")
+    logger.info(f"Model parameters: {sum(p.numel() for p in model.parameters()):,}")
 
     train_loader, val_loader = get_dataloaders(
         train_dir='./data/train',

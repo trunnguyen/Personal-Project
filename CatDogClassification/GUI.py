@@ -8,7 +8,7 @@ from data import inference_transform
 from log import get_logger
 
 class DogCatApp:
-    CLASS_NAMES = ['Dog', 'Cat']
+    CLASS_NAMES = ['Cat', 'Dog']
 
     def __init__(self, root:tk.Tk, checkpoint_path: str = 'best_model.pth'):
         self.root = root
