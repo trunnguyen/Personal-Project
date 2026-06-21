@@ -34,3 +34,10 @@ Thumbs.db
 *.zip
 logs/
 data/
+
+# Exceptions: keep job hunter tracked files
+!autonomous_job_finder/data/
+!autonomous_job_finder/data/jobs.db
+!autonomous_job_finder/data/jobs.csv
+!autonomous_job_finder/data/classifier.pkl
+!autonomous_job_finder/data/job_history.log
