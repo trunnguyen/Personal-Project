@@ -14,9 +14,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      - name: Install Dependencies
+        working-directory: ./autonomous_job_finder
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
       - name: Update Database Row
         working-directory: ./autonomous_job_finder
         run: |
@@ -28,6 +36,7 @@ jobs:
           row_count = db.update_score_and_interest(job_id=job_id, is_applied=1)
           print(f'Updated {row_count} row(s) for job {job_id}')
           "
+
       - name: Commit and Push
         working-directory: ./autonomous_job_finder
         run: |
