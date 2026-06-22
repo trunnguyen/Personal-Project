@@ -45,4 +45,10 @@ jobs:
           
           git add data/jobs.db data/jobs.csv
           
+          git stash
+          git pull --rebase origin master
+          git stash pop || true
+    
+          git add data/jobs.db data/jobs.csv
+          
           git diff --quiet && git diff --staged --quiet || (git commit -m "Mark job applied via issue" && git push)
