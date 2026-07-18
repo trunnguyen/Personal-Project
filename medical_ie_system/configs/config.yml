@@ -2,7 +2,7 @@ project:
   name: medical_ie_systems
 
 paths:
-  input_dir: data/raw
+  input_dir: data/raw/input
   output_dir: outputs
   logs: logs
 
