@@ -1,11 +1,10 @@
 from abc import ABC, abstractmethod
 
-from src.models.document import Document
+from src.models.section import Section
+from src.models.entity import Entity
 
-from src.pipeline.base_stage import PipelineStage
-
-class BaseEntityExtractor(PipelineStage,ABC):
+class BaseExtractor(ABC):
 
     @abstractmethod
-    def process(self, document: Document) -> Document:
-        ...
+    def extract(self,section: Section,) -> list[Entity]:
+        pass
