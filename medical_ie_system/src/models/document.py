@@ -3,6 +3,7 @@ from pathlib import Path
 
 from src.models.offset_map import OffsetMap
 from src.models.section import Section
+from src.models.entity import Entity
 
 @dataclass
 class Document:
@@ -19,4 +20,4 @@ class Document:
 
     sections: list[Section] = field(default_factory=list)
 
-    entities: list = field(default_factory=list)
+    entities: list[Entity] = field(default_factory=list)
