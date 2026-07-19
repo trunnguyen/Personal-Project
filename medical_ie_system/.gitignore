@@ -14,3 +14,10 @@ outputs/.*json
 .vscode/
 
 .env
+# Large medical resources
+data/knowledge/rxnorm/
+data/knowledge/icd10/
+
+# Generated files
+outputs/
+logs/
