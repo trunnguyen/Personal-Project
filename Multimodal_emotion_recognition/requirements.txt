@@ -1,6 +1,0 @@
-torch
-numpy
-opencv-python
-librosa
-scikit-learn
-streamlit
