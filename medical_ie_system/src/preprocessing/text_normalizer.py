@@ -2,10 +2,11 @@ import re
 
 from src.utils.file_io import Document
 from src.preprocessing.offset_builder import OffsetBuilder
+from src.pipeline.base_stage import PipelineStage
 
-class DocumentNormalizer:
+class DocumentNormalizer(PipelineStage):
 
-    def normalize(self, document: Document) -> Document:
+    def process(self, document: Document) -> Document:
 
         text = document.text
 

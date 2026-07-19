@@ -2,20 +2,10 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import List
 
+from src.models.document import Document
 from app.config import Config
 
 @dataclass
-class Document:
-    doc_id: str
-    file_path: Path
-    text: str
-
-    normalized_text: str =""
-
-    offset_map: object = None
-    sections: list = field(default_factory=list)
-
-    entities: list = field(default_factory=list)
 class FileLoader:
     def __init__(self, config: Config):
         self.config = config
