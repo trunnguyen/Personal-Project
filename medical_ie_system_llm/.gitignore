@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+
+.venv/
+venv/
+
+logs/*.log
+
+outputs/.*json
+
+.ipynb_checkpoints/
+
+.idea/
+.vscode/
+
+.env
+# Large medical resources
+data/knowledge/rxnorm/
+data/knowledge/icd10/
+
+# Generated files
+outputs/
+logs/
