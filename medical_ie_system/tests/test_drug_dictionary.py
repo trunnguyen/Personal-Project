@@ -2,15 +2,18 @@ from src.knowledge.drug_dictionary import DrugDictionary
 
 dictionary = DrugDictionary()
 
-print(f"Loaded {len(dictionary.entries)} drug entries")
+print(f"Unique drug names: {len(dictionary)}")
 
-text = """
-Bệnh nhân được dùng aspirin 325mg và metoprolol 25mg po bid.
-"""
+for drug in [
+    "aspirin",
+    "metoprolol",
+    "amlodipine",
+    "acetaminophen",
+]:
+    print("=" * 40)
+    print(drug)
 
-matches = dictionary.search(text)
+    concepts = dictionary.lookup(drug)
 
-print(matches)
-
-for match in matches:
-    print(match)
+    for concept in concepts:
+        print(concept)

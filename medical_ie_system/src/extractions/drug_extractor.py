@@ -1,41 +1,48 @@
-import re
+from src.matchers.drug_matcher import DrugMatcher
 
-from src.extractions.base_extractor import BaseExtractor
-from src.extractions.patterns import DRUG_PATTERN
 from src.models.entity import Entity
-from src.models.section import Section
-from src.utils.text import split_sentences
+from src.models.entity_type import EntityType
 
-class DrugExtractor(BaseExtractor):
+from src.assertions.assertions import AssertionDetector
 
-    def extract(self,section: Section) -> list[Entity]:
+
+class DrugExtractor:
+
+    def __init__(self):
+
+        self.matcher = DrugMatcher()
+        self.assertion_detector = AssertionDetector()
+
+    def extract(self, section):
+
         entities = []
 
-        section_start = section.start
+        matches = self.matcher.match(section.text)
 
-        current_offset = 0
+        for match in matches:
 
-        sentences = split_sentences(section.text)
-        for sentence in sentences:
-            sentence_start = section.text.find(sentence, current_offset)
+            entity = Entity(
 
-            if sentence_start == -1:
-                continue
+                text=match.text,
 
-            current_offset = sentence_start + len(sentence)
+                start=section.start + match.start,
 
-            for match in DRUG_PATTERN.finditer(sentence):
-                text = match.group().strip()
+                end=section.start + match.end,
 
-                start = section_start + sentence_start + match.start()
+                entity_type=EntityType.DRUG,
 
-                end = section_start + sentence_start + match.end()
+                section=section,
+            )
 
-                entity = Entity(
-                    text=text,
-                    entity_type=EntityType.DRUG,
-                    start=start,
-                    end=end,
-                    section=section,)
-                entities.append(entity)
+            entity.candidates = [
+
+                c.concept_id
+
+                for c in match.concepts
+            ]
+
+            entity.assertions = self.assertion_detector.detect(entity)
+
+            entities.append(entity)
+
         return entities

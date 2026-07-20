@@ -1,56 +1,39 @@
-from pathlib import Path
 import csv
+from collections import defaultdict
+from pathlib import Path
 
-from src.knowledge.base_dictionary import BaseDictionary
-from src.knowledge.dictionary_match import DictionaryMatch
+from src.models.drug_concept import DrugConcept
 
 
-class DrugDictionary(BaseDictionary):
+class DrugDictionary:
 
-    def __init__(self, csv_path: str = "data/knowledge/drugs.csv"):
+    def __init__(self):
 
-        self.entries = []
+        path = (
+            Path(__file__).resolve().parents[2]
+            / "data"
+            / "knowledge"
+            / "drugs.csv"
+        )
 
-        with open(csv_path, "r", encoding="utf-8") as f:
+        self.index = defaultdict(list)
+
+        with open(path, encoding="utf-8") as f:
 
             reader = csv.DictReader(f)
 
             for row in reader:
 
-                self.entries.append(
-                    {
-                        "concept_id": row["concept_id"],
-                        "name": row["name"].strip(),
-                        "name_lower": row["name"].strip().lower(),
-                    }
+                concept = DrugConcept(
+                    concept_id=row["concept_id"],
+                    name=row["name"],
+                    tty=row["tty"],
                 )
 
-    def search(self, text: str) -> list[DictionaryMatch]:
+                self.index[row["name"]].append(concept)
 
-        matches = []
+    def lookup(self, text: str):
+        return self.index.get(text.lower(), [])
 
-        text_lower = text.lower()
-
-        for entry in self.entries:
-
-            start = 0
-
-            while True:
-
-                idx = text_lower.find(entry["name_lower"], start)
-
-                if idx == -1:
-                    break
-
-                matches.append(
-                    DictionaryMatch(
-                        text=text[idx: idx + len(entry["name"])],
-                        start=idx,
-                        end=idx + len(entry["name"]),
-                        concept_id=entry["concept_id"],
-                    )
-                )
-
-                start = idx + len(entry["name"])
-
-        return matches
+    def __len__(self):
+        return len(self.index)

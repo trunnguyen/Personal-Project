@@ -3,9 +3,14 @@ project:
 
 paths:
   input_dir: data/raw/input
-  output_dir: outputs
+  output_dir: data/output
   logs: logs
+  knowledge_dir: data/knowledge
+  drug_dictionary: data/knowledge/drugs.csv
+  symptom_dictionary: data/knowledge/symptoms.csv
+  diagnosis_dictionary: data/knowledge/icd10.csv
 
 pipeline:
   lowercase: false
   remove_extra_spaces: true
+

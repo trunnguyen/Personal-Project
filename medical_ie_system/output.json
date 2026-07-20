@@ -1,0 +1,96 @@
+[
+  {
+    "text": "atenolol",
+    "type": "THUỐC",
+    "candidates": [
+      "1202"
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      109,
+      117
+    ]
+  },
+  {
+    "text": "caffeine",
+    "type": "THUỐC",
+    "candidates": [
+      "1886"
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      327,
+      335
+    ]
+  },
+  {
+    "text": "caffeine",
+    "type": "THUỐC",
+    "candidates": [
+      "1886"
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      362,
+      370
+    ]
+  },
+  {
+    "text": "doxycycline",
+    "type": "THUỐC",
+    "candidates": [
+      "3640"
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      72,
+      83
+    ]
+  },
+  {
+    "text": "metoprolol",
+    "type": "THUỐC",
+    "candidates": [
+      "6918"
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "position": [
+      46,
+      56
+    ]
+  },
+  {
+    "text": "aspirin",
+    "type": "THUỐC",
+    "candidates": [
+      "1191"
+    ],
+    "assertions": [],
+    "position": [
+      2072,
+      2079
+    ]
+  },
+  {
+    "text": "metoprolol",
+    "type": "THUỐC",
+    "candidates": [
+      "6918"
+    ],
+    "assertions": [],
+    "position": [
+      1663,
+      1673
+    ]
+  }
+]

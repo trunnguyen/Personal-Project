@@ -19,4 +19,4 @@ class Entity:
 
     assertions: list[Assertion] = field(default_factory=list)
 
-    candidates: list[Candidate] = field(default_factory=list)
+    candidates: list[str] = field(default_factory=list)
