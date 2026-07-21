@@ -41,6 +41,18 @@ QUY TẮC QUAN TRỌNG:
 4. Chỉ trả về JSON array, KHÔNG kèm giải thích, KHÔNG dùng markdown code fence, KHÔNG có
    text nào khác ngoài JSON.
 5. Nếu văn bản không chứa khái niệm y tế nào, trả về [].
+6. "TÊN_XÉT_NGHIỆM" CHỈ áp dụng cho xét nghiệm/cận lâm sàng y khoa thực sự (xét
+   nghiệm máu, chẩn đoán hình ảnh, điện tâm đồ, holter...). KHÔNG trích xuất các
+   yếu tố nguy cơ, thói quen sinh hoạt, hoàn cảnh xã hội (căng thẳng, mất việc
+   làm, uống cà phê, hút thuốc...) — nếu một cụm từ không thuộc rõ ràng vào 1
+   trong 5 nhãn, đừng trích xuất nó.
+7. "text" của THUỐC chỉ gồm tên hoạt chất + liều lượng + đường dùng + tần suất,
+   KHÔNG bao gồm lý do chỉ định hay ghi chú thời điểm đi kèm (vd: chỉ lấy
+   "doxycycline", KHÔNG lấy "doxycycline cho viêm tuyến mồ hôi").
+8. Với mỗi lần đề cập, chỉ trích xuất MỘT span trọn vẹn nhất. KHÔNG trích xuất
+   chồng lấn (overlapping) nhiều span cho cùng một khái niệm.
+9. "TÊN_XÉT_NGHIỆM" và "KẾT_QUẢ_XÉT_NGHIỆM" luôn là 2 span TÁCH BIỆT, KHÔNG
+   chồng lấn — kể cả khi kết quả được viết dạng câu văn thay vì "tên:giá trị".
 """
 
 # Few-shot examples taken directly from the organizers' problem statement so
@@ -70,32 +82,13 @@ FEWSHOT_EXAMPLE_1_OUTPUT = """[
   {"text": "12,8", "type": "KẾT_QUẢ_XÉT_NGHIỆM", "assertions": [], "lookup_term": null}
 ]"""
 
+
 FEWSHOT_EXAMPLE_2_INPUT = (
-    "Danh sách thuốc trước nhập viện chính xác và đầy đủ. 1. amlodipine 10 mg po daily "
-    "2. aspirin 81 mg po daily 4. guaifenesin ml po q6h:prn điều trị ho 6. acetaminophen "
-    "325-650 mg po q6h:prn điều trị sốt đau 10. clonazepam 0.5 mg po qam:prn điều trị lo âu"
-)
-
-FEWSHOT_EXAMPLE_2_OUTPUT = """[
-  {"text": "amlodipine 10 mg po daily", "type": "THUỐC", "assertions": ["isHistorical"], "lookup_term": "amlodipine 10 mg oral tablet"},
-  {"text": "aspirin 81 mg po daily", "type": "THUỐC", "assertions": ["isHistorical"], "lookup_term": "aspirin 81 mg oral tablet"},
-  {"text": "guaifenesin ml po q6h:prn", "type": "THUỐC", "assertions": ["isHistorical"], "lookup_term": "guaifenesin oral solution"},
-  {"text": "ho", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null},
-  {"text": "acetaminophen 325-650 mg po q6h:prn", "type": "THUỐC", "assertions": ["isHistorical"], "lookup_term": "acetaminophen 325 mg oral tablet"},
-  {"text": "sốt đau", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null},
-  {"text": "clonazepam 0.5 mg po qam:prn", "type": "THUỐC", "assertions": ["isHistorical"], "lookup_term": "clonazepam 0.5 mg oral tablet"},
-  {"text": "lo âu", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null}
-]"""
-
-# A negation example, since neither official example demonstrates isNegated —
-# this was the single biggest gap in the rule-based system, so make sure the
-# model has seen it explicitly.
-FEWSHOT_EXAMPLE_3_INPUT = (
     "Bệnh nhân không sốt, không ho, không buồn nôn. Mẹ bệnh nhân có tiền sử đái tháo "
     "đường. Bản thân bệnh nhân có tiền sử tăng huyết áp, hiện đang kiểm soát tốt."
 )
 
-FEWSHOT_EXAMPLE_3_OUTPUT = """[
+FEWSHOT_EXAMPLE_2_OUTPUT = """[
   {"text": "sốt", "type": "TRIỆU_CHỨNG", "assertions": ["isNegated"], "lookup_term": null},
   {"text": "ho", "type": "TRIỆU_CHỨNG", "assertions": ["isNegated"], "lookup_term": null},
   {"text": "buồn nôn", "type": "TRIỆU_CHỨNG", "assertions": ["isNegated"], "lookup_term": null},
@@ -103,8 +96,29 @@ FEWSHOT_EXAMPLE_3_OUTPUT = """[
   {"text": "tăng huyết áp", "type": "CHẨN_ĐOÁN", "assertions": ["isHistorical"], "lookup_term": "essential hypertension"}
 ]"""
 
+FEWSHOT_EXAMPLE_3_INPUT = (
+    "Bệnh nhân có tiền sử dùng doxycycline điều trị viêm tuyến mồ hôi, hiện làm "
+    "việc căng thẳng nhiều. Khó thở nhẹ, khó thở khi gắng sức. Chụp X-quang ngực "
+    "không ghi nhận bất thường."
+)
 
-def build_user_prompt(section_text: str) -> str:
+FEWSHOT_EXAMPLE_3_OUTPUT = """[
+  {"text": "doxycycline", "type": "THUỐC", "assertions": ["isHistorical"], "lookup_term": "doxycycline oral"},
+  {"text": "khó thở nhẹ", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null},
+  {"text": "khó thở khi gắng sức", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null},
+  {"text": "Chụp X-quang ngực", "type": "TÊN_XÉT_NGHIỆM", "assertions": [], "lookup_term": null},
+  {"text": "không ghi nhận bất thường", "type": "KẾT_QUẢ_XÉT_NGHIỆM", "assertions": [], "lookup_term": null}
+]"""
+
+
+def build_user_prompt(document_text: str) -> str:
+    """
+    Takes the WHOLE document now, not a single section — one LLM call per
+    document instead of per section, since the fixed few-shot/system-prompt
+    overhead (~6KB) was being paid 3x per document. Section headers
+    ("1. Tiền sử bệnh"...) are already visible as plain text in the
+    document, so the model doesn't lose section context.
+    """
 
     return f"""Ví dụ 1 — Đầu vào:
 {FEWSHOT_EXAMPLE_1_INPUT}
@@ -118,12 +132,18 @@ Ví dụ 2 — Đầu vào:
 Ví dụ 2 — Đầu ra:
 {FEWSHOT_EXAMPLE_2_OUTPUT}
 
+
 Ví dụ 3 — Đầu vào:
 {FEWSHOT_EXAMPLE_3_INPUT}
 
 Ví dụ 3 — Đầu ra:
 {FEWSHOT_EXAMPLE_3_OUTPUT}
 
-Bây giờ hãy trích xuất từ đoạn văn bản sau. Chỉ trả về JSON array, không giải thích:
+Bây giờ hãy trích xuất từ toàn bộ văn bản sau (văn bản có thể gồm nhiều mục
+được đánh số — hãy dùng tiêu đề mục để xác định assertions như isHistorical
+khi phù hợp). Chỉ trả về MỘT JSON array duy nhất cho toàn bộ văn bản, không
+giải thích:
 
-{section_text}"""
+{document_text}
+
+/no_think"""

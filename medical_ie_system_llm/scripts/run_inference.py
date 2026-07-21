@@ -45,6 +45,8 @@ def build_pipeline(config: Config):
         timeout=config.get("llm", "timeout"),
         temperature=config.get("llm", "temperature"),
         max_tokens=config.get("llm", "max_tokens"),
+        keep_alive=config.get("llm", "keep_alive"),
+        num_ctx=config.get("llm", "num_ctx"),
     )
 
     icd_retriever = FuzzyCodeRetriever(

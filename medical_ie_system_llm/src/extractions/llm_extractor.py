@@ -5,7 +5,7 @@ from src.preprocessing.span_locator import SpanLocator
 from src.models.entity import Entity
 from src.models.entity_type import EntityType
 from src.models.assertion import Assertion
-from src.models.section import Section
+from src.models.document import Document
 
 
 TYPE_MAP = {
@@ -25,16 +25,12 @@ ASSERTION_MAP = {
 
 class LlmEntityExtractor:
     """
-    Replaces the four separate rule-based extractors (drug/diagnosis/
-    symptom/lab) with a single LLM call per section that extracts all 5
-    entity types + assertions together, then grounds CHẨN_ĐOÁN/THUỐC
-    candidates against the real ICD-10/RxNorm corpus via retrieval rather
-    than trusting the model's own recollection of exact code numbers.
-
-    Every LLM-proposed entity passes through a hallucination guard
-    (SpanLocator) before becoming an Entity: if its "text" can't actually
-    be located in the source, it's dropped rather than exported with a
-    fabricated position.
+    One LLM call PER DOCUMENT. Every LLM-proposed entity passes through a
+    hallucination guard (SpanLocator) before becoming an Entity: if its
+    "text" can't actually be located in the source, it's dropped rather
+    than exported with a fabricated position. CHẨN_ĐOÁN/THUỐC candidates
+    are grounded via retrieval against the real ICD-10/RxNorm corpus,
+    never trusted from the model's own memory of exact code numbers.
     """
 
     def __init__(self, llm_client, icd_retriever, rxnorm_retriever, candidate_top_k: int = 3):
@@ -44,53 +40,66 @@ class LlmEntityExtractor:
         self.rxnorm_retriever = rxnorm_retriever
         self.candidate_top_k = candidate_top_k
 
-    def extract(self, section: Section, offset_map=None) -> list[Entity]:
+    def extract_document(self, document: Document) -> list[Entity]:
 
-        section_text = section.text
+        document_text = document.normalized_text
 
-        if not section_text or not section_text.strip():
+        if not document_text or not document_text.strip():
             return []
 
         raw_response = self.llm_client.chat(
             SYSTEM_PROMPT,
-            build_user_prompt(section_text),
+            build_user_prompt(document_text),
         )
 
         try:
             raw_entities = parse_entities(raw_response)
-        except ParseError:
-            # A malformed response for one section shouldn't take down the
-            # whole document — skip this section's entities rather than
-            # crash the run. (Worth logging in the real pipeline; kept
-            # simple here.)
+        except ParseError as e:
+            print(f"  [llm] PARSE FAILURE: {e}")
+            print(f"  [llm] raw response was:\n{raw_response[:3000]}")
+            return []
+
+        if not raw_entities:
+            # json.loads succeeded but yielded nothing usable — either the
+            # model genuinely said "no entities" ([]), or every item got
+            # filtered out by parse_entities' own validation (bad "type",
+            # missing "text", etc). Print the raw response either way,
+            # since silently returning [] here is exactly as undebuggable
+            # as the earlier ParseError case was.
+            print(f"  [llm] parsed to ZERO usable entities. Raw response was:\n{raw_response[:3000]}")
             return []
 
         locator = SpanLocator()
 
         entities = []
+        rejected = []
 
         for raw in raw_entities:
 
-            span = locator.locate(section_text, raw["text"])
+            span = locator.locate(document_text, raw["text"])
 
             if span is None:
                 # Hallucination guard: model claimed text that doesn't
-                # actually appear in the source. Drop it.
+                # actually appear in the source. Drop it — but track it so
+                # we can see if this guard is the thing eating everything.
+                rejected.append(raw["text"])
                 continue
 
             rel_start, rel_end = span
 
-            abs_start = section.start + rel_start
-            abs_end = section.start + rel_end
+            section = self._find_section(document.sections, rel_start)
 
-            if offset_map is not None:
-                abs_start = offset_map.original_index(abs_start)
-                # Map the last INCLUDED character then make exclusive again,
-                # since offset_map only has entries for indices < len(normalized).
-                abs_end = offset_map.original_index(abs_end - 1) + 1
+            if section is None:
+                continue
+
+            abs_start, abs_end = rel_start, rel_end
+
+            if document.offset_map is not None:
+                abs_start = document.offset_map.original_index(abs_start)
+                abs_end = document.offset_map.original_index(abs_end - 1) + 1
 
             entity = Entity(
-                text=section_text[rel_start:rel_end],  # true verbatim substring
+                text=document_text[rel_start:rel_end],
                 start=abs_start,
                 end=abs_end,
                 entity_type=TYPE_MAP[raw["type"]],
@@ -112,4 +121,18 @@ class LlmEntityExtractor:
 
             entities.append(entity)
 
+        if rejected:
+            print(f"  [llm] {len(rejected)}/{len(raw_entities)} entities REJECTED by hallucination guard (text not found verbatim in source):")
+            for text in rejected[:10]:
+                print(f"    - {text!r}")
+
         return entities
+
+    @staticmethod
+    def _find_section(sections, position: int):
+
+        for section in sections:
+            if section.start <= position < section.end:
+                return section
+
+        return sections[-1] if sections else None

@@ -1,7 +1,29 @@
 import json
+import time
+import socket
 import urllib.request
 import urllib.error
 
+
+RESPONSE_SCHEMA = {
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "text": {"type": "string"},
+            "type": {
+                "type": "string",
+                "enum": ["TRIỆU_CHỨNG", "TÊN_XÉT_NGHIỆM", "KẾT_QUẢ_XÉT_NGHIỆM", "CHẨN_ĐOÁN", "THUỐC"],
+            },
+            "assertions": {
+                "type": "array",
+                "items": {"type": "string", "enum": ["isNegated", "isFamily", "isHistorical"]},
+            },
+            "lookup_term": {"type": ["string", "null"]},
+        },
+        "required": ["text", "type", "assertions", "lookup_term"],
+    },
+}
 
 class LLMError(Exception):
     pass
@@ -9,58 +31,96 @@ class LLMError(Exception):
 
 class LLMClient:
     """
-    Thin client for a local OpenAI-compatible /v1/chat/completions endpoint
-    (this is what Ollama, vLLM, and llama.cpp-server all expose), so no
-    external API is called at inference time — satisfies the competition's
-    "self-host only, no external API" rule.
+    Uses Ollama's /api/generate endpoint with raw=true — we build the exact
+    ChatML prompt ourselves instead of letting Ollama's chat template do it.
 
-    Uses only the standard library (no `requests`/`openai` package) so this
-    doesn't add a dependency the team's environment might not have.
+    Why: two different ways of asking the model not to "think" (the API
+    "think": false parameter, then the in-prompt "/no_think" directive)
+    both failed — the model kept producing full prose reasoning traces
+    regardless. That means the chat template in this Ollama build isn't
+    correctly wiring up Qwen3's thinking toggle at all, for either
+    mechanism. The fix is to stop relying on the template: we write the
+    ChatML prompt by hand and pre-fill the assistant's turn with an
+    already-CLOSED empty <think></think> block. The model has no way to
+    generate reasoning into a thinking block its own output already shows
+    as finished, so it has to continue straight into the real answer. This
+    is the standard, template-independent workaround for hybrid-reasoning
+    models like Qwen3 when the serving layer's own thinking-control flags
+    aren't reliable.
     """
 
     def __init__(
         self,
-        base_url: str = "http://localhost:11434/v1",
-        model: str = "qwen3:8b",
-        timeout: int = 300,
+        base_url: str = "http://localhost:11434",
+        model: str = "qwen3:4b",
+        timeout: int = 600,
         temperature: float = 0.0,
-        max_tokens: int = 2048,
+        max_tokens: int = 2500,
+        num_ctx: int = 8192,
+        keep_alive: str = "30m",
+        verbose: bool = True,
     ):
         self.base_url = base_url.rstrip("/")
         self.model = model
         self.timeout = timeout
         self.temperature = temperature
         self.max_tokens = max_tokens
+        self.num_ctx = num_ctx
+        self.keep_alive = keep_alive
+        self.verbose = verbose
+
+    @staticmethod
+    def _build_raw_prompt(system_prompt: str, user_prompt: str) -> str:
+
+        return (
+            f"<|im_start|>system\n{system_prompt}<|im_end|>\n"
+            f"<|im_start|>user\n{user_prompt}<|im_end|>\n"
+            f"<|im_start|>assistant\n<think>\n\n</think>\n\n"
+        )
 
     def chat(self, system_prompt: str, user_prompt: str) -> str:
 
+        raw_prompt = self._build_raw_prompt(system_prompt, user_prompt)
+
         payload = {
             "model": self.model,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
-            ],
-            "temperature": self.temperature,
-            "max_tokens": self.max_tokens,
-            # Qwen3's "thinking mode" free-reasons before answering, which
-            # both slows down a batch job across ~100 docs and makes JSON
-            # parsing less reliable. We want direct JSON, not a reasoning
-            # trace. Ollama/vLLM read this via chat_template_kwargs.
-            "chat_template_kwargs": {"enable_thinking": False},
+            "prompt": raw_prompt,
+            "raw": True,
+            "stream": False,
+            "format": RESPONSE_SCHEMA,
+            "keep_alive": self.keep_alive,
+            "options": {
+                "temperature": self.temperature,
+                "num_predict": self.max_tokens,
+                "num_ctx": self.num_ctx,
+                "stop": ["<|im_end|>", "<|im_start|>"],
+            },
         }
 
         data = json.dumps(payload).encode("utf-8")
 
         request = urllib.request.Request(
-            url=f"{self.base_url}/chat/completions",
+            url=f"{self.base_url}/api/generate",
             data=data,
             headers={"Content-Type": "application/json"},
             method="POST",
         )
 
+        if self.verbose:
+            print(f"  [llm] model={self.model} (raw+prefilled) sending request ({len(data)} bytes)...", end="", flush=True)
+
+        t0 = time.time()
+
         try:
             with urllib.request.urlopen(request, timeout=self.timeout) as response:
                 body = json.loads(response.read().decode("utf-8"))
+
+        except (socket.timeout, TimeoutError) as e:
+            raise LLMError(
+                f"LLM request timed out after {self.timeout}s even with the "
+                f"prefilled empty think block. If this still happens, "
+                f"generation itself (not thinking) is the bottleneck now."
+            ) from e
 
         except urllib.error.URLError as e:
             raise LLMError(
@@ -68,10 +128,16 @@ class LLMClient:
                 f"Is the server running (e.g. `ollama serve`)? Original error: {e}"
             ) from e
 
-        try:
-            return body["choices"][0]["message"]["content"]
+        finally:
+            if self.verbose:
+                print(f" done in {time.time() - t0:.1f}s")
 
-        except (KeyError, IndexError) as e:
+        # /api/generate response shape is {"response": "...", "done": true, ...}
+        # — different again from both /v1/chat/completions and /api/chat.
+        try:
+            return body["response"]
+
+        except KeyError as e:
             raise LLMError(
                 f"Unexpected response shape from LLM endpoint: {body}"
             ) from e
