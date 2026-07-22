@@ -1,0 +1,112 @@
+[
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      22,
+      24
+    ],
+    "assertions": []
+  },
+  {
+    "text": "U Sacoit tổn thương chủ yếu tại tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      83
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ho ra máu cỡ đồng xu x3 đêm qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      156,
+      187
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      327,
+      334
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đờm có màu hồng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      415,
+      430
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt đến 38.8°C (101.8°F)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      461,
+      485
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau bụng âm ỉ trong tháng qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      685,
+      716
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "levofloxacin",
+    "type": "THUỐC",
+    "position": [
+      876,
+      888
+    ],
+    "assertions": [],
+    "candidates": [
+      "82122",
+      "199884",
+      "199885"
+    ]
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      975,
+      982
+    ],
+    "assertions": [],
+    "candidates": [
+      "161",
+      "108038",
+      "197426"
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1105,
+      1122
+    ]
+  },
+  {
+    "text": "không phát hiện viêm phổi hoặc phù phổi",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1123,
+      1162
+    ]
+  }
+]

@@ -96,9 +96,12 @@ def main():
     stages = build_pipeline(config)
 
     output_dir = Path("output")
-    if output_dir.exists():
+    is_full_run = args.doc_id is None and args.limit is None
+
+    if is_full_run and output_dir.exists():
         shutil.rmtree(output_dir)
-    output_dir.mkdir(parents=True)
+
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     exporter = JsonExporter()
 
@@ -122,12 +125,14 @@ def main():
     print(f"\nDone: {len(documents)} docs in {total_elapsed:.1f}s "
           f"({total_elapsed / max(len(documents), 1):.1f}s/doc avg)")
 
-    zip_path = Path("output.zip")
-    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
-        for json_file in sorted(output_dir.glob("*.json")):
-            zf.write(json_file, arcname=f"output/{json_file.name}")
-
-    print(f"Wrote {zip_path}")
+    if is_full_run:
+        zip_path = Path("output.zip")
+        with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+            for json_file in sorted(output_dir.glob("*.json")):
+                zf.write(json_file, arcname=f"output/{json_file.name}")
+        print(f"Wrote {zip_path}")
+    else:
+        print("(test run — skipping output.zip; run with no --doc-id/--limit for the real submission zip)")
 
 
 if __name__ == "__main__":

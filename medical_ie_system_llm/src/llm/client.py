@@ -114,7 +114,9 @@ class LLMClient:
         try:
             with urllib.request.urlopen(request, timeout=self.timeout) as response:
                 body = json.loads(response.read().decode("utf-8"))
-
+                if body.get("done_reason") == "length":
+                    print(
+                        f"  [llm] WARNING: response was TRUNCATED (hit max_tokens={self.max_tokens}). Increase max_tokens.")
         except (socket.timeout, TimeoutError) as e:
             raise LLMError(
                 f"LLM request timed out after {self.timeout}s even with the "

@@ -1,0 +1,308 @@
+[
+  {
+    "text": "tiền sử tăng calci máu trước đây",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      53,
+      85
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E83.52",
+      "E83.5",
+      "E83.51",
+      "E87.5"
+    ]
+  },
+  {
+    "text": "tăng calci máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      61,
+      75
+    ],
+    "assertions": []
+  },
+  {
+    "text": "11.6",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      87,
+      91
+    ]
+  },
+  {
+    "text": "U ác của đại tràng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      123,
+      141
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Z15.060",
+      "Z15.0",
+      "D70.1",
+      "QA1.790",
+      "QA1.7"
+    ]
+  },
+  {
+    "text": "cường cận giáp nguyên phát",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      148,
+      174
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E21.0",
+      "C22.9",
+      "C86.60",
+      "C86.6"
+    ]
+  },
+  {
+    "text": "Xơ vữa động mạch",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      181,
+      197
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I25.700",
+      "I25.7",
+      "I25.701",
+      "I25.702"
+    ]
+  },
+  {
+    "text": "cơn đau thắt ngực ổn định",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      204,
+      229
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I20.0",
+      "I25.110",
+      "I25.1",
+      "I25.700",
+      "I25.7"
+    ]
+  },
+  {
+    "text": "xét nghiệm xét nghiệm ngoại trú được thực hiện hôm nay và canxi là 12.0",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      388,
+      459
+    ]
+  },
+  {
+    "text": "canxi ion hóa 6.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      461,
+      478
+    ]
+  },
+  {
+    "text": "xuất hiện hai lần ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      486,
+      512
+    ],
+    "assertions": []
+  },
+  {
+    "text": "một lần khi lái xe lần cuối",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      514,
+      541
+    ],
+    "assertions": []
+  },
+  {
+    "text": "một lần khác khi nói chuyện với bạn trong xe một tháng trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      545,
+      605
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Cả hai lần đều kéo dài vài giây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      612,
+      643
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không có các biểu hiện đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      650,
+      681
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      673,
+      681
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      683,
+      690
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      692,
+      701
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "động kinh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      741,
+      750
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "MRI ngoại trú",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      769,
+      782
+    ]
+  },
+  {
+    "text": "hình ảnh nhồi máu cũ nhỏ ở vỏ não đỉnh trái",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      787,
+      830
+    ]
+  },
+  {
+    "text": "không có tổn thương cấp tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      832,
+      860
+    ]
+  },
+  {
+    "text": "kéo dài khoảng 5 phút",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      937,
+      958
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sau đó đã được sử dụng ngay 01 viên nitroglycerin đặt dưới lưỡi",
+    "type": "THUỐC",
+    "position": [
+      960,
+      1023
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "198038",
+      "198039",
+      "198040"
+    ]
+  },
+  {
+    "text": "đau ở sau đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1053,
+      1066
+    ],
+    "assertions": []
+  },
+  {
+    "text": "từ khi bị ngã trong bồn tắm năm ngoái đến nay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1073,
+      1118
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đã dùng Laxis 20mg tiêm tĩnh mạch",
+    "type": "THUỐC",
+    "position": [
+      1433,
+      1466
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "8559",
+      "92758",
+      "93252"
+    ]
+  },
+  {
+    "text": "Truyền dịch Natriclori 0.9 % tĩnh mạch",
+    "type": "THUỐC",
+    "position": [
+      1473,
+      1513
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "9853",
+      "9863",
+      "712"
+    ]
+  }
+]

@@ -10,9 +10,9 @@
       "isHistorical"
     ],
     "candidates": [
-      "866924",
       "6918",
-      "866511"
+      "92758",
+      "93252"
     ]
   },
   {
@@ -47,35 +47,30 @@
   },
   {
     "text": "Căng thẳng nhiều trong công việc",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "type": "TRIỆU_CHỨNG",
     "position": [
       226,
       259
-    ]
+    ],
+    "assertions": []
   },
   {
     "text": "Mất việc làm 8 ngày trước",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "type": "TRIỆU_CHỨNG",
     "position": [
       266,
       291
-    ]
+    ],
+    "assertions": []
   },
   {
     "text": "Một ngày người bệnh có thể uống hàng chục tách cà phê có caffeine",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "type": "TRIỆU_CHỨNG",
     "position": [
       299,
       364
-    ]
-  },
-  {
-    "text": "và 1 tách cà phê không caffeine",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      372,
-      403
-    ]
+    ],
+    "assertions": []
   },
   {
     "text": "đánh trống ngực",
@@ -177,35 +172,8 @@
     "assertions": []
   },
   {
-    "text": "giảm dung nạp gắng sức",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1423,
-      1445
-    ],
-    "assertions": []
-  },
-  {
-    "text": "Không buồn nôn, hay nôn, đổ mồ hôi",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1454,
-      1489
-    ],
-    "assertions": []
-  },
-  {
-    "text": "Không liên quan đến gắng sức hoặc tư thế",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1496,
-      1536
-    ],
-    "assertions": []
-  },
-  {
     "text": "monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận ngoại tâm thu nhĩ và ngoại tâm thu thất xuất hiện thường xuyên",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
     "position": [
       1631,
       1751
@@ -213,70 +181,21 @@
   },
   {
     "text": "Bắt đầu dùng metoprolol 25mg po bid, không có cải thiện",
-    "type": "THUỐC",
+    "type": "TRIỆU_CHỨNG",
     "position": [
       1759,
       1814
     ],
-    "assertions": [],
-    "candidates": [
-      "866924",
-      "6918",
-      "866511"
-    ]
+    "assertions": []
   },
   {
     "text": "Ở nhà bệnh nhân đã sử dụng atenololtrong ngày",
-    "type": "THUỐC",
+    "type": "TRIỆU_CHỨNG",
     "position": [
       1822,
       1867
     ],
-    "assertions": [],
-    "candidates": [
-      "1202",
-      "92758",
-      "93252"
-    ]
-  },
-  {
-    "text": "Lên lịch tái khám với bác sĩ tim mạch và được chỉ định siêu âm tim qua thành ngực vào tuần tới",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      1874,
-      1968
-    ]
-  },
-  {
-    "text": "Ngày hôm nay khoảng Lúc 17 giờ, khi đang mang đồ tạp hóa ra xe, xuất hiện cảm giác thắt chặt ngực vùng trước tim, tăng đánh trống ngực, và khó thở kéo dài 20 giây",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1975,
-      2138
-    ],
     "assertions": []
-  },
-  {
-    "text": "Sau đó Đến Khoa Cấp cứu",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      2145,
-      2168
-    ]
-  },
-  {
-    "text": "Được chỉ định điều trị aspirin 325mg x 1",
-    "type": "THUỐC",
-    "position": [
-      2175,
-      2216
-    ],
-    "assertions": [],
-    "candidates": [
-      "1191",
-      "197447",
-      "198466"
-    ]
   },
   {
     "text": "chụp x-quang ngực không ghi nhận gì bất thường",
@@ -303,11 +222,11 @@
     ]
   },
   {
-    "text": "VS98.3 12987 56 18 99RA",
+    "text": "điện tâm đồ là không ghi nhận gì bất thường",
     "type": "KẾT_QUẢ_XÉT_NGHIỆM",
     "position": [
-      2482,
-      2505
+      2771,
+      2814
     ]
   }
 ]

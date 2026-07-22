@@ -1,0 +1,172 @@
+[
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      21,
+      23
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Chưa phát hiện bệnh lý bất thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      25,
+      58
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "Đờm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      107,
+      110
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đôi khi đau bụng quặn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      118,
+      139
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      142,
+      151
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đôi khi đi ngoài ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      154,
+      177
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không tăng cân nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      180,
+      200
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cea (kháng nguyên ung thư phôi)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      247,
+      278
+    ]
+  },
+  {
+    "text": "tăng nhẹ lên 4.9",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      279,
+      295
+    ]
+  },
+  {
+    "text": "mri vùng chậu thực tế",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      325,
+      346
+    ]
+  },
+  {
+    "text": "không chẩn đoán được do không có mỡ nào trong cơ thể",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      347,
+      399
+    ]
+  },
+  {
+    "text": "siêu âm hôm nay",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      402,
+      417
+    ]
+  },
+  {
+    "text": "có thể có một tổn thương t2 tốt nhất",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      452,
+      488
+    ]
+  },
+  {
+    "text": "một số vùng không thể đánh giá tốt",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      496,
+      530
+    ]
+  },
+  {
+    "text": "sinh thiết (trước đây)",
+    "type": "THUỐC",
+    "position": [
+      553,
+      575
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "siêu âm hôm nay",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      578,
+      593
+    ]
+  },
+  {
+    "text": "khối u trực tràng với hình ảnh của một u ác trực tràng đáng kể",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      625,
+      687
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "sinh thiết chỉ cho thấy một u tuyến",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      690,
+      725
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đến khám để phân giai đoạn phẫu thuật với tem (viết tắt)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      728,
+      784
+    ],
+    "assertions": []
+  }
+]

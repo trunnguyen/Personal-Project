@@ -1,0 +1,145 @@
+[
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      57,
+      70
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "bệnh gút không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      77,
+      100
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E79.81",
+      "E79.8",
+      "M10.011",
+      "M10.0",
+      "M10.012"
+    ]
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      107,
+      136
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "D63.1",
+      "E08.22",
+      "E08.2",
+      "E09.22",
+      "E09.2"
+    ]
+  },
+  {
+    "text": "ung thư đại tràng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      143,
+      160
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Z15.060",
+      "Z15.0",
+      "D70.1",
+      "QA1.790",
+      "QA1.7"
+    ]
+  },
+  {
+    "text": "béo phì",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      167,
+      174
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E66.01",
+      "E66.0",
+      "E66.09",
+      "E66.1"
+    ]
+  },
+  {
+    "text": "Bệnh nhân xơ gan mất bù có tăng áp lực tĩnh mạch cửa, cổ trướng và tràn dịch màng phổi",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      181,
+      267
+    ],
+    "assertions": [],
+    "candidates": [
+      "K76.6",
+      "A38.1",
+      "A52.72",
+      "A52.7"
+    ]
+  },
+  {
+    "text": "liệu pháp lợi tiểu",
+    "type": "THUỐC",
+    "position": [
+      308,
+      326
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "11002",
+      "1483141",
+      "1661176"
+    ]
+  },
+  {
+    "text": "chọc dò màng phổi 3L4",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      443,
+      464
+    ]
+  },
+  {
+    "text": "chọc dò dịch ổ bụng 7L",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      471,
+      493
+    ]
+  },
+  {
+    "text": "thủ thuật TIPS",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      500,
+      514
+    ]
+  }
+]

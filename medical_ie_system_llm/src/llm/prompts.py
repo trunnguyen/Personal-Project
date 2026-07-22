@@ -41,11 +41,12 @@ QUY TẮC QUAN TRỌNG:
 4. Chỉ trả về JSON array, KHÔNG kèm giải thích, KHÔNG dùng markdown code fence, KHÔNG có
    text nào khác ngoài JSON.
 5. Nếu văn bản không chứa khái niệm y tế nào, trả về [].
-6. "TÊN_XÉT_NGHIỆM" CHỈ áp dụng cho xét nghiệm/cận lâm sàng y khoa thực sự (xét
-   nghiệm máu, chẩn đoán hình ảnh, điện tâm đồ, holter...). KHÔNG trích xuất các
-   yếu tố nguy cơ, thói quen sinh hoạt, hoàn cảnh xã hội (căng thẳng, mất việc
-   làm, uống cà phê, hút thuốc...) — nếu một cụm từ không thuộc rõ ràng vào 1
-   trong 5 nhãn, đừng trích xuất nó.
+6. Các yếu tố nguy cơ, thói quen sinh hoạt, hoàn cảnh xã hội, tâm lý (căng thẳng,
+   mất việc làm, uống cà phê, hút thuốc, tình trạng hôn nhân...) KHÔNG được trích
+   xuất dưới BẤT KỲ nhãn nào trong 5 nhãn trên — không phải TÊN_XÉT_NGHIỆM, không
+   phải THUỐC, không phải TRIỆU_CHỨNG. Nếu một cụm từ không phải là triệu chứng y
+   khoa, xét nghiệm, kết quả xét nghiệm, chẩn đoán, hay thuốc điều trị theo đúng
+   nghĩa lâm sàng, đừng trích xuất nó, bất kể nó có vẻ liên quan đến sức khỏe.
 7. "text" của THUỐC chỉ gồm tên hoạt chất + liều lượng + đường dùng + tần suất,
    KHÔNG bao gồm lý do chỉ định hay ghi chú thời điểm đi kèm (vd: chỉ lấy
    "doxycycline", KHÔNG lấy "doxycycline cho viêm tuyến mồ hôi").
@@ -53,6 +54,17 @@ QUY TẮC QUAN TRỌNG:
    chồng lấn (overlapping) nhiều span cho cùng một khái niệm.
 9. "TÊN_XÉT_NGHIỆM" và "KẾT_QUẢ_XÉT_NGHIỆM" luôn là 2 span TÁCH BIỆT, KHÔNG
    chồng lấn — kể cả khi kết quả được viết dạng câu văn thay vì "tên:giá trị".
+10. "text" TUYỆT ĐỐI không được bao gồm động từ chỉ hành động ("Bắt đầu dùng",
+    "Được chỉ định", "Ở nhà bệnh nhân đã sử dụng"...) hay mệnh đề kết quả/diễn
+    biến đi kèm ("không có cải thiện", "còn cảm giác...khi nhập viện"...).
+    Chỉ trích xuất phần lõi của khái niệm y tế, không trích xuất cả câu văn
+    chứa nó.
+11. Các phát hiện khám lâm sàng dạng có/không (vd: ra huyết âm đạo, vỡ ối, sốt,
+    phù...) khi được nêu trực tiếp là có hoặc không xảy ra, KHÔNG đi kèm tên
+    một xét nghiệm/cận lâm sàng cụ thể, PHẢI được coi là TRIỆU_CHỨNG (kèm
+    isNegated nếu bị phủ định) — KHÔNG phải KẾT_QUẢ_XÉT_NGHIỆM. Chỉ dùng
+    KẾT_QUẢ_XÉT_NGHIỆM khi kết quả đi kèm ngay sau tên một xét nghiệm/cận lâm
+    sàng cụ thể (vd: sau "chụp X-quang", "xét nghiệm máu", "ECG"...).
 """
 
 # Few-shot examples taken directly from the organizers' problem statement so
@@ -108,6 +120,20 @@ FEWSHOT_EXAMPLE_3_OUTPUT = """[
   {"text": "khó thở khi gắng sức", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null},
   {"text": "Chụp X-quang ngực", "type": "TÊN_XÉT_NGHIỆM", "assertions": [], "lookup_term": null},
   {"text": "không ghi nhận bất thường", "type": "KẾT_QUẢ_XÉT_NGHIỆM", "assertions": [], "lookup_term": null}
+]"""
+
+FEWSHOT_EXAMPLE_4_INPUT = (
+    "Bắt đầu dùng metoprolol 25mg po bid, không có cải thiện. Được chỉ định "
+    "điều trị aspirin 325mg x 1. Bệnh nhân còn cảm giác đánh trống ngực khi nhập viện."
+)
+
+# SAI (WRONG) — không làm như thế này:
+# [{"text": "Bắt đầu dùng metoprolol 25mg po bid, không có cải thiện", "type": "THUỐC", ...}]
+# ĐÚNG (CORRECT):
+FEWSHOT_EXAMPLE_4_OUTPUT = """[
+  {"text": "metoprolol 25mg po bid", "type": "THUỐC", "assertions": [], "lookup_term": "metoprolol 25 mg oral tablet"},
+  {"text": "aspirin 325mg x 1", "type": "THUỐC", "assertions": [], "lookup_term": "aspirin 325 mg oral tablet"},
+  {"text": "đánh trống ngực", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null}
 ]"""
 
 
