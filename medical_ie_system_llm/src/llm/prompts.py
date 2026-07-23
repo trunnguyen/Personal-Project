@@ -1,7 +1,8 @@
 SYSTEM_PROMPT = """Bạn là một hệ thống AI trích xuất thông tin y khoa từ văn bản lâm sàng tiếng Việt.
 
-Nhiệm vụ: đọc một đoạn văn bản y khoa (ghi chú bác sĩ, giấy xuất viện, kết quả xét nghiệm...)
-và trả về TẤT CẢ các khái niệm y tế xuất hiện, dưới dạng một JSON array.
+Nhiệm vụ: đọc một đoạn văn bản y khoa (ghi chú bác sĩ, giấy xuất viện, kết quả xét nghiệm,
+bài viết y khoa, câu hỏi/trả lời giữa bệnh nhân và bác sĩ...) và trả về TẤT CẢ các khái niệm
+y tế xuất hiện, dưới dạng một JSON array.
 
 Mỗi khái niệm là một object với các trường:
 - "text": cụm từ chính xác, TRÍCH NGUYÊN VĂN (verbatim) từ văn bản đầu vào. TUYỆT ĐỐI
@@ -24,9 +25,9 @@ Mỗi khái niệm là một object với các trường:
   - "isHistorical": khái niệm thuộc tiền sử bệnh nhân (trước đợt bệnh/nhập viện hiện tại),
     KHÔNG áp dụng cho triệu chứng/chẩn đoán của đợt bệnh hiện tại
   Có thể có nhiều assertion cùng lúc, hoặc list rỗng [] nếu không có assertion nào áp dụng.
-- "lookup_term": CHỈ áp dụng cho "CHẨN_ĐOÁN" và "THUỐC" (với các type khác để null).
-  Đây là tên y khoa chuẩn, TIẾNG ANH, ngắn gọn, dùng để tra cứu trong danh mục ICD-10 (cho
-  CHẨN_ĐOÁN) hoặc RxNorm (cho THUỐC):
+- "lookup_term": CHỈ áp dụng cho "CHẨN_ĐOÁN" và "THUỐC" (với các type khác, hoặc khi không
+  thể xác định được, để null). Đây là tên y khoa chuẩn, TIẾNG ANH, ngắn gọn, dùng để tra
+  cứu trong danh mục ICD-10 (cho CHẨN_ĐOÁN) hoặc RxNorm (cho THUỐC):
   - Với CHẨN_ĐOÁN: tên bệnh tiếng Anh chuẩn y khoa, KHÔNG bao gồm mô tả phụ (vd: text =
     "trào ngược dạ dày - thực quản" → lookup_term = "gastroesophageal reflux disease")
   - Với THUỐC: "<hoạt chất tiếng Anh> <liều lượng> <dạng bào chế>" theo phong cách RxNorm
@@ -65,10 +66,31 @@ QUY TẮC QUAN TRỌNG:
     isNegated nếu bị phủ định) — KHÔNG phải KẾT_QUẢ_XÉT_NGHIỆM. Chỉ dùng
     KẾT_QUẢ_XÉT_NGHIỆM khi kết quả đi kèm ngay sau tên một xét nghiệm/cận lâm
     sàng cụ thể (vd: sau "chụp X-quang", "xét nghiệm máu", "ECG"...).
+12. Văn bản đầu vào có thể là ghi chú lâm sàng CHÍNH THỨC, HOẶC câu hỏi/trả lời
+    giữa bệnh nhân và bác sĩ trên diễn đàn (dạng "Câu hỏi từ người dùng" /
+    "Câu trả lời của bác sĩ"). Trong trường hợp câu hỏi/trả lời, người đặt câu
+    hỏi ở ngôi thứ nhất ("em", "tôi", "cháu", "mình"...) CHÍNH LÀ bệnh nhân —
+    áp dụng isHistorical/isNegated/isFamily cho các khái niệm liên quan đến
+    người này giống hệt như với "bệnh nhân" trong ghi chú lâm sàng thông thường.
+13. Khi văn bản mô tả một bệnh/tình trạng một cách CHUNG CHUNG, KHÔNG gắn với
+    trường hợp cụ thể của một người nào (vd: bài viết "X là gì?", phần giải
+    thích chung của bác sĩ như "triệu chứng của X thường bao gồm...", "thuốc
+    này thường được dùng cho các trường hợp..."), vẫn trích xuất các khái niệm
+    y tế được nhắc đến (chúng vẫn là triệu chứng/chẩn đoán/thuốc thật sự xuất
+    hiện trong văn bản), NHƯNG KHÔNG áp dụng isHistorical, isNegated, hay
+    isFamily cho các khái niệm này — trừ khi văn bản gắn rõ ràng thông tin đó
+    với một người cụ thể.
+14. Nếu tên thuốc hoặc một khái niệm bị CHE/ẨN bằng dấu sao (vd: "************"),
+    vẫn trích xuất đoạn văn bản đó y nguyên (bao gồm cả dấu sao) làm "text" với
+    "type" phù hợp (thường là THUỐC), nhưng đặt "lookup_term" là null vì không
+    thể xác định được tên thật.
 """
 
-# Few-shot examples taken directly from the organizers' problem statement so
-# the model's output format matches exactly what they specified.
+# Few-shot examples. Examples 1 and một phần of 2 are taken directly from the
+# organizers' problem statement so the model's output format matches exactly
+# what they specified. Examples 2-4 were added to cover gaps found by testing
+# against real documents (negation, sentence-swallowing, and — as of the
+# Round 1 data upgrade — Q&A/forum-style documents with redacted drug names).
 
 FEWSHOT_EXAMPLE_1_INPUT = (
     "Bệnh nhân nam 70 tuổi bị bệnh 1 tuần nay, ho đờm xanh, tức ngực, đau thượng vị, "
@@ -94,7 +116,6 @@ FEWSHOT_EXAMPLE_1_OUTPUT = """[
   {"text": "12,8", "type": "KẾT_QUẢ_XÉT_NGHIỆM", "assertions": [], "lookup_term": null}
 ]"""
 
-
 FEWSHOT_EXAMPLE_2_INPUT = (
     "Bệnh nhân không sốt, không ho, không buồn nôn. Mẹ bệnh nhân có tiền sử đái tháo "
     "đường. Bản thân bệnh nhân có tiền sử tăng huyết áp, hiện đang kiểm soát tốt."
@@ -109,41 +130,45 @@ FEWSHOT_EXAMPLE_2_OUTPUT = """[
 ]"""
 
 FEWSHOT_EXAMPLE_3_INPUT = (
-    "Bệnh nhân có tiền sử dùng doxycycline điều trị viêm tuyến mồ hôi, hiện làm "
-    "việc căng thẳng nhiều. Khó thở nhẹ, khó thở khi gắng sức. Chụp X-quang ngực "
-    "không ghi nhận bất thường."
-)
-
-FEWSHOT_EXAMPLE_3_OUTPUT = """[
-  {"text": "doxycycline", "type": "THUỐC", "assertions": ["isHistorical"], "lookup_term": "doxycycline oral"},
-  {"text": "khó thở nhẹ", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null},
-  {"text": "khó thở khi gắng sức", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null},
-  {"text": "Chụp X-quang ngực", "type": "TÊN_XÉT_NGHIỆM", "assertions": [], "lookup_term": null},
-  {"text": "không ghi nhận bất thường", "type": "KẾT_QUẢ_XÉT_NGHIỆM", "assertions": [], "lookup_term": null}
-]"""
-
-FEWSHOT_EXAMPLE_4_INPUT = (
     "Bắt đầu dùng metoprolol 25mg po bid, không có cải thiện. Được chỉ định "
     "điều trị aspirin 325mg x 1. Bệnh nhân còn cảm giác đánh trống ngực khi nhập viện."
 )
 
-# SAI (WRONG) — không làm như thế này:
-# [{"text": "Bắt đầu dùng metoprolol 25mg po bid, không có cải thiện", "type": "THUỐC", ...}]
-# ĐÚNG (CORRECT):
-FEWSHOT_EXAMPLE_4_OUTPUT = """[
+FEWSHOT_EXAMPLE_3_OUTPUT = """[
   {"text": "metoprolol 25mg po bid", "type": "THUỐC", "assertions": [], "lookup_term": "metoprolol 25 mg oral tablet"},
   {"text": "aspirin 325mg x 1", "type": "THUỐC", "assertions": [], "lookup_term": "aspirin 325 mg oral tablet"},
   {"text": "đánh trống ngực", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null}
 ]"""
 
+# Demonstrates: first-person Q&A patient identification (rule 12), a redacted
+# drug name (rule 14), family history correctly tied to "Mẹ em" not the
+# patient themself, AND — just as important — the doctor's generic
+# explanatory sentence at the end NOT being extracted as a diagnosis for this
+# patient (rule 13). Constructed example, not taken from real competition data.
+FEWSHOT_EXAMPLE_4_INPUT = (
+    "Câu hỏi từ người dùng: Chào bác sĩ, em bị đau dạ dày mấy hôm nay, có tự mua "
+    "thuốc ******** uống nhưng không đỡ, hôm qua còn thấy đi ngoài phân đen. Mẹ em "
+    "trước đây cũng từng bị viêm loét dạ dày. Câu trả lời của bác sĩ: Chào bạn, "
+    "triệu chứng đi ngoài phân đen có thể là dấu hiệu của xuất huyết tiêu hóa, các "
+    "thuốc giảm đau không kê đơn đôi khi gây kích ứng niêm mạc dạ dày ở một số người, "
+    "bạn nên đi khám sớm."
+)
+
+FEWSHOT_EXAMPLE_4_OUTPUT = """[
+  {"text": "đau dạ dày", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null},
+  {"text": "********", "type": "THUỐC", "assertions": [], "lookup_term": null},
+  {"text": "đi ngoài phân đen", "type": "TRIỆU_CHỨNG", "assertions": [], "lookup_term": null},
+  {"text": "viêm loét dạ dày", "type": "CHẨN_ĐOÁN", "assertions": ["isFamily", "isHistorical"], "lookup_term": "peptic ulcer disease"}
+]"""
+
 
 def build_user_prompt(document_text: str) -> str:
     """
-    Takes the WHOLE document now, not a single section — one LLM call per
+    Takes the WHOLE document (all sections concatenated — this is just
+    document.normalized_text), not a single section. One LLM call per
     document instead of per section, since the fixed few-shot/system-prompt
-    overhead (~6KB) was being paid 3x per document. Section headers
-    ("1. Tiền sử bệnh"...) are already visible as plain text in the
-    document, so the model doesn't lose section context.
+    overhead was being paid 3x per document and dominating runtime on
+    CPU-heavy hardware; see docs/EXTRACTION_PIPELINE.md.
     """
 
     return f"""Ví dụ 1 — Đầu vào:
@@ -158,18 +183,21 @@ Ví dụ 2 — Đầu vào:
 Ví dụ 2 — Đầu ra:
 {FEWSHOT_EXAMPLE_2_OUTPUT}
 
-
 Ví dụ 3 — Đầu vào:
 {FEWSHOT_EXAMPLE_3_INPUT}
 
 Ví dụ 3 — Đầu ra:
 {FEWSHOT_EXAMPLE_3_OUTPUT}
 
+Ví dụ 4 — Đầu vào:
+{FEWSHOT_EXAMPLE_4_INPUT}
+
+Ví dụ 4 — Đầu ra:
+{FEWSHOT_EXAMPLE_4_OUTPUT}
+
 Bây giờ hãy trích xuất từ toàn bộ văn bản sau (văn bản có thể gồm nhiều mục
 được đánh số — hãy dùng tiêu đề mục để xác định assertions như isHistorical
 khi phù hợp). Chỉ trả về MỘT JSON array duy nhất cho toàn bộ văn bản, không
 giải thích:
 
-{document_text}
-
-/no_think"""
+{document_text}"""
