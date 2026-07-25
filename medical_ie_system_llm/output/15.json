@@ -10,9 +10,9 @@
       "isHistorical"
     ],
     "candidates": [
+      "A00.0",
       "A00.1",
-      "A03.0",
-      "A03.1"
+      "A03.0"
     ]
   },
   {
@@ -60,7 +60,7 @@
     "candidates": [
       "A48.3",
       "D46.C",
-      "D50.8"
+      "D50.0"
     ]
   },
   {
@@ -146,22 +146,6 @@
     ]
   },
   {
-    "text": "doxycyclin",
-    "type": "THUỐC",
-    "position": [
-      430,
-      440
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "3640",
-      "23663",
-      "203122"
-    ]
-  },
-  {
     "text": "Suy giảm miễn dịch do sử dụng corticoid kéo dài",
     "type": "CHẨN_ĐOÁN",
     "position": [
@@ -178,28 +162,36 @@
     ]
   },
   {
-    "text": "Tình trạng tổn thương vùng âm hộ và mông bên phải",
+    "text": "Tình trạng tổn thương vùng âm hộ và mông bên phải ngày càng nặng",
     "type": "TRIỆU_CHỨNG",
     "position": [
       573,
-      622
-    ],
-    "assertions": []
-  },
-  {
-    "text": "cotrimoxazol",
-    "type": "THUỐC",
-    "position": [
-      921,
-      933
+      637
     ],
     "assertions": [
       "isHistorical"
+    ]
+  },
+  {
+    "text": "mông bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      609,
+      622
     ],
-    "candidates": [
-      "10180",
-      "10829",
-      "221176"
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tổn thương vùng âm hộ phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      682,
+      708
+    ],
+    "assertions": [
+      "isHistorical"
     ]
   },
   {
@@ -220,53 +212,98 @@
     ]
   },
   {
-    "text": "Tổn thương cực kỳ đau đớn",
+    "text": "ban đỏ",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      1389,
-      1414
+      1008,
+      1014
     ],
-    "assertions": []
+    "assertions": [
+      "isHistorical"
+    ]
   },
   {
-    "text": "Tình trạng tổn thương dạng bóng nước ngày càng nặng",
+    "text": "đau nhiều",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      1421,
-      1472
+      1150,
+      1159
     ],
-    "assertions": []
+    "assertions": [
+      "isHistorical"
+    ]
   },
   {
-    "text": "Lan đến mông bên phải",
+    "text": "rỉ dịch vàng đục giống mủ",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      1479,
-      1500
+      1175,
+      1200
     ],
-    "assertions": []
+    "assertions": [
+      "isHistorical"
+    ]
   },
   {
-    "text": "có dịch giống mủ có màu vàng chảy ra từ tổn thương",
-    "type": "TRIỆU_CHỨNG",
+    "text": "******",
+    "type": "THUỐC",
     "position": [
-      1507,
-      1558
+      1354,
+      1360
     ],
-    "assertions": []
+    "assertions": [],
+    "candidates": []
   },
   {
-    "text": "dị tật thiểu sản vành tai và tịt ống tai ngoài bẩm sinh",
-    "type": "CHẨN_ĐOÁN",
+    "text": "Pimperan",
+    "type": "THUỐC",
     "position": [
-      1718,
-      1773
+      1465,
+      1473
     ],
     "assertions": [],
     "candidates": [
-      "Q16.3",
-      "Q16.5",
-      "Q10.7"
+      "6915",
+      "104884",
+      "207265"
+    ]
+  },
+  {
+    "text": "chảy mủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1868,
+      1875
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "điều trị chẩn đoán Viêm mô tế bào",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2010,
+      2043
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Lo ngại về Nhiễm virus Herpes simplex (HSV) hoặc Bệnh thủy đậu/Zona (do Varicella Zoster Virus)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2574,
+      2669
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A31.0",
+      "A31.1",
+      "A54.1"
     ]
   }
 ]

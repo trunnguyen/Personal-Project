@@ -1,0 +1,217 @@
+[
+  {
+    "text": "dấu mề đay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      81,
+      91
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mề đay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      85,
+      91
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngứa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      102,
+      106
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bạch cầu dòng tủy mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      647,
+      673
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C92.10",
+      "C92.1",
+      "C92.11",
+      "C92.12"
+    ]
+  },
+  {
+    "text": "gleevec",
+    "type": "THUỐC",
+    "position": [
+      684,
+      691
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "282388",
+      "284924",
+      "403878"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      698,
+      711
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "tăng lipid máu, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      718,
+      748
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường típ 2",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      755,
+      775
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E11.00",
+      "E11.0",
+      "E11.01",
+      "E11.10",
+      "E11.1"
+    ]
+  },
+  {
+    "text": "hẹp ống sống",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      782,
+      794
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Giả gout",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      801,
+      809
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu Giai đoạn 4",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      816,
+      857
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng sản tuyến tiền liệt",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      864,
+      888
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Nhiều lần ngã gần đây",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      895,
+      916
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ảo giác",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      927,
+      934
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh lý mày đay vô căn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1849,
+      1871
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "L50.0",
+      "L50.1",
+      "L50.2"
+    ]
+  },
+  {
+    "text": "**********",
+    "type": "THUỐC",
+    "position": [
+      2307,
+      2317
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thể hệ sau không gây buồn ngủ là lựa chọn hàng đầu sau đó đến **************** thể hệ 1",
+    "type": "THUỐC",
+    "position": [
+      2324,
+      2424
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

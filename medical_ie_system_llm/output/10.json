@@ -1,172 +1,396 @@
 [
   {
-    "text": "ho",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      21,
-      23
-    ],
-    "assertions": []
-  },
-  {
-    "text": "Chưa phát hiện bệnh lý bất thường",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      25,
-      58
-    ],
-    "assertions": [
-      "isNegated"
-    ]
-  },
-  {
-    "text": "Đờm",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      107,
-      110
-    ],
-    "assertions": []
-  },
-  {
-    "text": "đôi khi đau bụng quặn",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      118,
-      139
-    ],
-    "assertions": []
-  },
-  {
-    "text": "tiêu chảy",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      142,
-      151
-    ],
-    "assertions": []
-  },
-  {
-    "text": "đôi khi đi ngoài ra máu",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      154,
-      177
-    ],
-    "assertions": []
-  },
-  {
-    "text": "không tăng cân nhiều",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      180,
-      200
-    ],
-    "assertions": []
-  },
-  {
-    "text": "cea (kháng nguyên ung thư phôi)",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      247,
-      278
-    ]
-  },
-  {
-    "text": "tăng nhẹ lên 4.9",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
-    "position": [
-      279,
-      295
-    ]
-  },
-  {
-    "text": "mri vùng chậu thực tế",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      325,
-      346
-    ]
-  },
-  {
-    "text": "không chẩn đoán được do không có mỡ nào trong cơ thể",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
-    "position": [
-      347,
-      399
-    ]
-  },
-  {
-    "text": "siêu âm hôm nay",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      402,
-      417
-    ]
-  },
-  {
-    "text": "có thể có một tổn thương t2 tốt nhất",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
-    "position": [
-      452,
-      488
-    ]
-  },
-  {
-    "text": "một số vùng không thể đánh giá tốt",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
-    "position": [
-      496,
-      530
-    ]
-  },
-  {
-    "text": "sinh thiết (trước đây)",
+    "text": "metoprolol 25mg po bid",
     "type": "THUỐC",
     "position": [
-      553,
-      575
+      53,
+      75
     ],
     "assertions": [
       "isHistorical"
     ],
-    "candidates": []
-  },
-  {
-    "text": "siêu âm hôm nay",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      578,
-      593
+    "candidates": [
+      "866924",
+      "6918",
+      "866511"
     ]
   },
   {
-    "text": "khối u trực tràng với hình ảnh của một u ác trực tràng đáng kể",
-    "type": "CHẨN_ĐOÁN",
+    "text": "doxycycline cho viêm tuyến mồ hôi",
+    "type": "THUỐC",
     "position": [
-      625,
-      687
+      82,
+      115
     ],
     "assertions": [],
-    "candidates": []
+    "candidates": [
+      "3640",
+      "92758",
+      "93252"
+    ]
   },
   {
-    "text": "sinh thiết chỉ cho thấy một u tuyến",
-    "type": "CHẨN_ĐOÁN",
+    "text": "atenolol (uống hôm nay)",
+    "type": "THUỐC",
     "position": [
-      690,
-      725
+      122,
+      145
     ],
     "assertions": [],
-    "candidates": []
+    "candidates": [
+      "197379",
+      "197380",
+      "197381"
+    ]
   },
   {
-    "text": "đến khám để phân giai đoạn phẫu thuật với tem (viết tắt)",
+    "text": "Căng thẳng nhiều trong công việc",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      728,
-      784
+      226,
+      259
     ],
     "assertions": []
+  },
+  {
+    "text": "Mất việc làm 8 ngày trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      266,
+      291
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Một ngày người bệnh có thể uống hàng chục tách cà phê có caffeine",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      299,
+      364
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      497,
+      512
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Khó thở nhẹ khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      688,
+      707
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      688,
+      695
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "cảm giác thắt chặt ngực vùng trước tim",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      714,
+      752
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Tăng đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      782,
+      802
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Cảm thấy mệt mỏi nhiều khi gắng sức trong tuần qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      869,
+      919
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Cảm thấy mệt mỏi nhiều hơn sau khi luyện tập thể dục so với mọi ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      926,
+      994
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đánh trống ngực: còn cảm giác đánh trống ngực khi nhập viện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1053,
+      1113
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "khó thở: Nhẹ, liên quan đến đánh trống ngực, liên quan đến khó thở (khởi phát lúc 17 giờ)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1121,
+      1210
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "cảm giác thắt chặt ngực: Trung tâm, khởi phát lúc 17 giờ, kéo dài 20 giây, không có khó chịu vùng ngực khi đến tầng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1217,
+      1332
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "khó thở: Liên quan đến đánh trống ngực, khởi phát lúc 17 giờ, kéo dài 20 giây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1339,
+      1416
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "giảm dung nạp gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1423,
+      1445
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Không buồn nôn, hay nôn, đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1454,
+      1489
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Không liên quan đến gắng sức hoặc tư thế",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1496,
+      1536
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận ngoại tâm thu nhĩ và ngoại tâm thu thất xuất hiện thường xuyên",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1631,
+      1751
+    ]
+  },
+  {
+    "text": "Bắt đầu dùng metoprolol 25mg po bid, không có cải thiện",
+    "type": "THUỐC",
+    "position": [
+      1759,
+      1814
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "866924",
+      "6918",
+      "866511"
+    ]
+  },
+  {
+    "text": "Ở nhà bệnh nhân đã sử dụng atenololtrong ngày",
+    "type": "THUỐC",
+    "position": [
+      1822,
+      1867
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "197379",
+      "197380",
+      "197381"
+    ]
+  },
+  {
+    "text": "được chỉ định siêu âm tim qua thành ngực vào tuần tới",
+    "type": "THUỐC",
+    "position": [
+      1915,
+      1968
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Ngày hôm nay khoảng Lúc 17 giờ, khi đang mang đồ tạp hóa ra xe, xuất hiện cảm giác thắt chặt ngực vùng trước tim, tăng đánh trống ngực, và khó thở kéo dài 20 giây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1975,
+      2138
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Được chỉ định điều trị aspirin 325mg x 1",
+    "type": "THUỐC",
+    "position": [
+      2175,
+      2216
+    ],
+    "assertions": [],
+    "candidates": [
+      "212033",
+      "260847",
+      "198471"
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực không ghi nhận gì bất thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2223,
+      2269
+    ]
+  },
+  {
+    "text": "phân tích nước tiểu không ghi nhận gì bất thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2276,
+      2324
+    ]
+  },
+  {
+    "text": "ecg bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2331,
+      2346
+    ]
+  },
+  {
+    "text": "Tiếp tục cảm thấy đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2388,
+      2421
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "VS98.3 12987 56 18 99RA",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2482,
+      2505
+    ]
+  },
+  {
+    "text": "Viêm gan cấp tính do virus B thể thông thường điển hình mức độ nặng giai đoạn toàn phát",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2506,
+      2593
+    ],
+    "assertions": [],
+    "candidates": [
+      "B17.2",
+      "A08.11",
+      "A08.1",
+      "A08.19"
+    ]
+  },
+  {
+    "text": "phân tích nước tiểu không có gì đáng chú ý",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2633,
+      2675
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực không có gì đáng chú ý",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2708,
+      2748
+    ]
+  },
+  {
+    "text": "điện tâm đồ là không ghi nhận gì bất thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2786,
+      2829
+    ]
+  },
+  {
+    "text": "monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận ngoại tâm thu nhĩ và ngoại tâm thu thất xuất hiện thường xuyên",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2836,
+      2956
+    ]
   }
 ]

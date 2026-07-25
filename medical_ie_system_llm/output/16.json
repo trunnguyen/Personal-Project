@@ -1,0 +1,144 @@
+[
+  {
+    "text": "bị thương nhẹ ở tay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      73,
+      95
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bị chảy máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      102,
+      116
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chó chưa tiêm dại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      177,
+      196
+    ],
+    "assertions": []
+  },
+  {
+    "text": "dính nước dãi của chó con",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      209,
+      234
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bệnh dại",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      327,
+      335
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A82.0",
+      "A82.1",
+      "A82.9"
+    ]
+  },
+  {
+    "text": "Lyssavirus",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      865,
+      875
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "virus",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      870,
+      875
+    ],
+    "assertions": []
+  },
+  {
+    "text": "họ Lyssaviridae",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      883,
+      898
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "điên dại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1081,
+      1089
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phòng bệnh bằng tiêm *****************",
+    "type": "THUỐC",
+    "position": [
+      1304,
+      1342
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "bumetanide 2mg iv",
+    "type": "THUỐC",
+    "position": [
+      2178,
+      2195
+    ],
+    "assertions": [],
+    "candidates": [
+      "1808",
+      "92758",
+      "93252"
+    ]
+  },
+  {
+    "text": "vancomycin 1 gram",
+    "type": "THUỐC",
+    "position": [
+      2211,
+      2228
+    ],
+    "assertions": [],
+    "candidates": [
+      "11124",
+      "103467",
+      "104367"
+    ]
+  },
+  {
+    "text": "levofloxacin 750mg iv",
+    "type": "THUỐC",
+    "position": [
+      2244,
+      2265
+    ],
+    "assertions": [],
+    "candidates": [
+      "7623",
+      "82122",
+      "93252"
+    ]
+  }
+]

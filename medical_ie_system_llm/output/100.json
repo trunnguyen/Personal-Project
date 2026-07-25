@@ -45,6 +45,15 @@
     "assertions": []
   },
   {
+    "text": "tác dụng phụ của thuốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      371,
+      398
+    ],
+    "assertions": []
+  },
+  {
     "text": "************",
     "type": "THUỐC",
     "position": [
@@ -71,12 +80,23 @@
     ]
   },
   {
+    "text": "chảy máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      777,
+      785
+    ],
+    "assertions": []
+  },
+  {
     "text": "đại tiện ra máu đỏ tươi gián đoạn",
     "type": "TRIỆU_CHỨNG",
     "position": [
       1219,
       1252
     ],
-    "assertions": []
+    "assertions": [
+      "isHistorical"
+    ]
   }
 ]

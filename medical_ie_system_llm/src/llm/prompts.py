@@ -29,7 +29,10 @@ Mỗi khái niệm là một object với các trường:
   thể xác định được, để null). Đây là tên y khoa chuẩn, TIẾNG ANH, ngắn gọn, dùng để tra
   cứu trong danh mục ICD-10 (cho CHẨN_ĐOÁN) hoặc RxNorm (cho THUỐC):
   - Với CHẨN_ĐOÁN: tên bệnh tiếng Anh chuẩn y khoa, KHÔNG bao gồm mô tả phụ (vd: text =
-    "trào ngược dạ dày - thực quản" → lookup_term = "gastroesophageal reflux disease")
+    "trào ngược dạ dày - thực quản" → lookup_term = "gastroesophageal reflux disease").
+    Với ung thư, ƯU TIÊN dùng cấu trúc "malignant neoplasm of <cơ quan>" thay vì "<cơ quan>
+    cancer" (vd: "ung thư đại tràng" → lookup_term = "malignant neoplasm of colon", KHÔNG
+    phải "colorectal cancer") — đây là cách ICD-10 đặt tên chính thức.
   - Với THUỐC: "<hoạt chất tiếng Anh> <liều lượng> <dạng bào chế>" theo phong cách RxNorm
     (vd: text = "amlodipine 10 mg po daily" → lookup_term = "amlodipine 10 mg oral tablet")
 

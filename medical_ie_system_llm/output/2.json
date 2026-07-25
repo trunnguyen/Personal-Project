@@ -1,0 +1,329 @@
+[
+  {
+    "text": "Bệnh Kawasaki",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3,
+      16
+    ],
+    "assertions": [],
+    "candidates": [
+      "A08.11",
+      "A08.1",
+      "A08.19",
+      "A19.0"
+    ]
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      53,
+      56
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt cấp kéo dài",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      53,
+      68
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phát ban toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      84,
+      102
+    ],
+    "assertions": []
+  },
+  {
+    "text": "viêm lan tỏa hệ mạch máu nhỏ và vừa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      126,
+      161
+    ],
+    "assertions": []
+  },
+  {
+    "text": "động mạch vành – mạch máu quan trọng cung cấp máu cho tim",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      171,
+      228
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Sốt cao kéo dài",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1439,
+      1454
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mắt đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1534,
+      1540
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mắt đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1534,
+      1540
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thay đổi niêm mạc miệng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1592,
+      1615
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Sưng, đỏ mu bàn tay – chân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1710,
+      1736
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đỏ gan bàn tay – chân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1741,
+      1762
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bong da đầu ngón tay, ngón chân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1767,
+      1798
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ban đỏ toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1827,
+      1843
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2144,
+      2155
+    ]
+  },
+  {
+    "text": "đánh giá động mạch vành",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2176,
+      2199
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Điều trị quan trọng nhất",
+    "type": "THUỐC",
+    "position": [
+      2374,
+      2398
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Dùng liều cao truyền tĩnh mạch",
+    "type": "THUỐC",
+    "position": [
+      2402,
+      2432
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Hiệu quả 80%",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2437,
+      2449
+    ]
+  },
+  {
+    "text": "Giảm biến chứng động mạch vành rõ rệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2492,
+      2529
+    ],
+    "assertions": []
+  },
+  {
+    "text": "******* (ASA)",
+    "type": "THUỐC",
+    "position": [
+      2534,
+      2547
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Dùng liều cao giai đoạn cấp tính",
+    "type": "THUỐC",
+    "position": [
+      2551,
+      2583
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "giảm liều duy trì để ngừa huyết khối",
+    "type": "THUỐC",
+    "position": [
+      2608,
+      2644
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "truyền **** lần 2",
+    "type": "THUỐC",
+    "position": [
+      2692,
+      2709
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ức chế miễn dịch",
+    "type": "THUỐC",
+    "position": [
+      2729,
+      2745
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Tái khám định kỳ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2823,
+      2839
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Dùng thuốc đúng chỉ định",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2881,
+      2905
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tránh tiêm vắc xin sống",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2910,
+      2933
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hút thuốc lá thụ động",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3355,
+      3376
+    ],
+    "assertions": []
+  },
+  {
+    "text": "môi trường ô nhiễm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3378,
+      3396
+    ],
+    "assertions": []
+  },
+  {
+    "text": "môi đỏ – nứt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3603,
+      3615
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lưỡi đỏ dâu tây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3617,
+      3632
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sưng hạch cổ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3638,
+      3650
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Điều trị bằng **** trong 10 ngày đầu",
+    "type": "THUỐC",
+    "position": [
+      3652,
+      3688
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "giảm biến chứng mạch vành",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3714,
+      3739
+    ],
+    "assertions": []
+  }
+]

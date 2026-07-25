@@ -1,0 +1,231 @@
+[
+  {
+    "text": "bị thương nhẹ ở tay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      57,
+      79
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bị chảy máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      86,
+      100
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chó con",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      144,
+      151
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chó chưa tiêm dại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      161,
+      180
+    ],
+    "assertions": []
+  },
+  {
+    "text": "dính nước dãi của chó con",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      193,
+      218
+    ],
+    "assertions": []
+  },
+  {
+    "text": "được",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      251,
+      255
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bệnh dại",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      310,
+      318
+    ],
+    "assertions": [],
+    "candidates": [
+      "A82.0",
+      "A82.1",
+      "A82.9"
+    ]
+  },
+  {
+    "text": "vết cắn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      571,
+      578
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đường lây bệnh dại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      593,
+      611
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nước bọt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      687,
+      695
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lyssavirus",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      855,
+      865
+    ],
+    "assertions": [],
+    "candidates": [
+      "A84.81",
+      "A84.8",
+      "J12.81",
+      "J12.8",
+      "A98.4"
+    ]
+  },
+  {
+    "text": "virus",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      860,
+      865
+    ],
+    "assertions": []
+  },
+  {
+    "text": "họ Lyssaviridae",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      873,
+      888
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tủy sống",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      988,
+      996
+    ],
+    "assertions": []
+  },
+  {
+    "text": "trung khu thần kinh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1017,
+      1036
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đại não",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1043,
+      1050
+    ],
+    "assertions": []
+  },
+  {
+    "text": "trạng thái điên dại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1059,
+      1078
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điều trị y tế",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1211,
+      1224
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêm vaccine phòng dại",
+    "type": "THUỐC",
+    "position": [
+      1307,
+      1329
+    ],
+    "assertions": [],
+    "candidates": [
+      "89886",
+      "762817",
+      "763096"
+    ]
+  },
+  {
+    "text": "mùa hè",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1359,
+      1365
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vết trầy xước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1613,
+      1626
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực trái cấp tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2243,
+      2265
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau sau xương ức lan ra sau lưng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2269,
+      2301
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

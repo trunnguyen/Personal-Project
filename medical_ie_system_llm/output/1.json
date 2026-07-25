@@ -1,232 +1,214 @@
 [
   {
-    "text": "metoprolol 25mg po bid",
-    "type": "THUỐC",
+    "text": "THIẾU MEN G6PD",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      53,
-      75
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "6918",
-      "92758",
-      "93252"
-    ]
-  },
-  {
-    "text": "doxycycline cho viêm tuyến mồ hôi",
-    "type": "THUỐC",
-    "position": [
-      82,
-      115
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "3640",
-      "92758",
-      "93252"
-    ]
-  },
-  {
-    "text": "atenolol (uống hôm nay)",
-    "type": "THUỐC",
-    "position": [
-      122,
-      145
+      0,
+      14
     ],
     "assertions": [],
     "candidates": [
-      "1202",
-      "92758",
-      "93252"
+      "D55.0",
+      "D50.8",
+      "D51.1"
     ]
   },
   {
-    "text": "Căng thẳng nhiều trong công việc",
-    "type": "TRIỆU_CHỨNG",
+    "text": "Glucose-6-Phosphate Dehydrogenase",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      226,
-      259
+      71,
+      104
     ],
-    "assertions": []
-  },
-  {
-    "text": "Mất việc làm 8 ngày trước",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      266,
-      291
-    ],
-    "assertions": []
-  },
-  {
-    "text": "Một ngày người bệnh có thể uống hàng chục tách cà phê có caffeine",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      299,
-      364
-    ],
-    "assertions": []
-  },
-  {
-    "text": "đánh trống ngực",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      497,
-      512
-    ],
-    "assertions": []
-  },
-  {
-    "text": "Khó thở nhẹ khó thở",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      688,
-      707
-    ],
-    "assertions": []
-  },
-  {
-    "text": "cảm giác thắt chặt ngực vùng trước tim (khởi phát lúc 17 giờ)",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      714,
-      775
-    ],
-    "assertions": []
-  },
-  {
-    "text": "Tăng đánh trống ngực (khởi phát lúc 17 giờ)",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      782,
-      825
-    ],
-    "assertions": []
-  },
-  {
-    "text": "khó thở (khởi phát lúc 17 giờ)",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      832,
-      862
-    ],
-    "assertions": []
-  },
-  {
-    "text": "Cảm thấy mệt mỏi nhiều khi gắng sức trong tuần qua",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      869,
-      919
-    ],
-    "assertions": []
-  },
-  {
-    "text": "Cảm thấy mệt mỏi nhiều hơn sau khi luyện tập thể dục so với mọi ngày",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      926,
-      994
-    ],
-    "assertions": []
-  },
-  {
-    "text": "đánh trống ngực: còn cảm giác đánh trống ngực khi nhập viện",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1053,
-      1113
-    ],
-    "assertions": []
-  },
-  {
-    "text": "khó thở: Nhẹ, liên quan đến đánh trống ngực, liên quan đến khó thở (khởi phát lúc 17 giờ)",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1121,
-      1210
-    ],
-    "assertions": []
-  },
-  {
-    "text": "cảm giác thắt chặt ngực: Trung tâm, khởi phát lúc 17 giờ, kéo dài 20 giây, không có khó chịu vùng ngực khi đến tầng",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1217,
-      1332
-    ],
-    "assertions": []
-  },
-  {
-    "text": "khó thở: Liên quan đến đánh trống ngực, khởi phát lúc 17 giờ, kéo dài 20 giây",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1339,
-      1416
-    ],
-    "assertions": []
-  },
-  {
-    "text": "monitor holter cho thấy Nhịp xoang chiếm ưu thế. Ghi nhận ngoại tâm thu nhĩ và ngoại tâm thu thất xuất hiện thường xuyên",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
-    "position": [
-      1631,
-      1751
+    "assertions": [],
+    "candidates": [
+      "D55.0",
+      "D75.A",
+      "E71.310",
+      "E71.3"
     ]
   },
   {
-    "text": "Bắt đầu dùng metoprolol 25mg po bid, không có cải thiện",
+    "text": "bệnh di truyền lặn liên kết với nhiễm sắc thể X",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      113,
+      160
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đậu tằm",
+    "type": "THUỐC",
+    "position": [
+      1518,
+      1525
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đậu",
+    "type": "THUỐC",
+    "position": [
+      1518,
+      1521
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Sốt cao",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      1759,
-      1814
+      1632,
+      1639
     ],
     "assertions": []
   },
   {
-    "text": "Ở nhà bệnh nhân đã sử dụng atenololtrong ngày",
+    "text": "Tim đập nhanh, khó thở",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      1822,
-      1867
+      1669,
+      1691
     ],
     "assertions": []
   },
   {
-    "text": "chụp x-quang ngực không ghi nhận gì bất thường",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "text": "Vàng da, vàng mắt",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      2223,
-      2269
-    ]
+      1695,
+      1712
+    ],
+    "assertions": []
   },
   {
-    "text": "phân tích nước tiểu không ghi nhận gì bất thường",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "text": "thiếu máu do tan huyết",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      2276,
-      2324
-    ]
+      1758,
+      1780
+    ],
+    "assertions": []
   },
   {
-    "text": "ecg bình thường",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "text": "bại não",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      2331,
-      2346
-    ]
+      1995,
+      2002
+    ],
+    "assertions": []
   },
   {
-    "text": "điện tâm đồ là không ghi nhận gì bất thường",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "text": "chậm phát triển trí tuệ",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      2771,
-      2814
-    ]
+      2004,
+      2027
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Rối loạn vận động",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2619,
+      2636
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thuốc giảm đau, hạ sốt chứa *******",
+    "type": "THUỐC",
+    "position": [
+      3427,
+      3462
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Kháng sinh nhóm ***********",
+    "type": "THUỐC",
+    "position": [
+      3482,
+      3509
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Thuốc kháng sốt rét như *******, ***********",
+    "type": "THUỐC",
+    "position": [
+      3523,
+      3567
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Vitamin K dùng trong điều trị nhiễm khuẩn tiết niệu",
+    "type": "THUỐC",
+    "position": [
+      3583,
+      3634
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "băng phiến",
+    "type": "THUỐC",
+    "position": [
+      3684,
+      3694
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "long não",
+    "type": "THUỐC",
+    "position": [
+      3696,
+      3704
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thuốc nam",
+    "type": "THUỐC",
+    "position": [
+      3982,
+      3991
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thuốc đông y",
+    "type": "THUỐC",
+    "position": [
+      3993,
+      4005
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "sữa",
+    "type": "THUỐC",
+    "position": [
+      4106,
+      4109
+    ],
+    "assertions": [],
+    "candidates": []
   }
 ]

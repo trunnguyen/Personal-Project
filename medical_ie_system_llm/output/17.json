@@ -1,0 +1,181 @@
+[
+  {
+    "text": "đánh răng hay chảy máu chân răng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      60,
+      92
+    ],
+    "assertions": []
+  },
+  {
+    "text": "miệng thấy hơi thở mùi khó chịu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      94,
+      125
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mảng bám quanh răng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      147,
+      166
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Vệ sinh răng miệng kém",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      384,
+      406
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Viêm quanh răng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      613,
+      628
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Viêm nha chu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      712,
+      724
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Thiếu canxi và vitamin",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      997,
+      1019
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tiểu đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1173,
+      1183
+    ],
+    "assertions": [],
+    "candidates": [
+      "E08.00",
+      "E08.0",
+      "E08.01",
+      "E08.10",
+      "E08.1"
+    ]
+  },
+  {
+    "text": "Tác dụng phụ của thuốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1475,
+      1497
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hút thuốc lá",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1685,
+      1697
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bệnh mạch máu ngoại biên",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1850,
+      1874
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "bệnh phổi tắc nghẽn mạn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1881,
+      1909
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Ngưng thở khi ngủ do tắc nghẽn đang dùng BiPAP",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1916,
+      1962
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Ung thư biểu mô tế bào vảy xâm nhập của dương vật",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1969,
+      2018
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Uống trà gừng và mật ong",
+    "type": "THUỐC",
+    "position": [
+      2117,
+      2141
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Trà đinh hương",
+    "type": "THUỐC",
+    "position": [
+      2226,
+      2240
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "bào láng gốc răng",
+    "type": "THUỐC",
+    "position": [
+      2365,
+      2382
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Ghép mô mềm ở vòm họng",
+    "type": "THUỐC",
+    "position": [
+      2462,
+      2484
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

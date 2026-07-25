@@ -1,145 +1,278 @@
 [
   {
-    "text": "tăng huyết áp",
+    "text": "Bệnh tim mạch do xơ vữa động mạch",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      57,
-      70
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "I10",
-      "O10.011",
-      "O10.0",
-      "O10.012"
-    ]
-  },
-  {
-    "text": "bệnh gút không đặc hiệu",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      77,
-      100
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "E79.81",
-      "E79.8",
-      "M10.011",
-      "M10.0",
-      "M10.012"
-    ]
-  },
-  {
-    "text": "bệnh thận mạn, không đặc hiệu",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      107,
-      136
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "D63.1",
-      "E08.22",
-      "E08.2",
-      "E09.22",
-      "E09.2"
-    ]
-  },
-  {
-    "text": "ung thư đại tràng",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      143,
-      160
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "Z15.060",
-      "Z15.0",
-      "D70.1",
-      "QA1.790",
-      "QA1.7"
-    ]
-  },
-  {
-    "text": "béo phì",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      167,
-      174
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "E66.01",
-      "E66.0",
-      "E66.09",
-      "E66.1"
-    ]
-  },
-  {
-    "text": "Bệnh nhân xơ gan mất bù có tăng áp lực tĩnh mạch cửa, cổ trướng và tràn dịch màng phổi",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      181,
-      267
+      21,
+      54
     ],
     "assertions": [],
     "candidates": [
-      "K76.6",
-      "A38.1",
-      "A52.72",
-      "A52.7"
+      "I25.10",
+      "I25.1",
+      "I25.110",
+      "I25.111"
     ]
   },
   {
-    "text": "liệu pháp lợi tiểu",
-    "type": "THUỐC",
+    "text": "ăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      308,
-      326
+      56,
+      68
+    ],
+    "assertions": [],
+    "candidates": [
+      "G93.2",
+      "H40.051",
+      "H40.0",
+      "H40.052"
+    ]
+  },
+  {
+    "text": "Rối loạn lipid máu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      69,
+      87
+    ],
+    "assertions": [],
+    "candidates": [
+      "E78.2",
+      "E78.49",
+      "E78.4",
+      "Z83.438",
+      "Z83.4"
+    ]
+  },
+  {
+    "text": "Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      89,
+      103
+    ],
+    "assertions": [],
+    "candidates": [
+      "E08.00",
+      "E08.0",
+      "E08.01",
+      "E08.10",
+      "E08.1"
+    ]
+  },
+  {
+    "text": "Cơn rối loạn ý thức thoáng qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      132,
+      162
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nghi ngờ cơn co giật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      164,
+      184
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bệnh nhân bị ngã",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      218,
+      234
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "xuất huyết dưới nhện",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      253,
+      273
     ],
     "assertions": [
       "isHistorical"
     ],
     "candidates": [
-      "11002",
-      "1483141",
-      "1661176"
+      "I62.00",
+      "I62.0",
+      "I62.01",
+      "I62.02"
     ]
   },
   {
-    "text": "chọc dò màng phổi 3L4",
+    "text": "Chụp cắt lớp vi tính sọ não",
     "type": "TÊN_XÉT_NGHIỆM",
     "position": [
-      443,
-      464
+      275,
+      302
     ]
   },
   {
-    "text": "chọc dò dịch ổ bụng 7L",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "bầm dập nhu mô vùng trán phải",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      471,
-      493
+      354,
+      383
+    ],
+    "assertions": [
+      "isHistorical"
     ]
   },
   {
-    "text": "thủ thuật TIPS",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "trán - thái dương phải",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      500,
-      514
+      387,
+      409
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "lớp dịch dưới màng cứng mỏng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      419,
+      447
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tụ máu dưới màng cứng mạn tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      512,
+      542
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tụ máu ngoài màng cứng phải cấp tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      752,
+      788
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau đầu vùng thái dương phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1001,
+      1029
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đỉnh đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1033,
+      1041
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "cảm giác tê bì nửa mặt phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1047,
+      1074
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "mất định hướng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1376,
+      1390
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đi lại không vững",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1392,
+      1409
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ngửa đầu ra sau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1474,
+      1489
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "không đáp ứng được các câu hỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1493,
+      1523
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bàn chân bẹt",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1903,
+      1915
+    ],
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": [
+      "M21.40",
+      "M21.4",
+      "M21.41",
+      "M21.42"
+    ]
+  },
+  {
+    "text": "nghĩ đến nang màng nhện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2734,
+      2757
+    ],
+    "assertions": [
+      "isHistorical"
     ]
   }
 ]
