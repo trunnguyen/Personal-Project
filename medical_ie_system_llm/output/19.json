@@ -9,20 +9,11 @@
     "assertions": []
   },
   {
-    "text": "mề đay",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      85,
-      91
-    ],
-    "assertions": []
-  },
-  {
-    "text": "ngứa",
+    "text": "ngứa khắp người",
     "type": "TRIỆU_CHỨNG",
     "position": [
       102,
-      106
+      117
     ],
     "assertions": []
   },
@@ -45,31 +36,6 @@
     "assertions": []
   },
   {
-    "text": "mề đay nổi rất khó chịu",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      161,
-      184
-    ],
-    "assertions": []
-  },
-  {
-    "text": "mề đay",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      161,
-      167
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "L50.0",
-      "L50.1",
-      "L50.2"
-    ]
-  },
-  {
     "text": "tylenol",
     "type": "THUỐC",
     "position": [
@@ -86,157 +52,96 @@
     ]
   },
   {
-    "text": "MÀY ĐAY VÔ CĂN",
-    "type": "CHẨN_ĐOÁN",
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      1161,
-      1175
+      809,
+      817
     ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "L50.0",
-      "L50.1",
-      "L50.2"
-    ]
+    "assertions": []
   },
   {
-    "text": "MÀY ĐAY VÔ CĂN",
-    "type": "CHẨN_ĐOÁN",
+    "text": "táo bón",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      1161,
-      1175
+      824,
+      831
     ],
-    "assertions": [
-      "isFamily",
-      "isHistorical"
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      838,
+      846
     ],
-    "candidates": [
-      "L50.0",
-      "L50.1",
-      "L50.2"
-    ]
+    "assertions": []
   },
   {
     "text": "MÀY ĐAY MẠN TÍNH",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      1267,
-      1283
+      1258,
+      1274
     ],
     "assertions": [
       "isHistorical"
     ],
     "candidates": [
-      "L50.0",
-      "L50.1",
-      "L50.2"
-    ]
-  },
-  {
-    "text": "MÀY ĐAY MẠN TÍNH",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      1267,
-      1283
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "L50.0",
-      "L50.1",
-      "L50.2"
-    ]
-  },
-  {
-    "text": "MÀY ĐAY MẠN TÍNH",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      1267,
-      1283
-    ],
-    "assertions": [
-      "isFamily"
-    ],
-    "candidates": [
-      "L50.0",
-      "L50.1",
-      "L50.2"
-    ]
-  },
-  {
-    "text": "MÀY ĐAY MẠN TÍNH",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      1267,
-      1283
-    ],
-    "assertions": [
-      "isFamily",
-      "isHistorical"
-    ],
-    "candidates": [
-      "L50.0",
-      "L50.1",
-      "L50.2"
-    ]
-  },
-  {
-    "text": "mày đay vô căn",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      1824,
-      1838
-    ],
-    "assertions": [
-      "isHistorical"
-    ],
-    "candidates": [
-      "L50.0",
-      "L50.1",
-      "L50.2"
-    ]
-  },
-  {
-    "text": "Mày đay vô căn",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      1936,
-      1950
-    ],
-    "assertions": [
-      "isFamily"
-    ],
-    "candidates": [
-      "L50.0",
-      "L50.1",
-      "L50.2"
+      "A06.1",
+      "A24.2",
+      "B18.0"
     ]
   },
   {
     "text": "****************",
     "type": "THUỐC",
     "position": [
-      2274,
-      2290
+      2157,
+      2173
     ],
     "assertions": [],
     "candidates": []
   },
   {
-    "text": "corticoid",
+    "text": "thể hệ sau không gây buồn ngủ",
     "type": "THUỐC",
     "position": [
-      2393,
-      2402
+      2174,
+      2203
     ],
     "assertions": [],
-    "candidates": [
-      "376",
-      "309541",
-      "1040025"
-    ]
+    "candidates": []
+  },
+  {
+    "text": "thể hệ 1",
+    "type": "THUỐC",
+    "position": [
+      2253,
+      2261
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "corticoid liều thấp cách ngày hoặc hàng ngày",
+    "type": "THUỐC",
+    "position": [
+      2263,
+      2307
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "giảm liều chậm 2,5 – 5mg mỗi 2-3 tuần",
+    "type": "THUỐC",
+    "position": [
+      2311,
+      2348
+    ],
+    "assertions": [],
+    "candidates": []
   }
 ]

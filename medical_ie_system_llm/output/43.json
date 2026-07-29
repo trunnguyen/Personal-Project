@@ -1,0 +1,147 @@
+[
+  {
+    "text": "Bệnh bạch cầu dòng tủy mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      57,
+      88
+    ],
+    "assertions": [],
+    "candidates": [
+      "C92.10",
+      "C92.1",
+      "C92.11",
+      "C92.12"
+    ]
+  },
+  {
+    "text": "tăng cholesterol máu đơn thuần",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      95,
+      125
+    ],
+    "assertions": [],
+    "candidates": [
+      "E78.00",
+      "E78.0",
+      "E78.010",
+      "E78.011"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      132,
+      145
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "gleevec (ngừng uống cách nhập viện 5 ngày)",
+    "type": "THUỐC",
+    "position": [
+      190,
+      232
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "403879",
+      "403878",
+      "404589"
+    ]
+  },
+  {
+    "text": "allopurinol (ngừng uống \ncách nhập viện 5 ngày)",
+    "type": "THUỐC",
+    "position": [
+      239,
+      286
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "197319",
+      "197320",
+      "245422"
+    ]
+  },
+  {
+    "text": "Thuốc giảm đau (ngừng)",
+    "type": "THUỐC",
+    "position": [
+      293,
+      315
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      363,
+      370
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đi cầu phân sống",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1252,
+      1268
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bacillus clausii 2 tỷ bào tử/5ml/ ống uống 1-2 ống/ ngày",
+    "type": "THUỐC",
+    "position": [
+      1635,
+      1691
+    ],
+    "assertions": [],
+    "candidates": [
+      "96304",
+      "104208",
+      "104367"
+    ]
+  },
+  {
+    "text": "Enterogermina",
+    "type": "THUỐC",
+    "position": [
+      1706,
+      1719
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Biogermin",
+    "type": "THUỐC",
+    "position": [
+      1721,
+      1730
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

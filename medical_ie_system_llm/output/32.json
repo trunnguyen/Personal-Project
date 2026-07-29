@@ -1,0 +1,248 @@
+[
+  {
+    "text": "Rối loạn chuyển hóa tinh bột (amyloidosis)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      29,
+      71
+    ],
+    "assertions": [],
+    "candidates": [
+      "E85.0",
+      "E85.1",
+      "E85.2"
+    ]
+  },
+  {
+    "text": "Bệnh thoái hóa tinh bột (hay bệnh amyloidosis)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      308,
+      354
+    ],
+    "assertions": [],
+    "candidates": [
+      "E85.0",
+      "E85.1",
+      "E85.2"
+    ]
+  },
+  {
+    "text": "Bệnh bạch cầu dòng tủy mãn tính đang dùng gleevec",
+    "type": "THUỐC",
+    "position": [
+      765,
+      814
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "282388",
+      "284924",
+      "403878"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      821,
+      834
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "tăng lipid máu, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      841,
+      871
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường típ 2",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      878,
+      898
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E11.00",
+      "E11.0",
+      "E11.01",
+      "E11.10",
+      "E11.1"
+    ]
+  },
+  {
+    "text": "hẹp ống sống",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      905,
+      917
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Giả gout",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      924,
+      932
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu Giai đoạn 4",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      939,
+      980
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng sản tuyến tiền liệt",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      987,
+      1011
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Nhiều lần ngã gần đây Ngã",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1018,
+      1043
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1050,
+      1057
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Thuốc trước khi nhập viện: gleevec (dừng theo chỉ dẫn sau xuất viện)",
+    "type": "THUỐC",
+    "position": [
+      1062,
+      1130
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "282388",
+      "284924",
+      "403878"
+    ]
+  },
+  {
+    "text": "Lú lẫn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1254,
+      1260
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Ăn uống kém, ăn vào dễ nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1558,
+      1584
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Nôn không ra máu, không ra dịch mật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1592,
+      1627
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Bệnh amyloidosis chuỗi nhẹ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1637,
+      1663
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Bệnh amyloidosis tự miễn dịch",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1673,
+      1702
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Bệnh amyloidosis di truyền hoặc gia đình",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1712,
+      1752
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  }
+]

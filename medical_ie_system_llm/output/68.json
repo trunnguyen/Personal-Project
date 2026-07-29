@@ -1,0 +1,211 @@
+[
+  {
+    "text": "bệnh động mạch vành",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      34,
+      53
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I25.42",
+      "I25.4",
+      "A18.17",
+      "A18.1",
+      "A48.2"
+    ]
+  },
+  {
+    "text": "bệnh lý thần kinh ngoại biên",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      55,
+      83
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A50.43",
+      "A50.4",
+      "A52.15",
+      "A52.1",
+      "B02.23",
+      "B02.2"
+    ]
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      160,
+      167
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "khó thở tăng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      199,
+      211
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Đi lại khó khăn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      295,
+      310
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Đau hai bàn chân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      341,
+      357
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Đo sức bền cơ tim bằng đồng vị phóng xạ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      434,
+      473
+    ]
+  },
+  {
+    "text": "dị tật cố định vùng trước vách và vách dưới",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      485,
+      528
+    ]
+  },
+  {
+    "text": "giảm chức năng tâm thu thất trái nghiêm trọng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      534,
+      579
+    ]
+  },
+  {
+    "text": "rối loạn chức năng thất trái",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      589,
+      617
+    ]
+  },
+  {
+    "text": "Chụp động mạch vành",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      621,
+      640
+    ]
+  },
+  {
+    "text": "bệnh ba thân động mạch vành nghiêm trọng",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      650,
+      690
+    ]
+  },
+  {
+    "text": "Chụp động mạch vành can thiệp",
+    "type": "THUỐC",
+    "position": [
+      721,
+      750
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Augmentin (amoxicillin/acid clavulanic)",
+    "type": "THUỐC",
+    "position": [
+      799,
+      838
+    ],
+    "assertions": [],
+    "candidates": [
+      "824190",
+      "824194",
+      "848176"
+    ]
+  },
+  {
+    "text": "80 mg/kg/ngày",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      855,
+      868
+    ]
+  },
+  {
+    "text": "1040 mg/ngày",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      882,
+      894
+    ]
+  },
+  {
+    "text": "500 mg/lần x 2 lần ngày",
+    "type": "THUỐC",
+    "position": [
+      920,
+      943
+    ],
+    "assertions": [],
+    "candidates": [
+      "308192",
+      "308194",
+      "723"
+    ]
+  },
+  {
+    "text": "7 ngày",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      956,
+      962
+    ]
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1434,
+      1443
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phát triển vi khuẩn đề kháng thuốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1560,
+      1594
+    ],
+    "assertions": []
+  }
+]

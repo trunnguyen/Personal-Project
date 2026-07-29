@@ -1,0 +1,95 @@
+[
+  {
+    "text": "dấu mề đay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      81,
+      91
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngứa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      102,
+      106
+    ],
+    "assertions": []
+  },
+  {
+    "text": "MÀY ĐAY VÔ CĂN",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      733,
+      747
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A37.00",
+      "A37.0",
+      "A37.10",
+      "A37.1",
+      "A37.80",
+      "A37.8"
+    ]
+  },
+  {
+    "text": "MÀY ĐAY",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      733,
+      740
+    ],
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": [
+      "L50.0",
+      "L50.1",
+      "L50.2"
+    ]
+  },
+  {
+    "text": "MÀY ĐAY MẠN TÍNH",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      830,
+      846
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A06.1",
+      "A24.2",
+      "B18.0"
+    ]
+  },
+  {
+    "text": "chụp cộng hưởng từ (mri) cột sống cổ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2092,
+      2128
+    ]
+  },
+  {
+    "text": "hẹp ống sống C4-5",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2138,
+      2155
+    ]
+  },
+  {
+    "text": "hẹp lỗ liên hợp",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2171,
+      2186
+    ]
+  }
+]

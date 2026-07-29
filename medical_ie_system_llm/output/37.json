@@ -1,0 +1,133 @@
+[
+  {
+    "text": "bên tai ko có lỗ kia",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      354,
+      374
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vành tai không phát triển đều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      375,
+      404
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ban đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1087,
+      1093
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chảy mủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1095,
+      1102
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Được bác sĩ chăm sóc chính thay thế khám vào ngày",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1145,
+      1194
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A60.00",
+      "A60.0",
+      "A60.01",
+      "A60.02"
+    ]
+  },
+  {
+    "text": "tăng liều bactrim",
+    "type": "THUỐC",
+    "position": [
+      1201,
+      1218
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "10180",
+      "10829",
+      "221176"
+    ]
+  },
+  {
+    "text": "doxycycline",
+    "type": "THUỐC",
+    "position": [
+      1222,
+      1233
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "3640",
+      "23663",
+      "203122"
+    ]
+  },
+  {
+    "text": "Viêm mô tế bào",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1256,
+      1270
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "H05.011",
+      "H05.0",
+      "H05.012",
+      "H05.013"
+    ]
+  },
+  {
+    "text": "đo thính lực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1783,
+      1795
+    ]
+  },
+  {
+    "text": "bệnh viện lớn có chuyên khoa Tai mũi họng nhi",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1835,
+      1880
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "T49.6X1A",
+      "T49.6",
+      "T49.6X1D",
+      "T49.6X1S"
+    ]
+  }
+]

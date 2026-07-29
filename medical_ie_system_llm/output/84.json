@@ -1,0 +1,252 @@
+[
+  {
+    "text": "Nấm bẹn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      114,
+      121
+    ],
+    "assertions": [],
+    "candidates": [
+      "B35.6",
+      "B35.0",
+      "B35.4"
+    ]
+  },
+  {
+    "text": "Trichophyton rubrum",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      158,
+      177
+    ],
+    "assertions": [],
+    "candidates": [
+      "A81.81",
+      "A81.8",
+      "B48.3"
+    ]
+  },
+  {
+    "text": "T. mentagrophytes",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      186,
+      203
+    ],
+    "assertions": [],
+    "candidates": [
+      "K92.1",
+      "B48.3",
+      "N50.0"
+    ]
+  },
+  {
+    "text": "thời tiết nóng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      263,
+      277
+    ],
+    "assertions": []
+  },
+  {
+    "text": "quần áo ướt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      279,
+      290
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      294,
+      298
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chứng béo phì",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      300,
+      313
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thuốc kháng nấm dạng bôi",
+    "type": "THUỐC",
+    "position": [
+      415,
+      439
+    ],
+    "assertions": [],
+    "candidates": [
+      "91348",
+      "91349",
+      "92752"
+    ]
+  },
+  {
+    "text": "điều trị từ 1-4 tuần",
+    "type": "THUỐC",
+    "position": [
+      503,
+      523
+    ],
+    "assertions": [],
+    "candidates": [
+      "1546271",
+      "11002",
+      "90176"
+    ]
+  },
+  {
+    "text": "Giữ vùng bẹn khô thoáng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      611,
+      634
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vùng bẹn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      615,
+      623
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lau khô vùng bẹn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      640,
+      656
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      749,
+      755
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bột",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      772,
+      775
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mặc đồ sạch",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      809,
+      820
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thay quần lót",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      830,
+      843
+    ],
+    "assertions": []
+  },
+  {
+    "text": "quần lót",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      835,
+      843
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giặt đồ thể thao",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      932,
+      948
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đồ thể thao",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      937,
+      948
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đồ lót vừa mặc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      987,
+      1001
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đồ lót",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      987,
+      993
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đồ dùng cá nhân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1162,
+      1177
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mượn áo quần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1204,
+      1216
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khăn tắm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1218,
+      1226
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đi mượn đồ dùng cá nhân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1280,
+      1303
+    ],
+    "assertions": []
+  }
+]

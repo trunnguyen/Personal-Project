@@ -1,0 +1,423 @@
+[
+  {
+    "text": "rung nhĩ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      39,
+      47
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I48.0",
+      "I48.11",
+      "I48.1",
+      "I48.19"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      50,
+      63
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "suy tim, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      66,
+      89
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I50.9",
+      "B57.0",
+      "B57.1"
+    ]
+  },
+  {
+    "text": "béo phì",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      92,
+      99
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E66.01",
+      "E66.0",
+      "E66.09",
+      "E66.1"
+    ]
+  },
+  {
+    "text": "da rất nhiều dầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      122,
+      138
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bị mụn trứng cá",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      142,
+      157
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mụn ở trán",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      342,
+      352
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mụn cám",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      392,
+      399
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mụn đầu trắng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      403,
+      416
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi và weak",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      720,
+      735
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thường xuyên ngủ quên hoặc có thể ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      738,
+      780
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giảm khả năng quan hệ tình dục với bạn tình",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      783,
+      826
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Đau buốt khi đi tiểu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      829,
+      849
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chán ăn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      852,
+      859
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn từng đợt sau khi ăn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      862,
+      885
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      909,
+      917
+    ],
+    "assertions": []
+  },
+  {
+    "text": "xảy ra khoảng trước khi nhập viện khi bệnh nhân đang nằm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      921,
+      977
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhói",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      980,
+      984
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bên trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      987,
+      995
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lan xuống cánh tay trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      998,
+      1021
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kèm theo tê bì ở cánh tay trái trên và đau ở cánh tay trái dưới và bàn tay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1024,
+      1098
+    ],
+    "assertions": []
+  },
+  {
+    "text": "liên tục",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1101,
+      1109
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không nặng hơn/giảm khi làm gì",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1112,
+      1142
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không giảm khi dùng bất kỳ thuốc nào ở phòng cấp cứu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1145,
+      1197
+    ],
+    "assertions": []
+  },
+  {
+    "text": "shortness of breath",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1200,
+      1219
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăng dần trong vài tuần qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1223,
+      1250
+    ],
+    "assertions": []
+  },
+  {
+    "text": "yếu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1253,
+      1256
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau rát khi đi tiểu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1290,
+      1309
+    ],
+    "assertions": []
+  },
+  {
+    "text": "từng đợt, khoảng 2 tuần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1313,
+      1336
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kém trong 3 ngày qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1350,
+      1370
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn mửa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1373,
+      1380
+    ],
+    "assertions": []
+  },
+  {
+    "text": "từng đợt sau khi ăn trong 3 ngày qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1384,
+      1420
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cơn ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1423,
+      1435
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "2 tháng trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1439,
+      1452
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bệnh nhân không nhớ rõ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1455,
+      1477
+    ],
+    "assertions": []
+  },
+  {
+    "text": "va phải cánh tay phải và bụng phải nhưng không nhớ đập đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1480,
+      1538
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không nhớ bị đánh trống ngực, chóng mặt trước khi bị ngã",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1541,
+      1597
+    ],
+    "assertions": []
+  },
+  {
+    "text": "80mg po lasix",
+    "type": "THUỐC",
+    "position": [
+      1651,
+      1664
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "310007",
+      "2691156",
+      "8560"
+    ]
+  },
+  {
+    "text": "Được cho po metoprolol",
+    "type": "THUỐC",
+    "position": [
+      1990,
+      2012
+    ],
+    "assertions": [],
+    "candidates": [
+      "6918",
+      "92758",
+      "93252"
+    ]
+  },
+  {
+    "text": "10mg iv diltiazem",
+    "type": "THUỐC",
+    "position": [
+      2024,
+      2041
+    ],
+    "assertions": [],
+    "candidates": [
+      "3443",
+      "92752",
+      "92758"
+    ]
+  },
+  {
+    "text": "nhịp tim cải thiện thành",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2175,
+      2199
+    ],
+    "assertions": []
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      61,
+      63
+    ],
+    "assertions": []
+  },
+  {
+    "text": "rối loạn lo âu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      81,
+      95
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F06.4",
+      "F10.180",
+      "F10.1",
+      "F10.280",
+      "F10.2"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      102,
+      115
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "Táo bón mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      138,
+      154
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A24.2",
+      "B18.0",
+      "B18.1"
+    ]
+  },
+  {
+    "text": "ngưng thở khi ngủ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      162,
+      179
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "G47.30",
+      "G47.3",
+      "G47.31",
+      "G47.33"
+    ]
+  },
+  {
+    "text": "nhịp thở nhanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      222,
+      236
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thiếu oxy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      240,
+      249
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      322,
+      329
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy nước mũi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      337,
+      350
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bạch cầu 26.7",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      858,
+      871
+    ]
+  },
+  {
+    "text": "bnp 4227",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      878,
+      886
+    ]
+  },
+  {
+    "text": "kali 3.2",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      893,
+      901
+    ]
+  },
+  {
+    "text": "troponin 0.01",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      908,
+      921
+    ]
+  },
+  {
+    "text": "lactate 1.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      928,
+      939
+    ]
+  },
+  {
+    "text": "tổng phân tích nước tiểu có kết quả dương tính  với 182bạch cầuvài vi khuẩn (vi khuẩn), nitrite",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      946,
+      1041
+    ]
+  },
+  {
+    "text": "chẩn đoán hình ảnh không cho thấy quá trình bệnh lý tim mạch hoặc hô hấp cấp tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1079,
+      1160
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "chụp x-quang ngực phù hợp với viêm phổi kẽ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1168,
+      1210
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Albuterol và Ipratropium 1 lần",
+    "type": "THUỐC",
+    "position": [
+      1265,
+      1295
+    ],
+    "assertions": [],
+    "candidates": [
+      "435",
+      "103467",
+      "104367"
+    ]
+  },
+  {
+    "text": "Ceftriaxone 1 gram dùng 1 liều",
+    "type": "THUỐC",
+    "position": [
+      1302,
+      1332
+    ],
+    "assertions": [],
+    "candidates": [
+      "2193",
+      "103467",
+      "104367"
+    ]
+  },
+  {
+    "text": "Uống Tylenol 1 gram, 1 liều duy nhất",
+    "type": "THUỐC",
+    "position": [
+      1339,
+      1375
+    ],
+    "assertions": [],
+    "candidates": [
+      "161",
+      "103467",
+      "104367"
+    ]
+  },
+  {
+    "text": "cấy máu 2 mẫu và cấy nước tiểu đã được gửi",
+    "type": "THUỐC",
+    "position": [
+      1383,
+      1425
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

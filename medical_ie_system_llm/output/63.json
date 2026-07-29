@@ -1,0 +1,169 @@
+[
+  {
+    "text": "Bệnh bạch cầu dòng tủy mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      57,
+      88
+    ],
+    "assertions": [],
+    "candidates": [
+      "C92.10",
+      "C92.1",
+      "C92.11",
+      "C92.12"
+    ]
+  },
+  {
+    "text": "tăng cholesterol máu đơn thuần",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      95,
+      125
+    ],
+    "assertions": [],
+    "candidates": [
+      "E78.00",
+      "E78.0",
+      "E78.010",
+      "E78.011"
+    ]
+  },
+  {
+    "text": "E có uống thuốc kháng B-histamin thì triệu chứng giảm nhưng k hết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      126,
+      191
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vùng mẩn ngứa tập trung chủ yếu tại vùng bẹn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      205,
+      249
+    ],
+    "assertions": []
+  },
+  {
+    "text": "gleevec (ngừng uống cách nhập viện 5 ngày)",
+    "type": "THUỐC",
+    "position": [
+      368,
+      410
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "403879",
+      "403878",
+      "404589"
+    ]
+  },
+  {
+    "text": "allopurinol (ngừng uống \ncách nhập viện 5 ngày)",
+    "type": "THUỐC",
+    "position": [
+      417,
+      464
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "197319",
+      "197320",
+      "245422"
+    ]
+  },
+  {
+    "text": "Thuốc giảm đau (ngừng)",
+    "type": "THUỐC",
+    "position": [
+      471,
+      493
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      541,
+      548
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ảo giácxuất hiện khoảng một tháng trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      629,
+      668
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "điều trị nhiễm khuẩn đường tiết niệu, vị trí không xác định",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      684,
+      743
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bệnh nhân nhìn/nghe thấy có nhiều người (đôi khi tổng cộng khoảng 8 người)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1131,
+      1205
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Thấy những người này đang nói chuyện với mình",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1207,
+      1252
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Ảo giác không mang tính chất ra lệnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1254,
+      1290
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Bệnh nhân thường hoang tưởng/lo sợ rằng họ sẽ chạm vào da của mình",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1292,
+      1358
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

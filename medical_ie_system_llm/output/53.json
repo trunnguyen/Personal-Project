@@ -1,0 +1,260 @@
+[
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      45,
+      52
+    ],
+    "assertions": []
+  },
+  {
+    "text": "gầy sút cân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      54,
+      65
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ăn nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      140,
+      148
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khát nước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      150,
+      159
+    ],
+    "assertions": []
+  },
+  {
+    "text": "uống nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      161,
+      171
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đi tiểu nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      173,
+      186
+    ],
+    "assertions": []
+  },
+  {
+    "text": "gầy sút cân (3kg/tháng)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      188,
+      211
+    ],
+    "assertions": []
+  },
+  {
+    "text": "người mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      213,
+      226
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mạch: 89 lần/phút",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      276,
+      293
+    ]
+  },
+  {
+    "text": "HA: 180/100 mmHg",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      295,
+      311
+    ]
+  },
+  {
+    "text": "Glucose máu: 13,2 mmol/l",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      337,
+      361
+    ]
+  },
+  {
+    "text": "Quai ĐMC vồng cao",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      373,
+      390
+    ]
+  },
+  {
+    "text": "chỉ số tim/LN < ½",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      392,
+      409
+    ]
+  },
+  {
+    "text": "rốn phổi đậm",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      411,
+      423
+    ]
+  },
+  {
+    "text": "ĐTD typ II",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      458,
+      468
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E11.00",
+      "E11.0",
+      "E11.01",
+      "E11.10",
+      "E11.1"
+    ]
+  },
+  {
+    "text": "Torsemide",
+    "type": "THUỐC",
+    "position": [
+      554,
+      563
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "38413",
+      "198369",
+      "198370"
+    ]
+  },
+  {
+    "text": "Insulin glargine",
+    "type": "THUỐC",
+    "position": [
+      604,
+      620
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "274783",
+      "285018",
+      "311041"
+    ]
+  },
+  {
+    "text": "Isosorbide",
+    "type": "THUỐC",
+    "position": [
+      679,
+      689
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "6057",
+      "6058",
+      "28004"
+    ]
+  },
+  {
+    "text": "Rosuvastatin (Crestor)",
+    "type": "THUỐC",
+    "position": [
+      735,
+      757
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "301542",
+      "323828",
+      "859419"
+    ]
+  },
+  {
+    "text": "Carvedilol",
+    "type": "THUỐC",
+    "position": [
+      803,
+      813
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "20352",
+      "200031",
+      "200032"
+    ]
+  },
+  {
+    "text": "*****************",
+    "type": "THUỐC",
+    "position": [
+      1528,
+      1545
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "************",
+    "type": "THUỐC",
+    "position": [
+      1528,
+      1540
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "*********",
+    "type": "THUỐC",
+    "position": [
+      1528,
+      1537
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "*****************",
+    "type": "THUỐC",
+    "position": [
+      1586,
+      1603
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,37 +1,37 @@
 [
   {
-    "text": "bị thương nhẹ ở tay",
+    "text": "thương nhẹ ở tay",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      73,
-      95
+      75,
+      91
     ],
     "assertions": []
   },
   {
-    "text": "bị chảy máu",
+    "text": "chảy máu",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      102,
-      116
+      101,
+      109
     ],
     "assertions": []
   },
   {
-    "text": "chó chưa tiêm dại",
+    "text": "chó chưa tiêm dại",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      177,
-      196
+      169,
+      186
     ],
     "assertions": []
   },
   {
-    "text": "dính nước dãi của chó con",
+    "text": "dính nước dãi của chó con vào tay",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      209,
-      234
+      199,
+      232
     ],
     "assertions": []
   },
@@ -39,8 +39,8 @@
     "text": "bệnh dại",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      327,
-      335
+      317,
+      325
     ],
     "assertions": [
       "isHistorical"
@@ -55,56 +55,36 @@
     "text": "Lyssavirus",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      865,
-      875
+      843,
+      853
     ],
-    "assertions": [],
-    "candidates": []
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A84.81",
+      "A84.8",
+      "J12.81",
+      "J12.8",
+      "A98.4"
+    ]
   },
   {
-    "text": "virus",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      870,
-      875
-    ],
-    "assertions": []
-  },
-  {
-    "text": "họ Lyssaviridae",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      883,
-      898
-    ],
-    "assertions": [],
-    "candidates": []
-  },
-  {
-    "text": "điên dại",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1081,
-      1089
-    ],
-    "assertions": []
-  },
-  {
-    "text": "Phòng bệnh bằng tiêm *****************",
+    "text": "tiêm *****************",
     "type": "THUỐC",
     "position": [
-      1304,
-      1342
+      1298,
+      1320
     ],
     "assertions": [],
     "candidates": []
   },
   {
-    "text": "bumetanide 2mg iv",
+    "text": "được cho bumetanide 2mg iv",
     "type": "THUỐC",
     "position": [
-      2178,
-      2195
+      2147,
+      2173
     ],
     "assertions": [],
     "candidates": [
@@ -114,11 +94,11 @@
     ]
   },
   {
-    "text": "vancomycin 1 gram",
+    "text": "được cho vancomycin 1 gram",
     "type": "THUỐC",
     "position": [
-      2211,
-      2228
+      2180,
+      2206
     ],
     "assertions": [],
     "candidates": [
@@ -128,11 +108,11 @@
     ]
   },
   {
-    "text": "levofloxacin 750mg iv",
+    "text": "được cho levofloxacin 750mg iv",
     "type": "THUỐC",
     "position": [
-      2244,
-      2265
+      2213,
+      2243
     ],
     "assertions": [],
     "candidates": [

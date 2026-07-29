@@ -1,0 +1,168 @@
+[
+  {
+    "text": "da rất nhiều dầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      46,
+      62
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bị mụn trứng cá",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      66,
+      81
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mụn ở trán",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      266,
+      276
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mụn cám",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      316,
+      323
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mụn đầu trắng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      327,
+      340
+    ],
+    "assertions": []
+  },
+  {
+    "text": "coumadin 3.0 mg /ngày",
+    "type": "THUỐC",
+    "position": [
+      805,
+      826
+    ],
+    "assertions": [],
+    "candidates": [
+      "92758",
+      "93252",
+      "93253"
+    ]
+  },
+  {
+    "text": "chảy máu mũi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      933,
+      945
+    ],
+    "assertions": []
+  },
+  {
+    "text": "INR 1.7",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1076,
+      1083
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1178,
+      1186
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1196,
+      1203
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1213,
+      1221
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1232,
+      1240
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1237,
+      1240
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nhiệt độ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1369,
+      1377
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mạch",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1390,
+      1394
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1404,
+      1412
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nhịp thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1426,
+      1434
+    ],
+    "assertions": []
+  },
+  {
+    "text": "SPO2",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1443,
+      1447
+    ],
+    "assertions": []
+  }
+]

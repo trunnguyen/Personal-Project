@@ -1,0 +1,335 @@
+[
+  {
+    "text": "mức độ nặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      23,
+      34
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bệnh lý nền",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      38,
+      49
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hiệu quả điều trị kiểm soát triệu chứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      88,
+      127
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tác dụng gây độc của liệu pháp điều trị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      137,
+      176
+    ],
+    "assertions": []
+  },
+  {
+    "text": "**************** thể hệ sau không gây buồn ngủ",
+    "type": "THUỐC",
+    "position": [
+      178,
+      224
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "**************** thể hệ 1",
+    "type": "THUỐC",
+    "position": [
+      257,
+      282
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "corticoid liều thấp cách ngày hoặc hàng ngày",
+    "type": "THUỐC",
+    "position": [
+      284,
+      328
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "giảm liều chậm 2,5 – 5mg mỗi 2-3 tuần",
+    "type": "THUỐC",
+    "position": [
+      332,
+      369
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Rối loạn cảm xúc",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      520,
+      536
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F25.0",
+      "F25.1",
+      "F25.8"
+    ]
+  },
+  {
+    "text": "Rối loạn lưỡng cực",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      544,
+      562
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F31.81",
+      "F31.8",
+      "F31.89",
+      "F31.0"
+    ]
+  },
+  {
+    "text": "rối loạn lo âu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      569,
+      583
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F06.4",
+      "F10.180",
+      "F10.1",
+      "F10.280",
+      "F10.2"
+    ]
+  },
+  {
+    "text": "lo âu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      578,
+      583
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Thuốc kê đơn (tên không được chỉ định)",
+    "type": "THUỐC",
+    "position": [
+      640,
+      678
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "klonopinclonidine (được kê đơn)",
+    "type": "THUỐC",
+    "position": [
+      685,
+      716
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "2599",
+      "91350",
+      "142432"
+    ]
+  },
+  {
+    "text": "clonidine (mua trên đường phố)",
+    "type": "THUỐC",
+    "position": [
+      723,
+      753
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "2599",
+      "91350",
+      "142432"
+    ]
+  },
+  {
+    "text": "suboxone (bắt đầu 3 tuần trước)",
+    "type": "THUỐC",
+    "position": [
+      760,
+      791
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1010603",
+      "1010606",
+      "1307058"
+    ]
+  },
+  {
+    "text": "không dùng đều 5-6 ngày",
+    "type": "THUỐC",
+    "position": [
+      793,
+      816
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "dừng thuốc trước nhập viện 01 ngày",
+    "type": "THUỐC",
+    "position": [
+      818,
+      852
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Lạm dụng chất kích thích, chất gây nghiện opioid",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      892,
+      940
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ý định tự tử",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      985,
+      997
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ý nghĩ tự bắn vào đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1001,
+      1022
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "trầm cảm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1051,
+      1059
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F32.0",
+      "F32.1",
+      "F32.2"
+    ]
+  },
+  {
+    "text": "hưng cảm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1116,
+      1124
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F30.10",
+      "F30.1",
+      "F30.11",
+      "F30.12"
+    ]
+  },
+  {
+    "text": "tăng hoạt động",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1141,
+      1155
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "giảm nhu cầu ngủ 3-4 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1159,
+      1184
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "hoảng sợ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1431,
+      1439
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "hoang tưởng như đang chiếm khí oxy của người khác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1446,
+      1495
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

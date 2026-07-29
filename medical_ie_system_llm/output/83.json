@@ -1,0 +1,224 @@
+[
+  {
+    "text": "nhiều lần cố gắng giảm cân và tăng cân trở lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      6,
+      52
+    ],
+    "assertions": []
+  },
+  {
+    "text": "MÀY đay VÔ CĂN",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      170,
+      184
+    ],
+    "assertions": [],
+    "candidates": [
+      "L50.1",
+      "D72.110",
+      "D72.1",
+      "D89.42",
+      "D89.4"
+    ]
+  },
+  {
+    "text": "MÀY đay MẠN",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      268,
+      279
+    ],
+    "assertions": [],
+    "candidates": [
+      "A06.1",
+      "A24.2",
+      "B18.0"
+    ]
+  },
+  {
+    "text": "thương mô bệnh học",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      284,
+      302
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tế bào một nhân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      338,
+      353
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bạch huyết T",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      366,
+      378
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đại thực bào",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      382,
+      394
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiền thưởng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      405,
+      416
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kính hiển thị vi quang học",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      435,
+      461
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kính hiển thị vi điện tử",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      488,
+      512
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tế bào cột sống tăng lượng hạ bì",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      518,
+      550
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sợi fibrin",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      719,
+      729
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giá trị chỉ là giấy chứng nhận",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      939,
+      969
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Điều trị phụ thuộc vào mức độ nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      971,
+      1013
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nền tảng có liên kết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1017,
+      1037
+    ],
+    "assertions": []
+  },
+  {
+    "text": "***************",
+    "type": "THUỐC",
+    "position": [
+      1143,
+      1158
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "*********",
+    "type": "THUỐC",
+    "position": [
+      1143,
+      1152
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "có thể hệ sau không gây buồn ngủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1159,
+      1191
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đơn hàng đầu sau đó đến",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1195,
+      1218
+    ],
+    "assertions": []
+  },
+  {
+    "text": "***************",
+    "type": "THUỐC",
+    "position": [
+      1219,
+      1234
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "có thể hệ 1",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1235,
+      1246
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bậc thấp cách ngày hoặc hàng ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1258,
+      1291
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giảm dần chậm 2,5 – 5mg mỗi 2-3 tuần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1295,
+      1331
+    ],
+    "assertions": []
+  }
+]

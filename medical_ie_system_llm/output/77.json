@@ -1,0 +1,170 @@
+[
+  {
+    "text": "xuất hiện đau vùng xương bánh chè – đùi phải dữ dội",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      63,
+      114
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau vùng xương bánh chè – đùi phải dữ dội",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      73,
+      114
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau đầu gối phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      202,
+      218
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Siêu âm ổ bụng (gan mật, tụy, lách, thận, bàng quang)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      626,
+      679
+    ]
+  },
+  {
+    "text": "Siêu âm Doppler tim, van tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      728,
+      756
+    ]
+  },
+  {
+    "text": "Buồng thất trái giãn",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      759,
+      779
+    ]
+  },
+  {
+    "text": "chức năng tâm thu thất trái giảm nhiều (EF BP: 28%)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      781,
+      832
+    ]
+  },
+  {
+    "text": "Hở hai lá vừa",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      834,
+      847
+    ]
+  },
+  {
+    "text": "Hở chủ nhẹ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      849,
+      859
+    ]
+  },
+  {
+    "text": "Hở ba lá nhiều",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      861,
+      875
+    ]
+  },
+  {
+    "text": "Thất phải giãn",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      877,
+      891
+    ]
+  },
+  {
+    "text": "chức năng tâm thu thất phải giảm (FAC: 30%)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      893,
+      936
+    ]
+  },
+  {
+    "text": "Tăng áp lực động mạch phổi vừa",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      938,
+      968
+    ]
+  },
+  {
+    "text": "Chụp Xquang ngực thẳng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      972,
+      994
+    ]
+  },
+  {
+    "text": "Hình ảnh bóng tim to",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      996,
+      1016
+    ]
+  },
+  {
+    "text": "suy tim - suy thận mạn giai đoạn 5",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1029,
+      1063
+    ],
+    "assertions": [],
+    "candidates": [
+      "N18.5",
+      "N18.1",
+      "N18.31",
+      "N18.3"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1063,
+      1076
+    ],
+    "assertions": [],
+    "candidates": [
+      "G93.2",
+      "H40.051",
+      "H40.0",
+      "H40.052"
+    ]
+  },
+  {
+    "text": "hầu hết các hoạt động, đặc biệt là leo cầu thang và gập sâu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1198,
+      1257
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

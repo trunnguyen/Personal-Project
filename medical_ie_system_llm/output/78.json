@@ -1,0 +1,175 @@
+[
+  {
+    "text": "bịchảy máu cam",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      50,
+      64
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy máu cam",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      52,
+      64
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khoảng 1 tháng 1 lần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      66,
+      86
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy ở mũi bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      88,
+      107
+    ],
+    "assertions": []
+  },
+  {
+    "text": "người hơi choáng và hết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      115,
+      138
+    ],
+    "assertions": []
+  },
+  {
+    "text": "choáng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      125,
+      131
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thời tiết cứ khô nóng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      255,
+      276
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thức đêm muộn đến 2 giờ, 3 giờ sáng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      305,
+      340
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      513,
+      522
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ban đỏ xuất hiện nhiểu ở vị trí phẫu thuật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      659,
+      701
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau khi sờ nắn vùng mổ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      708,
+      730
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      753,
+      762
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "Vùng mũi luôn có các cấu trúc mạch máu phong phú",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      939,
+      987
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điểm mạch",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1036,
+      1045
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy máu mũi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1165,
+      1177
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chảy máu tái phát nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1226,
+      1249
+    ],
+    "assertions": []
+  },
+  {
+    "text": "số lượng chảy nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1251,
+      1270
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nội soi mũi họng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1329,
+      1345
+    ]
+  },
+  {
+    "text": "đốt điểm mạch",
+    "type": "THUỐC",
+    "position": [
+      1369,
+      1382
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

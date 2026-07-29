@@ -1,0 +1,76 @@
+[
+  {
+    "text": "Đo sức bền cơ tim bằng đồng vị phóng xạ kết quả có dị tật cố định vùng trước vách và vách dưới với  giảm chức năng tâm thu thất trái nghiêm trọng kèm theo rối loạn chức năng thất trái",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      68,
+      251
+    ]
+  },
+  {
+    "text": "Chụp động mạch vành cho thấy bệnh ba thân động mạch vành nghiêm trọng",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      255,
+      324
+    ]
+  },
+  {
+    "text": "Chụp động mạch vành can thiệp",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      355,
+      384
+    ]
+  },
+  {
+    "text": "Viêm hang vị sung huyết",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      411,
+      434
+    ],
+    "assertions": [],
+    "candidates": [
+      "K25.0",
+      "K25.1",
+      "K25.2"
+    ]
+  },
+  {
+    "text": "đau bụng cồn cào",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      552,
+      568
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ợ hơi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      578,
+      583
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ợ chua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      585,
+      591
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm giác buồn nôn hoặc nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      603,
+      629
+    ],
+    "assertions": []
+  }
+]

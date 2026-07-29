@@ -1,0 +1,106 @@
+[
+  {
+    "text": "bệnh gút",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      64,
+      72
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E79.81",
+      "E79.8",
+      "M10.011",
+      "M10.0",
+      "M10.012"
+    ]
+  },
+  {
+    "text": "hạt nhỏ màu trắng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      166,
+      183
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạt tophi",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      508,
+      517
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A79.82",
+      "A79.8",
+      "L63.2",
+      "A27.0"
+    ]
+  },
+  {
+    "text": "bệnh gout mạn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      524,
+      542
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "M1A.00X0",
+      "M1A.0",
+      "M1A.00X1",
+      "M1A.0110"
+    ]
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      1287,
+      1294
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "161",
+      "108038",
+      "197426"
+    ]
+  },
+  {
+    "text": "mucinex d",
+    "type": "THUỐC",
+    "position": [
+      1301,
+      1310
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1310563",
+      "1311172",
+      "1722700"
+    ]
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1330,
+      1339
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "text": "béo phì",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      55
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E66.01",
+      "E66.0",
+      "E66.09",
+      "E66.1"
+    ]
+  },
+  {
+    "text": "đái tháo đường được kiểm soát bằng chế độ ăn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      62,
+      106
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E11.00",
+      "E11.0",
+      "E11.01",
+      "E11.10",
+      "E11.1"
+    ]
+  },
+  {
+    "text": "ngừng thở khi ngủ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      113,
+      130
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "G47.30",
+      "G47.3",
+      "G47.31",
+      "G47.33"
+    ]
+  },
+  {
+    "text": "tiền sử lâm sàng suy tim, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      137,
+      177
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I50.9",
+      "B57.0",
+      "B57.1"
+    ]
+  },
+  {
+    "text": "Dị ứng furosemide",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      190,
+      207
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K08.55",
+      "K08.5",
+      "Z01.82",
+      "Z01.8",
+      "Z28.04",
+      "Z28.0"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      256,
+      263
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "khó nằm vào ban đêm để ngủ vì thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      455,
+      488
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "căng cứng vai trái (ngắt quãng, xảy ra vài lần mỗi ngày, kéo dài 5 phút)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      495,
+      567
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tiền sử ho có đờm trắng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      574,
+      597
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chủ quan sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      604,
+      616
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "phù chi dưới (ổn định)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      623,
+      645
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "aspirin 325mg",
+    "type": "THUỐC",
+    "position": [
+      1522,
+      1535
+    ],
+    "assertions": [],
+    "candidates": [
+      "212033",
+      "260847",
+      "198471"
+    ]
+  },
+  {
+    "text": "albuterolipratropium nebulizer",
+    "type": "THUỐC",
+    "position": [
+      1551,
+      1581
+    ],
+    "assertions": [],
+    "candidates": [
+      "435",
+      "142153",
+      "643"
+    ]
+  },
+  {
+    "text": "methylprednisolone 125mg iv",
+    "type": "THUỐC",
+    "position": [
+      1597,
+      1624
+    ],
+    "assertions": [],
+    "candidates": [
+      "6902",
+      "8638",
+      "93252"
+    ]
+  },
+  {
+    "text": "lợi tiểu 600cc",
+    "type": "THUỐC",
+    "position": [
+      1631,
+      1645
+    ],
+    "assertions": [],
+    "candidates": [
+      "197806",
+      "197893",
+      "197907"
+    ]
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "text": "u lành về tuyến vú",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      70,
+      88
+    ],
+    "assertions": []
+  },
+  {
+    "text": "u xơ tuyến vú",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      93,
+      106
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A15.4",
+      "A15.5",
+      "A17.81",
+      "A17.8"
+    ]
+  },
+  {
+    "text": "u nang tuyến vú",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      111,
+      126
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A15.4",
+      "A15.5",
+      "A17.81",
+      "A17.8"
+    ]
+  },
+  {
+    "text": "vitamin 3b b1 b6 b12",
+    "type": "THUỐC",
+    "position": [
+      153,
+      173
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "vitamin b12",
+    "type": "THUỐC",
+    "position": [
+      237,
+      248
+    ],
+    "assertions": [],
+    "candidates": [
+      "11248",
+      "105686",
+      "198890"
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1421,
+      1438
+    ]
+  },
+  {
+    "text": "Tăng gánh nhẹ tuần hoàn phổi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1440,
+      1468
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tràn dịch màng phổi hai bên nhẹ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1470,
+      1501
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tim to",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1503,
+      1509
+    ],
+    "assertions": []
+  }
+]

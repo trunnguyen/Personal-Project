@@ -1,0 +1,150 @@
+[
+  {
+    "text": "dấu mề đay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      81,
+      91
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngứa khắp người",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      102,
+      117
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mề đay nổi rất khó chịu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      161,
+      184
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mề đay nổi rất khó chịu và ngứa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      161,
+      192
+    ],
+    "assertions": []
+  },
+  {
+    "text": "MÀY ĐAY VÔ CĂN",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      733,
+      747
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "L50.0",
+      "L50.1",
+      "L50.2"
+    ]
+  },
+  {
+    "text": "MÀY ĐAY MẠN TÍNH",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      830,
+      846
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A06.1",
+      "A24.2",
+      "B18.0"
+    ]
+  },
+  {
+    "text": "tế bào một nhân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      906,
+      921
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lympho T",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      934,
+      942
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đại thực bào",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      946,
+      958
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tế bào mast",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1071,
+      1082
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hình ảnh của lắng đọng các phức hợp miễn dịch",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1228,
+      1273
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bổ thể",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1275,
+      1281
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sợi fibrin",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1286,
+      1296
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mẹ Đã tử vong",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1671,
+      1684
+    ],
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": [
+      "A15.4",
+      "A15.5",
+      "A17.81",
+      "A17.8"
+    ]
+  }
+]

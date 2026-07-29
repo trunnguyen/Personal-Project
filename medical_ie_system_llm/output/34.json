@@ -1,0 +1,441 @@
+[
+  {
+    "text": "đau nửa đầu dữ dội",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      59,
+      77
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau nửa đầu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      59,
+      70
+    ],
+    "assertions": [],
+    "candidates": [
+      "G43.001",
+      "G43.0",
+      "G43.011",
+      "G43.019"
+    ]
+  },
+  {
+    "text": "ớn lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      103,
+      110
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      112,
+      120
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      128,
+      131
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bệnh lý đau nửa đầu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      289,
+      308
+    ],
+    "assertions": [],
+    "candidates": [
+      "G43.001",
+      "G43.0",
+      "G43.011",
+      "G43.019"
+    ]
+  },
+  {
+    "text": "mạch đập",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      468,
+      476
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thị giác bị nhòe",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      541,
+      557
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ruồi bay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      559,
+      567
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      569,
+      577
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mạch đập ở vùng thái dương",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      579,
+      605
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau vừa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      646,
+      653
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau dữ dội",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      659,
+      669
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cơn đau tăng dần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      671,
+      687
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      723,
+      731
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sợ ánh sáng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      733,
+      744
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sợ tiếng động",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      746,
+      759
+    ],
+    "assertions": []
+  },
+  {
+    "text": "căng thẳng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      761,
+      771
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau nửa đầu bên trái",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      826,
+      846
+    ],
+    "assertions": []
+  },
+  {
+    "text": "viêm xoang",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      924,
+      934
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "J01.00",
+      "J01.0",
+      "J01.01",
+      "J01.10",
+      "J01.1"
+    ]
+  },
+  {
+    "text": "suy giảm trí nhớ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1073,
+      1089
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó tập trung",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1091,
+      1104
+    ],
+    "assertions": []
+  },
+  {
+    "text": "trầm cảm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1106,
+      1114
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đột quỵ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1127,
+      1134
+    ],
+    "assertions": []
+  },
+  {
+    "text": "suy thoái võng mạc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1172,
+      1190
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mất thị lực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1192,
+      1203
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mù vĩnh viễn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1207,
+      1219
+    ],
+    "assertions": []
+  },
+  {
+    "text": "gleevec (ngừng uống cách nhập viện 5 ngày)",
+    "type": "THUỐC",
+    "position": [
+      1339,
+      1381
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "404588",
+      "404589",
+      "114477"
+    ]
+  },
+  {
+    "text": "allopurinol (ngừng uống \ncách nhập viện 5 ngày)",
+    "type": "THUỐC",
+    "position": [
+      1388,
+      1435
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "519",
+      "80566",
+      "197319"
+    ]
+  },
+  {
+    "text": "Thuốc giảm đau (ngừng)",
+    "type": "THUỐC",
+    "position": [
+      1442,
+      1464
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1234539",
+      "1306167",
+      "1307573"
+    ]
+  },
+  {
+    "text": "ảo giác",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1512,
+      1519
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F06.0",
+      "F10.151",
+      "F10.1",
+      "F10.251",
+      "F10.2"
+    ]
+  },
+  {
+    "text": "điểm khởi phát triệu chứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1529,
+      1555
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Khoảng một tháng trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1557,
+      1579
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ảo giácxuất hiện khoảng một tháng trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1600,
+      1639
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "được điều trị nhiễm khuẩn đường tiết niệu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1650,
+      1691
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "vị trí không xác định",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1693,
+      1714
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Thuốc giảm đau đã ngừng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1722,
+      1745
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Không có thay đổi đáng kể về triệu chứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1753,
+      1793
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Liều gleevec đã ngừng cách nhập viện 5 ngày",
+    "type": "THUỐC",
+    "position": [
+      1895,
+      1938
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "404588",
+      "404589",
+      "114477"
+    ]
+  },
+  {
+    "text": "allopurinol đã ngừng cách nhập viện 5 ngày",
+    "type": "THUỐC",
+    "position": [
+      1946,
+      1988
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "519",
+      "80566",
+      "197319"
+    ]
+  }
+]

@@ -1,0 +1,462 @@
+[
+  {
+    "text": "khó chịu tương tự",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      52,
+      69
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thuyên giảm khi dùng thuốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      90,
+      116
+    ],
+    "assertions": []
+  },
+  {
+    "text": "acetaminophen 500mg",
+    "type": "THUỐC",
+    "position": [
+      171,
+      190
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "198440",
+      "198444",
+      "200977"
+    ]
+  },
+  {
+    "text": "10 pills at a time",
+    "type": "THUỐC",
+    "position": [
+      199,
+      217
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "4 viên mỗi giờ",
+    "type": "THUỐC",
+    "position": [
+      245,
+      259
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "dạ dày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      271,
+      277
+    ],
+    "assertions": []
+  },
+  {
+    "text": "uống 2 chai thuốc an thần",
+    "type": "THUỐC",
+    "position": [
+      298,
+      323
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng ngày càng nặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      376,
+      399
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau bụng liên tục",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      491,
+      508
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tăng men gan",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      642,
+      654
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A51.45",
+      "A51.4",
+      "B00.81",
+      "B00.8",
+      "B15.0"
+    ]
+  },
+  {
+    "text": "mệt mỏi toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      821,
+      838
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "yếu sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      841,
+      848
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      851,
+      871
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ngứa toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      874,
+      888
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Vài lần tiểu ra máu không đau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      891,
+      920
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Đau vùng gan phải (RUQ) và thượng vị lan ra sau lưng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      952,
+      1004
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Không có buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1007,
+      1024
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Không có nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1027,
+      1039
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Không có thay đổi thói quen đại tiện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1042,
+      1078
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Không có phân có máu, đen hoặc nhựa đường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1081,
+      1122
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "nổi những nét nhẹ nhàng nhẹ nhàng rất đến và khắp nơi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1346,
+      1399
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Những thuốc giảm đau nổi bật rất khó chịu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1425,
+      1466
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đi chữa trị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1500,
+      1511
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sử dụng rất nhiều thuốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1515,
+      1538
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không đỡ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1545,
+      1553
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mẹ của bạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1557,
+      1567
+    ],
+    "assertions": [
+      "isFamily"
+    ]
+  },
+  {
+    "text": "Yên tĩnh chắc chắn là dây truyền tải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1586,
+      1622
+    ],
+    "assertions": [
+      "isFamily"
+    ]
+  },
+  {
+    "text": "dị ứng thời tiết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1652,
+      1668
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nổi lên mọi lúc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1692,
+      1707
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bệnh này",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1733,
+      1741
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bệnh nặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1768,
+      1777
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảnh hưởng nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1782,
+      1804
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cách nào để giải quyết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1858,
+      1880
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ast 421",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1967,
+      1974
+    ]
+  },
+  {
+    "text": "alt 336",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1977,
+      1984
+    ]
+  },
+  {
+    "text": "alp 185",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1987,
+      1994
+    ]
+  },
+  {
+    "text": "bilirubin toàn phần 0.9",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1997,
+      2020
+    ]
+  },
+  {
+    "text": "total bili bắt đầu tăng lên đạt đỉnh 6.7",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2023,
+      2063
+    ]
+  },
+  {
+    "text": "bảng xét nghiệm viêm gan virus là âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2066,
+      2107
+    ]
+  },
+  {
+    "text": "ferritin là bình thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2110,
+      2133
+    ]
+  },
+  {
+    "text": "ceruloplasmin vẫn đang chờ kết quả đang chờ kết quả tại thời điểm chuyển viện",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2136,
+      2213
+    ]
+  },
+  {
+    "text": "siêu âm bụng có doppler âm tính âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2243,
+      2282
+    ]
+  },
+  {
+    "text": "âm tính chụp hida",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2285,
+      2302
+    ]
+  },
+  {
+    "text": "ercp cho thấy túi mật giãn nở rõ rệt túi mật giãn nhưng không có sỏi hoặc bệnh lý giải phẫu bệnh khác",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2305,
+      2406
+    ]
+  },
+  {
+    "text": "ercp",
+    "type": "THUỐC",
+    "position": [
+      2305,
+      2309
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "tăng bilirubin máu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2479,
+      2497
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  }
+]

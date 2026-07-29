@@ -1,0 +1,147 @@
+[
+  {
+    "text": "suy tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      30,
+      37
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I50.89",
+      "I50.8",
+      "I09.81",
+      "I09.8",
+      "I11.0"
+    ]
+  },
+  {
+    "text": "bệnh mạch máu ngoại biên",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      44,
+      68
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A18.17",
+      "A18.1",
+      "A18.2",
+      "A48.2"
+    ]
+  },
+  {
+    "text": "bệnh phổi tắc nghẽn mạn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      75,
+      103
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "J44.89",
+      "J44.8",
+      "J44.0",
+      "J44.1"
+    ]
+  },
+  {
+    "text": "Ngưng thở khi ngủ do tắc nghẽn đang dùng BiPAP",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      110,
+      156
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A00.0",
+      "A00.1",
+      "A04.71",
+      "A04.7"
+    ]
+  },
+  {
+    "text": "Ung thư biểu mô tế bào vảy xâm nhập của dương vậtbiệt hóa kém, sau cắt bao quy đầu với bờ diện cắt dương tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      163,
+      272
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C05.2",
+      "C10.0",
+      "C38.4"
+    ]
+  },
+  {
+    "text": "Viêm hang vị sung huyết",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      336,
+      359
+    ],
+    "assertions": [],
+    "candidates": [
+      "H01.81",
+      "H01.8",
+      "H01.82",
+      "H01.83"
+    ]
+  },
+  {
+    "text": "đau bụng cồn cào",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      477,
+      493
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ợ hơi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      503,
+      508
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ợ chua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      510,
+      516
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      537,
+      545
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      542,
+      545
+    ],
+    "assertions": []
+  }
+]

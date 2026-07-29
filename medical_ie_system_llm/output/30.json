@@ -1,0 +1,241 @@
+[
+  {
+    "text": "bệnh tim mạch",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      40,
+      53
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A18.17",
+      "A18.1",
+      "A48.2",
+      "A50.54",
+      "A50.5"
+    ]
+  },
+  {
+    "text": "thận bệnh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      59,
+      68
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I12.0",
+      "N18.6",
+      "O26.831",
+      "O26.8"
+    ]
+  },
+  {
+    "text": "methadone",
+    "type": "THUỐC",
+    "position": [
+      136,
+      145
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "6813",
+      "218337",
+      "864706"
+    ]
+  },
+  {
+    "text": "chủ quan sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      208,
+      220
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ớn lạnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      224,
+      231
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau tăng dần khi đi lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      236,
+      259
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù hai bên",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      295,
+      306
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ban đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      313,
+      319
+    ],
+    "assertions": []
+  },
+  {
+    "text": "MÀY đay VÔ CĂN",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      918,
+      932
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "L50.1",
+      "D72.110",
+      "D72.1",
+      "D89.42",
+      "D89.4"
+    ]
+  },
+  {
+    "text": "MÀY đay MẠN",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1016,
+      1027
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A06.1",
+      "A24.2",
+      "B18.0"
+    ]
+  },
+  {
+    "text": "thương mô bệnh học",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1032,
+      1050
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tế bào một nhân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1086,
+      1101
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bạch huyết T",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1114,
+      1126
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đại thực bào",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1130,
+      1142
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tế bào cột sống tăng lượng hạ bì",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1266,
+      1298
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Quảng cáo quảng cáo thiết bị thương mại miễn phí dịch sinh học",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1353,
+      1415
+    ],
+    "assertions": []
+  },
+  {
+    "text": "***************",
+    "type": "THUỐC",
+    "position": [
+      1891,
+      1906
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "có thể hệ sau không gây buồn ngủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1907,
+      1939
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đơn hàng đầu sau đó đến",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1943,
+      1966
+    ],
+    "assertions": []
+  },
+  {
+    "text": "*************** có thể hệ 1",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1967,
+      1994
+    ],
+    "assertions": []
+  },
+  {
+    "text": "********* bậc thấp cách ngày hoặc hàng ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1996,
+      2039
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giảm dần chậm 2,5 – 5mg mỗi 2-3 tuần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2043,
+      2079
+    ],
+    "assertions": []
+  }
+]

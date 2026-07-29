@@ -1,0 +1,203 @@
+[
+  {
+    "text": "run tay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      35,
+      42
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Vastarel (trimetazidin)",
+    "type": "THUỐC",
+    "position": [
+      323,
+      346
+    ],
+    "assertions": [],
+    "candidates": [
+      "2541",
+      "5933",
+      "164308"
+    ]
+  },
+  {
+    "text": "điều trị triệu chứng đau thắt ngực ổn định",
+    "type": "THUỐC",
+    "position": [
+      639,
+      681
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      808,
+      817
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A88.1",
+      "H81.10",
+      "H81.1",
+      "H81.11"
+    ]
+  },
+  {
+    "text": "ù tai",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      819,
+      824
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "H93.11",
+      "H93.1",
+      "H93.12",
+      "H93.13"
+    ]
+  },
+  {
+    "text": "rối loạn thị lực",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      826,
+      842
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "H53.10",
+      "H53.1",
+      "H53.16",
+      "H53.19"
+    ]
+  },
+  {
+    "text": "yếu sức nửa người bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      943,
+      969
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tình trạng tri giác giảm sút",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      976,
+      1004
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "nhìn song thị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1011,
+      1024
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chụp ct sọ não",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1485,
+      1499
+    ]
+  },
+  {
+    "text": "âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1508,
+      1515
+    ]
+  },
+  {
+    "text": "chọc dò dịch não tủy",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1546,
+      1566
+    ]
+  },
+  {
+    "text": "nhịp tim chậm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1585,
+      1598
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "hạ huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1607,
+      1618
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "nhiễm trùng răng miệng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2021,
+      2043
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A02.29",
+      "A02.2",
+      "A04.0",
+      "A04.1"
+    ]
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2259,
+      2266
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Truyền dịch tĩnh mạch",
+    "type": "THUỐC",
+    "position": [
+      3703,
+      3724
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

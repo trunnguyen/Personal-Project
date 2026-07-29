@@ -1,0 +1,292 @@
+[
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      43,
+      45
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Bệnh bạch cầu dòng tủy mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      46,
+      77
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C92.10",
+      "C92.1",
+      "C92.11",
+      "C92.12"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      80,
+      93
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      80,
+      93
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Đái tháo đường típ 2",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      96,
+      116
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E11.00",
+      "E11.0",
+      "E11.01",
+      "E11.10",
+      "E11.1"
+    ]
+  },
+  {
+    "text": "Rung nhĩ kèm đáp ứng thất nhanh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      122,
+      153
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A38.0",
+      "A38.1",
+      "A54.1"
+    ]
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      156,
+      185
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "N18.9",
+      "N18.30",
+      "N18.3",
+      "Q61.9"
+    ]
+  },
+  {
+    "text": "Khó thở tăng dần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      222,
+      238
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "nghẹt ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      343,
+      353
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      358,
+      361
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "nhiệt độ cao nhất khoảng 38,3°C",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      363,
+      394
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "phù ngoại vi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      548,
+      560
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau vai",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      647,
+      654
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "suy hô hấp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      700,
+      710
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "được chẩn đoán nhiễm khuẩn huyết do tụ cầu vàng nhạy cảm methicillin",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      976,
+      1044
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A41.01",
+      "A41.0",
+      "A41.02",
+      "A02.1"
+    ]
+  },
+  {
+    "text": "nghi liên quan đến đường truyền tĩnh mạch trung tâm ngoại vi (PICC)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1046,
+      1113
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Siêu âm mạch máu chi trên không ghi nhận huyết khối",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1116,
+      1167
+    ]
+  },
+  {
+    "text": "xạ hình thông khí - tưới máu phổi cho thấy xác suất thấp thuyên tắc phổi",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1169,
+      1241
+    ]
+  },
+  {
+    "text": "hội chứng bàn chân bẹt bẩm sinh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1309,
+      1340
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A50.01",
+      "A50.0",
+      "A50.02",
+      "A50.03"
+    ]
+  },
+  {
+    "text": "phần gót chân của con cháu khi nhìn ngoại quan nó hơi lệch",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1345,
+      1403
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "lòng bàn chân phẳng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1406,
+      1425
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chạy, nhảy bình thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1432,
+      1454
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chân có hơi vòng kiềng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1456,
+      1478
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "text": "tăng nhãn áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      848,
+      860
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C26.1",
+      "Z85.840",
+      "Z85.8",
+      "C60.0"
+    ]
+  },
+  {
+    "text": "đau đầu kéo dài",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1047,
+      1062
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mờ mắt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1072,
+      1078
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù gai thị",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1536,
+      1547
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E08.311",
+      "E08.3",
+      "E09.311",
+      "E09.3",
+      "E09.319"
+    ]
+  },
+  {
+    "text": "Được bác sĩ nhãn khoa [Name] khám ngoại trú hôm nay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2015,
+      2066
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Được bác sĩ nhãn khoa giới thiệu đến Khoa Cấp cứu vì phù gai thị, bên trái nặng hơn bên phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2073,
+      2165
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tăng nhãn áp so với chụp cắt lớp vi tính (ct) đầu từ [Date] (từ lần nhập viện trước)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2331,
+      2415
+    ]
+  }
+]

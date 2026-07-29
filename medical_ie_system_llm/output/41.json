@@ -1,0 +1,103 @@
+[
+  {
+    "text": "da rất nhiều dầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      57,
+      73
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bị mụn trứng cá từ năm lớp 7",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      77,
+      105
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "mụn trứng cá",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      80,
+      92
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mụn ở trán",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      249,
+      259
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tretinoin tại chỗ",
+    "type": "THUỐC",
+    "position": [
+      962,
+      979
+    ],
+    "assertions": [],
+    "candidates": [
+      "10753",
+      "91348",
+      "91349"
+    ]
+  },
+  {
+    "text": "********",
+    "type": "THUỐC",
+    "position": [
+      1001,
+      1009
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "****************",
+    "type": "THUỐC",
+    "position": [
+      1064,
+      1080
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau ngực trái cấp tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1115,
+      1137
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cấp tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1129,
+      1137
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau sau xương ức lan ra sau lưng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1141,
+      1173
+    ],
+    "assertions": []
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "text": "mang thai",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      58,
+      67
+    ],
+    "assertions": []
+  },
+  {
+    "text": "uống thuốc ************",
+    "type": "THUỐC",
+    "position": [
+      123,
+      146
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ngày 2 viên",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      225,
+      236
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bạch cầu dòng tủy mãn tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      302,
+      328
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C92.10",
+      "C92.1",
+      "C92.11",
+      "C92.12"
+    ]
+  },
+  {
+    "text": "dùng gleevec",
+    "type": "THUỐC",
+    "position": [
+      334,
+      346
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "282388",
+      "284924",
+      "403878"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      353,
+      366
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "tăng lipid máu, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      373,
+      403
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đái tháo đường típ 2",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      410,
+      430
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E11.00",
+      "E11.0",
+      "E11.01",
+      "E11.10",
+      "E11.1"
+    ]
+  },
+  {
+    "text": "hẹp ống sống",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      437,
+      449
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Giả gout",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      456,
+      464
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "bệnh thận mạn, không đặc hiệu Giai đoạn 4",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      471,
+      512
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tăng sản tuyến tiền liệt",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      519,
+      543
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Nhiều lần ngã gần đây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      550,
+      571
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ngã",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      560,
+      563
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ảo giác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      582,
+      589
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Toàn trạng suy kiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      716,
+      735
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "suy kiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      727,
+      735
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Lú lẫn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      786,
+      792
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

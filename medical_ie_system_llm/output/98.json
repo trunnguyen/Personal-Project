@@ -1,0 +1,319 @@
+[
+  {
+    "text": "tàn nhang",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      29,
+      38
+    ],
+    "assertions": []
+  },
+  {
+    "text": "da sạm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      40,
+      46
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bôi nghệ mật ong",
+    "type": "THUỐC",
+    "position": [
+      61,
+      77
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "uống nghệ",
+    "type": "THUỐC",
+    "position": [
+      79,
+      88
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Mẹ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      202,
+      204
+    ],
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Đã tử vong",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      205,
+      215
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "Rối loạn cảm xúc",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      277,
+      293
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F25.0",
+      "F25.1",
+      "F25.8"
+    ]
+  },
+  {
+    "text": "Rối loạn lưỡng cực",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      301,
+      319
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F31.81",
+      "F31.8",
+      "F31.89",
+      "F31.0"
+    ]
+  },
+  {
+    "text": "rối loạn lo âu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      326,
+      340
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F06.4",
+      "F10.180",
+      "F10.1",
+      "F10.280",
+      "F10.2"
+    ]
+  },
+  {
+    "text": "lo âu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      335,
+      340
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điều trị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      354,
+      362
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thuốc kê đơn (tên không được chỉ định)",
+    "type": "THUỐC",
+    "position": [
+      397,
+      435
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "klonopinclonidine",
+    "type": "THUỐC",
+    "position": [
+      442,
+      459
+    ],
+    "assertions": [],
+    "candidates": [
+      "2599",
+      "91350",
+      "142432"
+    ]
+  },
+  {
+    "text": "clonidine",
+    "type": "THUỐC",
+    "position": [
+      450,
+      459
+    ],
+    "assertions": [],
+    "candidates": [
+      "2599",
+      "91350",
+      "142432"
+    ]
+  },
+  {
+    "text": "suboxone",
+    "type": "THUỐC",
+    "position": [
+      517,
+      525
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "1010603",
+      "1010606",
+      "1307058"
+    ]
+  },
+  {
+    "text": "bắt đầu 3 tuần trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      527,
+      547
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không dùng đều 5-6 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      550,
+      573
+    ],
+    "assertions": []
+  },
+  {
+    "text": "dừng thuốc trước nhập viện 01 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      575,
+      609
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lạm dụng chất kích thích",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      649,
+      673
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chất gây nghiện opioid",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      675,
+      697
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tự bắn vào đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      765,
+      779
+    ],
+    "assertions": []
+  },
+  {
+    "text": "trầm cảm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      808,
+      816
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F32.0",
+      "F32.1",
+      "F32.2"
+    ]
+  },
+  {
+    "text": "hưng cảm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      873,
+      881
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăng hoạt động",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      898,
+      912
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giảm nhu cầu ngủ 3-4 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      916,
+      941
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hoảng sợ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1188,
+      1196
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hoang tưởng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1203,
+      1214
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chiếm khí oxy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1224,
+      1237
+    ],
+    "assertions": []
+  },
+  {
+    "text": "người khác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1242,
+      1252
+    ],
+    "assertions": []
+  }
+]

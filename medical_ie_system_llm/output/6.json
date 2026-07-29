@@ -1,0 +1,306 @@
+[
+  {
+    "text": "Bệnh tim mạch do xơ vữa động mạch",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      21,
+      54
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I25.10",
+      "I25.1",
+      "I25.110",
+      "I25.111"
+    ]
+  },
+  {
+    "text": "ăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      56,
+      68
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "G93.2",
+      "H40.051",
+      "H40.0",
+      "H40.052"
+    ]
+  },
+  {
+    "text": "Rối loạn lipid máu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      69,
+      87
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E78.2",
+      "E78.49",
+      "E78.4",
+      "Z83.438",
+      "Z83.4"
+    ]
+  },
+  {
+    "text": "Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      89,
+      103
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E08.00",
+      "E08.0",
+      "E08.01",
+      "E08.10",
+      "E08.1"
+    ]
+  },
+  {
+    "text": "Cơn rối loạn ý thức thoáng qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      132,
+      162
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nghi ngờ cơn co giật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      164,
+      184
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngã",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      231,
+      234
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "xuất huyết dưới nhện",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      253,
+      273
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I62.00",
+      "I62.0",
+      "I62.01",
+      "I62.02"
+    ]
+  },
+  {
+    "text": "bầm dập nhu mô vùng trán phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      354,
+      383
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "trán - thái dương phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      387,
+      409
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "lớp dịch dưới màng cứng mỏng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      419,
+      447
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tụ máu dưới màng cứng mạn tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      512,
+      542
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau đầu vùng thái dương phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1001,
+      1029
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đỉnh đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1033,
+      1041
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nửa mặt phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1062,
+      1074
+    ],
+    "assertions": []
+  },
+  {
+    "text": "da đầu phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1103,
+      1114
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mất định hướng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1376,
+      1390
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tê bì vùng trán phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2077,
+      2097
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mất thăng bằng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2175,
+      2189
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Gần ngất",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2190,
+      2198
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Chụp cắt lớp vi tính (CT Scanner)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2496,
+      2529
+    ]
+  },
+  {
+    "text": "WBC",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2828,
+      2831
+    ]
+  },
+  {
+    "text": "14.99 G/L",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2834,
+      2843
+    ]
+  },
+  {
+    "text": "NEUT%",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2844,
+      2849
+    ]
+  },
+  {
+    "text": "82.9 %",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2852,
+      2858
+    ]
+  },
+  {
+    "text": "HGB (Hemoglobin)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2867,
+      2883
+    ]
+  },
+  {
+    "text": "92 g/L",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2885,
+      2891
+    ]
+  },
+  {
+    "text": "PT - INR",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2892,
+      2900
+    ]
+  },
+  {
+    "text": "1.05",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2902,
+      2906
+    ]
+  }
+]

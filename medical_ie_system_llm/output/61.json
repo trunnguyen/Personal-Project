@@ -1,0 +1,125 @@
+[
+  {
+    "text": "ngừa thai bằng phương pháp cấy que",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      93,
+      127
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cấy que",
+    "type": "THUỐC",
+    "position": [
+      120,
+      127
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Sau khi cấy que",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      467,
+      482
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      598,
+      605
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "khó khăn khi ra khỏi giường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      639,
+      666
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau bụng gián đoạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      699,
+      717
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "hạ huyết áp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      763,
+      774
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      864,
+      884
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ho mạn tính có đờm vàng loãng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      887,
+      916
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chán ăn trong vài tháng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      919,
+      942
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "rỉ máu âm đạo vài tuần sau cấy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1653,
+      1683
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kinh nguyệt thưa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1685,
+      1701
+    ],
+    "assertions": []
+  }
+]

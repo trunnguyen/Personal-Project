@@ -1,0 +1,223 @@
+[
+  {
+    "text": "Viêm loét đại tràng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      57,
+      76
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K51.80",
+      "K51.8",
+      "K51.811",
+      "K51.812"
+    ]
+  },
+  {
+    "text": "Bệnh gan do rượu ở vị trí 35cm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      114,
+      144
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K70.9",
+      "A18.17",
+      "A18.1",
+      "A48.2"
+    ]
+  },
+  {
+    "text": "tạo hậu môn nhân tạo kiểu túi nối hồi tràng - hậu môn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      195,
+      248
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K94.00",
+      "K94.0",
+      "K94.01",
+      "K94.02"
+    ]
+  },
+  {
+    "text": "nấm bẹn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      285,
+      292
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "N48.1",
+      "B37.42",
+      "B37.4",
+      "N47.6"
+    ]
+  },
+  {
+    "text": "ăn uống kém do buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      634,
+      657
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      649,
+      657
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng/khó chịu vùng bụng tăng dần, đặc biệt ở vùng hạ vị bên trái (LLQ)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      664,
+      738
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn x 1",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      760,
+      767
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chủ quan sốt và run rẩy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      774,
+      797
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mất cảm giác ngon miệng/chán ăn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      804,
+      835
+    ],
+    "assertions": []
+  },
+  {
+    "text": "suy nhược",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      842,
+      851
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Toàn trạng suy kiệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      859,
+      878
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giảm lượng nước tiểu từ 1800 ml xuống còn 300 ml trong vòng 24 giờ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      885,
+      951
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăng đáng kể lượng dịch từ ống thông hồi tràng từ 350 ml lên 1200 mltrong cùng khoảng thời gian",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      958,
+      1053
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Vị trí: LLQ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1085,
+      1096
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mức độ nghiêm trọng: đau bụng/khó chịu vùng bụng tăng dần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1103,
+      1160
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thời gian: 48 giờ qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1167,
+      1188
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tần suất: nôn x 1",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1195,
+      1212
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chủ quan sốt và run rẩy, mất cảm giác ngon miệng/chán ăn, suy nhược, toàn trạng suy kiệt  thiểu niệu, chảy dịch từ lỗ dò tăng đáng kể",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1242,
+      1375
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ăn uống kém do buồn nôn, được cho là do tác dụng phụ của thuốc giảm đau opioid",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1414,
+      1492
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngừng thuốc giảm đau opioid vào hôm qua mà không có thay đổi các triệu chứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1499,
+      1575
+    ],
+    "assertions": []
+  }
+]

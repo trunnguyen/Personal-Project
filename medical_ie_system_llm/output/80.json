@@ -1,0 +1,135 @@
+[
+  {
+    "text": "bệnh gút",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      64,
+      72
+    ],
+    "assertions": [],
+    "candidates": [
+      "E79.81",
+      "E79.8",
+      "M10.011",
+      "M10.0",
+      "M10.012"
+    ]
+  },
+  {
+    "text": "hạt nhỏ màu trắng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      166,
+      183
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạt tophi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      508,
+      517
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sưng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      788,
+      792
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tấy đỏ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      794,
+      800
+    ],
+    "assertions": []
+  },
+  {
+    "text": "xơ gan mất bù",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1019,
+      1032
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K76.6",
+      "A37.01",
+      "A37.0",
+      "A37.11",
+      "A37.1"
+    ]
+  },
+  {
+    "text": "tăng áp lực tĩnh mạch cửa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1036,
+      1061
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "cổ trướng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1063,
+      1072
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tràn dịch màng phổi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1076,
+      1095
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "liệu pháp lợi tiểu",
+    "type": "THUỐC",
+    "position": [
+      1136,
+      1154
+    ],
+    "assertions": [],
+    "candidates": [
+      "11002",
+      "1483141",
+      "1661176"
+    ]
+  },
+  {
+    "text": "chọc dò màng phổi 3L4",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1271,
+      1292
+    ]
+  },
+  {
+    "text": "chọc dò dịch ổ bụng 7L",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1299,
+      1321
+    ]
+  }
+]

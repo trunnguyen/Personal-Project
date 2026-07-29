@@ -1,0 +1,361 @@
+[
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      48,
+      50
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Rối loạn cảm xúc (trầm cảm) (tiền sử giai đoạn trầm cảm không đặc hiệu)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      51,
+      122
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F32.0",
+      "F32.1",
+      "F32.2"
+    ]
+  },
+  {
+    "text": "hội chứng nghiện rượu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      129,
+      150
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "D47.Z1",
+      "D47.Z",
+      "D68.312",
+      "D68.3",
+      "D68.318"
+    ]
+  },
+  {
+    "text": "seroquel",
+    "type": "THUỐC",
+    "position": [
+      190,
+      198
+    ],
+    "assertions": [],
+    "candidates": [
+      "51272",
+      "153638",
+      "153639"
+    ]
+  },
+  {
+    "text": "tự tử",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      400,
+      405
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lú lẫn từng đợt gần đây",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      477,
+      500
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cảm giác chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      507,
+      525
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó khăn khi nhìn gần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      532,
+      553
+    ],
+    "assertions": []
+  },
+  {
+    "text": "rối loạn thị giác, nhìn thấy con cái mình ở góc mắt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      560,
+      611
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ảo giác thị giác (ảo giác thị giác)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      618,
+      653
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ảo thanh (AH) (ảo giác thính giác)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      660,
+      694
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Được đưa đến Cấp cứu sau khi bày tỏ tự tử với nhân viên khi xuất viện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1053,
+      1122
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Được yêu cầu ký một mẫu đơn cam kết đảm bảo an toàn trong 24 giờ trước khi bắt đầu chương trình điều trị bán trú, và anh ấy không thể làm được",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1129,
+      1271
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chụp ct sọ được phát hiện tình cờ tại Cấp cứu; phát hiện bệnh lý chất trắng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1278,
+      1353
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chọc dò dịch não tủy là không phát hiện bất thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1360,
+      1410
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đánh giá thần kinh để tìm bệnh lý chất trắng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1417,
+      1461
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "các băng nhóm oligoclonal đang chờ kết quả",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1468,
+      1510
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Được bác sĩ khoa tâm thần cho nhập chỉ định viện tâm thần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1517,
+      1574
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Phủ nhận tự tử chủ động, ý định, kế hoạch hiện tại khi đã lên tầng, cảm thấy an toàn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1617,
+      1701
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chọc dò dịch não tủy là âm tính",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1754,
+      1785
+    ]
+  },
+  {
+    "text": "chụp ct sọ: phát hiện bệnh lý chất trắng (được phát hiện tình cờ)",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1818,
+      1883
+    ]
+  },
+  {
+    "text": "Phình giãn động mạch vành",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2565,
+      2590
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hẹp – tắc động mạch vành",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2594,
+      2618
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thiếu máu cơ tim",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2622,
+      2638
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nhồi máu cơ tim",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2642,
+      2657
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Suy vành mạn tính",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2661,
+      2678
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Viêm cơ tim",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2764,
+      2775
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tràn dịch màng tim",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2779,
+      2797
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tăng men gan",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2801,
+      2813
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Rối loạn tiêu hóa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2817,
+      2834
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Sốt ≥5 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2885,
+      2896
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Viêm kết mạc 2 bên không ghèn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2921,
+      2950
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Môi – miệng thay đổi (nứt, đỏ, lưỡi dâu tây)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2955,
+      2999
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tổn thương đầu chi (phù, đỏ, bong da)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3004,
+      3041
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ban đỏ toàn thân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3046,
+      3062
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hạch cổ to ≥1,5 cm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3067,
+      3085
+    ],
+    "assertions": []
+  }
+]

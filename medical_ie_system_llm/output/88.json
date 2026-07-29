@@ -1,0 +1,136 @@
+[
+  {
+    "text": "cắt bỏ ống dẫn mật chủ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      67,
+      89
+    ]
+  },
+  {
+    "text": "cắt bỏ phân đoạn bên trái gan",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      96,
+      125
+    ]
+  },
+  {
+    "text": "Đã phẫu thuật nối ống gan - hỗng tràng vì nghi ngờ ung thư đường mật không thể cắt bỏ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      132,
+      217
+    ]
+  },
+  {
+    "text": "Đã can thiệp chụp đường mật, đặt 3 stent đường mật lưu dài hạn",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      224,
+      286
+    ]
+  },
+  {
+    "text": "run rẩy kèm sốt kèm theo sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      401,
+      429
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      413,
+      416
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      426,
+      429
+    ],
+    "assertions": []
+  },
+  {
+    "text": "áp xe",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      536,
+      541
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kháng sinh tĩnh mạch",
+    "type": "THUỐC",
+    "position": [
+      562,
+      582
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Augmentin đường uống trong 10 ngày",
+    "type": "THUỐC",
+    "position": [
+      630,
+      664
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ra mồ hôi nhiều hơn trẻ khác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      921,
+      949
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Thiếu một số vi chất cho cơ thể do mất cân đối trong chế độ ăn so với nhu cầu phát triển của trẻ như calcium, sắt, kẽm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      951,
+      1069
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Mắc một bệnh tiềm ẩn chưa được phát hiện",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1075,
+      1115
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đã được đặt",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1349,
+      1360
+    ]
+  },
+  {
+    "text": "ổ dịch sau phẫu thuật giảm kích thước so với lần chụp chẩn đoán hình ảnh  trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1371,
+      1450
+    ],
+    "assertions": []
+  }
+]

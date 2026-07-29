@@ -1,0 +1,215 @@
+[
+  {
+    "text": "Ung thư biểu mô tuyến đại tràng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      39,
+      70
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C18.2",
+      "C18.4",
+      "C18.6"
+    ]
+  },
+  {
+    "text": "bệnh phổi tắc nghẽn mạn tính, không xác định",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      73,
+      117
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "J44.89",
+      "J44.8",
+      "J44.0",
+      "J44.1"
+    ]
+  },
+  {
+    "text": "Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      120,
+      134
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E08.00",
+      "E08.0",
+      "E08.01",
+      "E08.10",
+      "E08.1"
+    ]
+  },
+  {
+    "text": "xơ gan do rượu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      137,
+      151
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K70.30",
+      "K70.3",
+      "K70.31",
+      "K29.20",
+      "K29.2"
+    ]
+  },
+  {
+    "text": "Phẫu thuật mở cắt nối trực tràng/đại tràng sigma vì ung thư tuyến đại tràng",
+    "type": "THUỐC",
+    "position": [
+      231,
+      306
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "tụt huyết áp không rõ nguyên nhân và mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      390,
+      434
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      427,
+      434
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Viêm phổi bệnh viện",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      557,
+      576
+    ],
+    "assertions": [],
+    "candidates": [
+      "A01.03",
+      "A01.0",
+      "A37.00",
+      "A37.0",
+      "A37.01"
+    ]
+  },
+  {
+    "text": "hạ huyết áp, không đặc hiệu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      991,
+      1018
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1483,
+      1503
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho mạn tính có đờm vàng loãng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1506,
+      1535
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ran",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1538,
+      1541
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phù phù",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1544,
+      1551
+    ],
+    "assertions": []
+  },
+  {
+    "text": "dịch thanh dịch lẫn máu từ vết mổ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1554,
+      1587
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phân nâu dương tính guaiac",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1590,
+      1616
+    ],
+    "assertions": []
+  },
+  {
+    "text": "huyết khối 26.3",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1637,
+      1652
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực có xẹp phổi thùy dưới phải do chèn ép kèm tràn dịch màng phổi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1747,
+      1826
+    ]
+  },
+  {
+    "text": "Rung nhĩ kèm nhịp nhanh trên thất",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1954,
+      1987
+    ],
+    "assertions": [],
+    "candidates": [
+      "A37.01",
+      "A37.0",
+      "A37.11",
+      "A37.1",
+      "A37.81",
+      "A37.8"
+    ]
+  }
+]

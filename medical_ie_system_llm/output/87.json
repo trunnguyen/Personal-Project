@@ -1,0 +1,269 @@
+[
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      34,
+      42
+    ],
+    "assertions": []
+  },
+  {
+    "text": "T âm ỉ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      121,
+      127
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau không lan",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      129,
+      142
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      272,
+      285
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Da niêm mạc hồng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      286,
+      302
+    ],
+    "assertions": []
+  },
+  {
+    "text": "KHông phù",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      304,
+      313
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không xuất huyết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      315,
+      331
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tim nhịp đều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      333,
+      345
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phổi RRPN thô",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      347,
+      360
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bụng mềm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      362,
+      370
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tiểu được",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      372,
+      381
+    ],
+    "assertions": []
+  },
+  {
+    "text": "HA: 110/ 70 mmHg",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      383,
+      399
+    ]
+  },
+  {
+    "text": "M: 70 l/p",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      414,
+      423
+    ]
+  },
+  {
+    "text": "Thời gian prothrombin (PT: Prothrombin Time)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      455,
+      499
+    ]
+  },
+  {
+    "text": "Các tên khác: TQ; Tỷ lệ Prothrombin",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      503,
+      538
+    ]
+  },
+  {
+    "text": "Định lượng Troponin Ths",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      560,
+      583
+    ]
+  },
+  {
+    "text": "Đo hoạt độ AST \n(GOT)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      586,
+      607
+    ]
+  },
+  {
+    "text": "Đo hoạt độ ALT (GPT)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      609,
+      629
+    ]
+  },
+  {
+    "text": "Định lượng \nCreatinin (máu)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      631,
+      658
+    ]
+  },
+  {
+    "text": "Điện giải đồ (Na, K, Cl)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      660,
+      684
+    ]
+  },
+  {
+    "text": "Định \nlượng Glucose",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      686,
+      705
+    ]
+  },
+  {
+    "text": "Tổng phân tích tế bào máu ngoại vi \n(bằng máy đếm laser)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      742,
+      798
+    ]
+  },
+  {
+    "text": "Siêu âm Doppler tim, van tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      811,
+      839
+    ]
+  },
+  {
+    "text": "Ghi điện tim cấp cứu tại giường",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      853,
+      884
+    ]
+  },
+  {
+    "text": "Cơn đau thắt ngực không ổn định-bệnh tăng HA vô căn(nguyên phát)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      900,
+      964
+    ],
+    "assertions": [],
+    "candidates": [
+      "I20.0",
+      "A51.0",
+      "A51.1"
+    ]
+  },
+  {
+    "text": "***************************** x 1,0 Viên",
+    "type": "THUỐC",
+    "position": [
+      985,
+      1025
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "***********************",
+    "type": "THUỐC",
+    "position": [
+      985,
+      1008
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Ngày uống 1 viên buổi sáng sau ăn",
+    "type": "THUỐC",
+    "position": [
+      1026,
+      1059
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "x 2,0 Viên",
+    "type": "THUỐC",
+    "position": [
+      1428,
+      1438
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Ngày uống 2 viên buổi tối",
+    "type": "THUỐC",
+    "position": [
+      1439,
+      1464
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

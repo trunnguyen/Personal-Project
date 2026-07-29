@@ -1,0 +1,268 @@
+[
+  {
+    "text": "đau bao tử",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      113,
+      123
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thỉnh thoảng đau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      125,
+      141
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ăn uống thất thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      208,
+      227
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ổ loét trong bao tử",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      327,
+      346
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Z87.11",
+      "Z87.1",
+      "A18.17",
+      "A18.1",
+      "A48.2"
+    ]
+  },
+  {
+    "text": "tinh bột nghệ tách tinh dầu",
+    "type": "THUỐC",
+    "position": [
+      578,
+      605
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đau bụng râm ran",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1030,
+      1046
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau đến mức chỉ biết ôm bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1087,
+      1115
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thắt ruột gan",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1281,
+      1294
+    ],
+    "assertions": []
+  },
+  {
+    "text": "**********",
+    "type": "THUỐC",
+    "position": [
+      1812,
+      1822
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Thành phần 3 loại thuốc em sử dụng như sau",
+    "type": "THUỐC",
+    "position": [
+      1988,
+      2030
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Aquima",
+    "type": "THUỐC",
+    "position": [
+      2032,
+      2038
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nhôm hydroxid",
+    "type": "THUỐC",
+    "position": [
+      2040,
+      2053
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "612",
+      "613",
+      "210000"
+    ]
+  },
+  {
+    "text": "magie hydroxid",
+    "type": "THUỐC",
+    "position": [
+      2055,
+      2069
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "6581",
+      "6574",
+      "198993"
+    ]
+  },
+  {
+    "text": "Simenic",
+    "type": "THUỐC",
+    "position": [
+      2085,
+      2092
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "Alverin citrate 40mg",
+    "type": "THUỐC",
+    "position": [
+      2094,
+      2114
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "3272",
+      "56466",
+      "92758"
+    ]
+  },
+  {
+    "text": "Simethicon 100mg",
+    "type": "THUỐC",
+    "position": [
+      2118,
+      2134
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "9796",
+      "92758",
+      "93252"
+    ]
+  },
+  {
+    "text": "Pimperam",
+    "type": "THUỐC",
+    "position": [
+      2135,
+      2143
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "metoclopramide 10mg",
+    "type": "THUỐC",
+    "position": [
+      2145,
+      2164
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "6915",
+      "207266",
+      "311666"
+    ]
+  },
+  {
+    "text": "đại tràng giãn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2703,
+      2717
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Q25.44",
+      "Q25.4",
+      "Q87.410",
+      "Q87.4",
+      "P00.82",
+      "P00.8"
+    ]
+  },
+  {
+    "text": "tăng bạch cầu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2808,
+      2821
+    ]
+  },
+  {
+    "text": "chụp CT",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2860,
+      2867
+    ]
+  },
+  {
+    "text": "lơ mơ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2980,
+      2985
+    ],
+    "assertions": []
+  }
+]

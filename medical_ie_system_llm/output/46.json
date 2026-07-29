@@ -1,0 +1,552 @@
+[
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      35,
+      42
+    ],
+    "assertions": []
+  },
+  {
+    "text": "stent mạch vành - suy tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      53,
+      78
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A18.84",
+      "A18.8",
+      "D15.1",
+      "D61.89",
+      "D61.8"
+    ]
+  },
+  {
+    "text": "stent mạch vành",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      53,
+      68
+    ],
+    "assertions": [],
+    "candidates": [
+      "T82.855A",
+      "T82.8",
+      "T82.855D",
+      "T82.855S"
+    ]
+  },
+  {
+    "text": "suy tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      71,
+      78
+    ],
+    "assertions": [],
+    "candidates": [
+      "I50.89",
+      "I50.8",
+      "I09.81",
+      "I09.8",
+      "I11.0"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      82,
+      95
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "G93.2",
+      "H40.051",
+      "H40.0",
+      "H40.052"
+    ]
+  },
+  {
+    "text": "HoHL  điêu trị ngoại trú",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      98,
+      122
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A18.84",
+      "A18.8",
+      "D15.1",
+      "D61.89",
+      "D61.8"
+    ]
+  },
+  {
+    "text": "HoHL",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      98,
+      102
+    ],
+    "assertions": [],
+    "candidates": [
+      "I50.89",
+      "I50.8",
+      "I09.81",
+      "I09.8",
+      "I11.0"
+    ]
+  },
+  {
+    "text": "khó thở tăng lên",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      190,
+      206
+    ],
+    "assertions": []
+  },
+  {
+    "text": "NYHA III-IV",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      208,
+      219
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      221,
+      228
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      237,
+      246
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "không đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      248,
+      262
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "phù phổi cấp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      303,
+      315
+    ],
+    "assertions": [],
+    "candidates": [
+      "J81.0",
+      "A08.11",
+      "A08.1",
+      "A08.19"
+    ]
+  },
+  {
+    "text": "ph",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      303,
+      305
+    ]
+  },
+  {
+    "text": "phù phổi cấp - suy tim - \nstent mạch vành - tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      303,
+      360
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "ph",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      307,
+      309
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      347,
+      360
+    ],
+    "assertions": [],
+    "candidates": [
+      "G93.2",
+      "H40.051",
+      "H40.0",
+      "H40.052"
+    ]
+  },
+  {
+    "text": "khó thở vừa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      393,
+      404
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Lactat",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      633,
+      639
+    ]
+  },
+  {
+    "text": "0.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      641,
+      644
+    ]
+  },
+  {
+    "text": "HCO3",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      648,
+      652
+    ]
+  },
+  {
+    "text": "32.09",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      654,
+      659
+    ]
+  },
+  {
+    "text": "PO2",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      664,
+      667
+    ]
+  },
+  {
+    "text": "97.0",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      669,
+      673
+    ]
+  },
+  {
+    "text": "PCO2",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      677,
+      681
+    ]
+  },
+  {
+    "text": "39",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      683,
+      685
+    ]
+  },
+  {
+    "text": "7.517",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      693,
+      698
+    ]
+  },
+  {
+    "text": "nhịp  xoang ts 74",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      736,
+      753
+    ]
+  },
+  {
+    "text": "không biến đổi ST-T",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      755,
+      774
+    ]
+  },
+  {
+    "text": "Định lượng Lactat (Acid \nLactic)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      792,
+      824
+    ]
+  },
+  {
+    "text": "0.8",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      826,
+      829
+    ]
+  },
+  {
+    "text": "HCO3",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      833,
+      837
+    ]
+  },
+  {
+    "text": "32.09",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      839,
+      844
+    ]
+  },
+  {
+    "text": "PO2",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      848,
+      851
+    ]
+  },
+  {
+    "text": "97.0",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      853,
+      857
+    ]
+  },
+  {
+    "text": "PCO2",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      862,
+      866
+    ]
+  },
+  {
+    "text": "39",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      868,
+      870
+    ]
+  },
+  {
+    "text": "7.517",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      878,
+      883
+    ]
+  },
+  {
+    "text": "Phình thành sau và thành bên thất trái",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      909,
+      947
+    ]
+  },
+  {
+    "text": "Giảm vận động 2/3 thành bên và 2/3 thành sau dưới thất trái về phía đáy",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      949,
+      1020
+    ]
+  },
+  {
+    "text": "Thành thất trái dày",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1022,
+      1041
+    ]
+  },
+  {
+    "text": "buồng thất trái không giãn",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1043,
+      1069
+    ]
+  },
+  {
+    "text": "chức năng tâm thu thất trái bảo tồn",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1071,
+      1106
+    ]
+  },
+  {
+    "text": "EF BP: 55%",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1108,
+      1118
+    ]
+  },
+  {
+    "text": "Hở hai lá nhiều",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1120,
+      1135
+    ]
+  },
+  {
+    "text": "Hở chủ vừa",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1137,
+      1147
+    ]
+  },
+  {
+    "text": "Tăng áp lực động mạch phổi nhẹ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1149,
+      1179
+    ]
+  },
+  {
+    "text": "Phẫu thuật cắt bỏ u dây thần kinh số VIII",
+    "type": "THUỐC",
+    "position": [
+      1267,
+      1308
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Đặt shunt động tĩnh mạch (AVF) ở tay phải (RUE AVF)",
+    "type": "THUỐC",
+    "position": [
+      1316,
+      1367
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Sinh thiết tuyến tiền liệt",
+    "type": "THUỐC",
+    "position": [
+      1374,
+      1400
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "mất trí nhớ chi tiết",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1453,
+      1473
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ăn không ngon miệng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1520,
+      1539
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngứa da toàn thân nhiều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1541,
+      1564
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1591,
+      1611
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn và nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1816,
+      1831
+    ],
+    "assertions": []
+  },
+  {
+    "text": "********************* x 1,0 Viên",
+    "type": "THUỐC",
+    "position": [
+      1847,
+      1879
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Ngày uống 1 viên buổi tối",
+    "type": "THUỐC",
+    "position": [
+      1880,
+      1905
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

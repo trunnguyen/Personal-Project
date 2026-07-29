@@ -1,0 +1,163 @@
+[
+  {
+    "text": "bệnh rụng tóc từng mảng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      30,
+      53
+    ],
+    "assertions": []
+  },
+  {
+    "text": "05 năm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      102,
+      108
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "Liệu pháp **************",
+    "type": "THUỐC",
+    "position": [
+      324,
+      348
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Tiêm **************",
+    "type": "THUỐC",
+    "position": [
+      349,
+      368
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Corticosteroid bôi tại chỗ",
+    "type": "THUỐC",
+    "position": [
+      507,
+      533
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "kem **************************",
+    "type": "THUỐC",
+    "position": [
+      589,
+      619
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "************************************",
+    "type": "THUỐC",
+    "position": [
+      643,
+      679
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "2,5g ********************e",
+    "type": "THUỐC",
+    "position": [
+      781,
+      807
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Nghiệm pháp gắng sức dương tính với thiếu máu cơ tim cục bộ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      962,
+      1021
+    ],
+    "assertions": []
+  },
+  {
+    "text": "biểu hiện ST chênh xuống ở các chuyển đạo thành dưới và thành bên",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1023,
+      1088
+    ],
+    "assertions": []
+  },
+  {
+    "text": "diphenylcyclopropenone (diphencyprone)",
+    "type": "THUỐC",
+    "position": [
+      1116,
+      1154
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "dinitrochlorobenzene",
+    "type": "THUỐC",
+    "position": [
+      1158,
+      1178
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "viêm da tiếp xúc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1221,
+      1237
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mày đay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1367,
+      1374
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bất thường sắc tố",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1376,
+      1393
+    ],
+    "assertions": []
+  },
+  {
+    "text": "PUVA",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1424,
+      1428
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,120 @@
+[
+  {
+    "text": "da rất nhiều dầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      46,
+      62
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bị mụn trứng cá",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      66,
+      81
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mụn trứng cá",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      69,
+      81
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "mụn ở trán",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      266,
+      276
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mụn cám",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      316,
+      323
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mụn đầu trắng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      327,
+      340
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Sừng hóa nang lông bất thường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      972,
+      1001
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "B43.2",
+      "H21.331",
+      "H21.3",
+      "H21.332"
+    ]
+  },
+  {
+    "text": "Vi khuẩn C. acne",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1002,
+      1018
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "L70.0",
+      "L10.0",
+      "L40.0"
+    ]
+  },
+  {
+    "text": "Viêm tại chỗ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1019,
+      1031
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A02.20",
+      "A02.2",
+      "A02.29",
+      "G40.001",
+      "G40.0"
+    ]
+  },
+  {
+    "text": "Hầu hết thiếu niên (80%)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1032,
+      1056
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

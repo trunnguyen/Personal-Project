@@ -50,7 +50,7 @@
     "assertions": []
   },
   {
-    "text": "Bệnh nhân có đau lưng âm ỉ",
+    "text": "Bệnh nhân có  đau lưng âm ỉ",
     "type": "TRIỆU_CHỨNG",
     "position": [
       1697,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "text": "Chụp cộng hưởng từ mật tụy ghi nhận sỏi đoạn cuối ống mật chủ",
+    "text": "Chụp cộng hưởng từ mật tụy  ghi nhận sỏi đoạn cuối ống mật chủ",
     "type": "TÊN_XÉT_NGHIỆM",
     "position": [
       2234,

@@ -1,0 +1,167 @@
+[
+  {
+    "text": "tiền sử Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      23,
+      45
+    ],
+    "assertions": [
+      "isFamily"
+    ],
+    "candidates": [
+      "E08.00",
+      "E08.0",
+      "E08.01",
+      "E08.10",
+      "E08.1"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      73,
+      86
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "xét nghiệm gắng sức bất thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      172,
+      202
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "khó chịu vùng ngực gián đoạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      294,
+      322
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      325,
+      334
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      337,
+      344
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      357,
+      366
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điện tâm đồ bình thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      820,
+      843
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nhiệt độ 36.7°c",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      902,
+      917
+    ]
+  },
+  {
+    "text": "Huyết áp 139/68 mmhg",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      919,
+      939
+    ]
+  },
+  {
+    "text": "Mạch 67 lần/phút",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      941,
+      957
+    ]
+  },
+  {
+    "text": "Nhịp thở 16 lần/phút",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      959,
+      979
+    ]
+  },
+  {
+    "text": "SpO2 100%",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      981,
+      990
+    ]
+  },
+  {
+    "text": "ống nội khí quản",
+    "type": "THUỐC",
+    "position": [
+      1154,
+      1170
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Liệu phát miễn dịch tiếp xúc",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1250,
+      1278
+    ],
+    "assertions": [],
+    "candidates": [
+      "H10.531",
+      "H10.5",
+      "H10.532",
+      "H10.533"
+    ]
+  },
+  {
+    "text": "Đoạn ST chênh xuống kiểu xuống dốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1302,
+      1336
+    ],
+    "assertions": []
+  }
+]

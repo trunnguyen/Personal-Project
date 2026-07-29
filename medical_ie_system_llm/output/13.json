@@ -1,55 +1,37 @@
 [
   {
-    "text": "bị thương nhẹ ở tay",
+    "text": "thương nhẹ ở tay",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      57,
-      79
+      59,
+      75
     ],
     "assertions": []
   },
   {
-    "text": "bị chảy máu",
+    "text": "chảy máu",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      86,
-      100
+      85,
+      93
     ],
     "assertions": []
   },
   {
-    "text": "chó con",
+    "text": "chó chưa tiêm dại",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      144,
-      151
+      153,
+      170
     ],
     "assertions": []
   },
   {
-    "text": "chó chưa tiêm dại",
+    "text": "dính nước dãi của chó con vào tay",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      161,
-      180
-    ],
-    "assertions": []
-  },
-  {
-    "text": "dính nước dãi của chó con",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      193,
-      218
-    ],
-    "assertions": []
-  },
-  {
-    "text": "được",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      251,
-      255
+      183,
+      216
     ],
     "assertions": []
   },
@@ -57,10 +39,12 @@
     "text": "bệnh dại",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      310,
-      318
+      300,
+      308
     ],
-    "assertions": [],
+    "assertions": [
+      "isHistorical"
+    ],
     "candidates": [
       "A82.0",
       "A82.1",
@@ -71,8 +55,8 @@
     "text": "vết cắn",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      571,
-      578
+      549,
+      556
     ],
     "assertions": []
   },
@@ -80,17 +64,17 @@
     "text": "Đường lây bệnh dại",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      593,
-      611
+      571,
+      589
     ],
     "assertions": []
   },
   {
-    "text": "nước bọt",
+    "text": "nước bọt của chó, mèo dại",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      687,
-      695
+      665,
+      690
     ],
     "assertions": []
   },
@@ -98,24 +82,18 @@
     "text": "Lyssavirus",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      855,
-      865
+      833,
+      843
     ],
     "assertions": [],
-    "candidates": [
-      "A84.81",
-      "A84.8",
-      "J12.81",
-      "J12.8",
-      "A98.4"
-    ]
+    "candidates": []
   },
   {
     "text": "virus",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      860,
-      865
+      838,
+      843
     ],
     "assertions": []
   },
@@ -123,65 +101,22 @@
     "text": "họ Lyssaviridae",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      873,
-      888
+      851,
+      866
     ],
     "assertions": [],
     "candidates": []
   },
   {
-    "text": "tủy sống",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      988,
-      996
-    ],
-    "assertions": []
-  },
-  {
-    "text": "trung khu thần kinh",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1017,
-      1036
-    ],
-    "assertions": []
-  },
-  {
-    "text": "đại não",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1043,
-      1050
-    ],
-    "assertions": []
-  },
-  {
-    "text": "trạng thái điên dại",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1059,
-      1078
-    ],
-    "assertions": []
-  },
-  {
-    "text": "điều trị y tế",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1211,
-      1224
-    ],
-    "assertions": []
-  },
-  {
     "text": "tiêm vaccine phòng dại",
     "type": "THUỐC",
     "position": [
-      1307,
-      1329
+      1285,
+      1307
     ],
-    "assertions": [],
+    "assertions": [
+      "isHistorical"
+    ],
     "candidates": [
       "89886",
       "762817",
@@ -192,8 +127,8 @@
     "text": "mùa hè",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      1359,
-      1365
+      1337,
+      1343
     ],
     "assertions": []
   },
@@ -201,8 +136,8 @@
     "text": "vết trầy xước",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      1613,
-      1626
+      1591,
+      1604
     ],
     "assertions": []
   },
@@ -210,8 +145,8 @@
     "text": "đau ngực trái cấp tính",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      2243,
-      2265
+      2221,
+      2243
     ],
     "assertions": [
       "isHistorical"
@@ -221,8 +156,8 @@
     "text": "đau sau xương ức lan ra sau lưng",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      2269,
-      2301
+      2247,
+      2279
     ],
     "assertions": [
       "isHistorical"

@@ -1,0 +1,306 @@
+[
+  {
+    "text": "điều trị để hạ lượng acid uric máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      60,
+      94
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hạ lượng acid uric máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      72,
+      94
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      133,
+      135
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      244,
+      246
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thiếu oxy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      248,
+      257
+    ],
+    "assertions": []
+  },
+  {
+    "text": "1 tuần trước khi nhập viện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      295,
+      321
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở nhẹ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      379,
+      390
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vừa khó thở khi gắng sức",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      391,
+      415
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      422,
+      429
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt lên đến 101",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      450,
+      465
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      485,
+      494
+    ],
+    "assertions": []
+  },
+  {
+    "text": "các thuốc của ông ấy",
+    "type": "THUỐC",
+    "position": [
+      495,
+      515
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đi tiểu nhiều lần vào ban đêm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      522,
+      551
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở khi gắng sức bao gồm cảm giác khó thở sau khi đi bộ vài khối",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      614,
+      682
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho đặc như bã theo lời bệnh nhân nhưng ông ấy không khạc nhổ gì",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      689,
+      752
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt lần cuối sốt là vào ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      759,
+      787
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy đã tự khỏi vào buổi sáng hôm sau",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      794,
+      836
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phủ nhận đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      843,
+      860
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phủ nhận buồn nôn/nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      867,
+      888
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phủ nhận đổ mồ hôi đêm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      895,
+      917
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phủ nhận khó thở khi nằm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      924,
+      948
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phủ nhận khó thở khi nằm đột ngột (paroxysmal nocturnal dyspnea)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      955,
+      1019
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Vợ có các triệu chứng tương tự 3 tuần trước",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1058,
+      1101
+    ],
+    "assertions": [
+      "isFamily"
+    ]
+  },
+  {
+    "text": "giãn phế quản",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1121,
+      1134
+    ],
+    "assertions": [
+      "isFamily",
+      "isHistorical"
+    ],
+    "candidates": [
+      "J47.0",
+      "J47.1",
+      "J47.9"
+    ]
+  },
+  {
+    "text": "phản ứng tốt với azithromycin",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1136,
+      1165
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tylenol",
+    "type": "THUỐC",
+    "position": [
+      1189,
+      1196
+    ],
+    "assertions": [],
+    "candidates": [
+      "161",
+      "108038",
+      "197426"
+    ]
+  },
+  {
+    "text": "mucinex d",
+    "type": "THUỐC",
+    "position": [
+      1200,
+      1209
+    ],
+    "assertions": [],
+    "candidates": [
+      "5032",
+      "197741",
+      "198687"
+    ]
+  },
+  {
+    "text": "số lượng bạch cầu là 12.5",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1478,
+      1503
+    ]
+  },
+  {
+    "text": "tổng phân tích nước tiểu đáng chú ý chỉ có vếtvết protein niệu",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1510,
+      1572
+    ]
+  },
+  {
+    "text": "troponin âm tính x1",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1582,
+      1601
+    ]
+  },
+  {
+    "text": "chụp x-quang ngực được cho là viêm phổi thùy dưới phải (RLL PNA)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1634,
+      1698
+    ],
+    "assertions": [],
+    "candidates": [
+      "A01.03",
+      "A01.0",
+      "A37.00",
+      "A37.0",
+      "A37.01"
+    ]
+  }
+]

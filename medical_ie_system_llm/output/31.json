@@ -1,0 +1,138 @@
+[
+  {
+    "text": "NSAID",
+    "type": "THUỐC",
+    "position": [
+      59,
+      64
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "426",
+      "1535498",
+      "9143"
+    ]
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      106,
+      116
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646",
+      "283742",
+      "198051"
+    ]
+  },
+  {
+    "text": "giãn thừng tinh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      240,
+      255
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "N43.0",
+      "N43.1",
+      "N43.2"
+    ]
+  },
+  {
+    "text": "đau bụng vùng hạ sườn phải",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      958,
+      984
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chướng bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      991,
+      1002
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn thoáng qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1010,
+      1029
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn mửa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1036,
+      1043
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau lưng âm ỉ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1064,
+      1077
+    ],
+    "assertions": []
+  },
+  {
+    "text": "viêm dạ dày",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1512,
+      1523
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K29.00",
+      "K29.0",
+      "K29.01",
+      "K29.20",
+      "K29.2"
+    ]
+  },
+  {
+    "text": "sỏi đoạn cuối ống mật chủ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1624,
+      1649
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C24.0",
+      "C25.3",
+      "C69.50",
+      "C69.5"
+    ]
+  },
+  {
+    "text": "Xét nghiệm chức năng gan ghi nhận tăng men gan",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1802,
+      1848
+    ]
+  }
+]

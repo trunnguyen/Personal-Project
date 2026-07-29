@@ -1,0 +1,159 @@
+[
+  {
+    "text": "động mạch vành",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      67,
+      81
+    ],
+    "assertions": [],
+    "candidates": [
+      "I25.42",
+      "I25.4",
+      "A18.17",
+      "A18.1",
+      "A48.2"
+    ]
+  },
+  {
+    "text": "Vastarel",
+    "type": "THUỐC",
+    "position": [
+      129,
+      137
+    ],
+    "assertions": [],
+    "candidates": [
+      "6373",
+      "14584",
+      "37075"
+    ]
+  },
+  {
+    "text": "********",
+    "type": "THUỐC",
+    "position": [
+      141,
+      149
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "run tay",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      203,
+      210
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bệnh Graves",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      283,
+      294
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A18.17",
+      "A18.1",
+      "A48.1",
+      "A48.2"
+    ]
+  },
+  {
+    "text": "tăng lipid máu, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      301,
+      331
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E78.2",
+      "E78.49",
+      "E78.4",
+      "Z83.438",
+      "Z83.4"
+    ]
+  },
+  {
+    "text": "trimetazidine",
+    "type": "THUỐC",
+    "position": [
+      518,
+      531
+    ],
+    "assertions": [],
+    "candidates": [
+      "5933",
+      "2541",
+      "11017"
+    ]
+  },
+  {
+    "text": "Nitramyl 2,5 mg/viên",
+    "type": "THUỐC",
+    "position": [
+      810,
+      830
+    ],
+    "assertions": [],
+    "candidates": [
+      "92758",
+      "93252",
+      "93253"
+    ]
+  },
+  {
+    "text": "đau đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1201,
+      1208
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1210,
+      1219
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1221,
+      1229
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đỏ mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1231,
+      1237
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tác dụng tụt huyết áp thế đứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1242,
+      1272
+    ],
+    "assertions": []
+  }
+]

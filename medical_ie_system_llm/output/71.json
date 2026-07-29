@@ -1,0 +1,171 @@
+[
+  {
+    "text": "Tình trạng khi đến khoa Cấp cứu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      23,
+      54
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Bệnh nhân tỉnh, tiếp xúc tốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      56,
+      84
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Không xác nhận đã bị trầm cảm trước đó",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      85,
+      123
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "không xác nhận có ý định tự tử",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      128,
+      158
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "tổn thương tổn thương chi dưới nghiêm trọng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      173,
+      216
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Phẫu thuật cắt cụt chân trái bên trên gối  và cắt cụt chân phải bên dưới gối",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      229,
+      305
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A06.3",
+      "A15.0",
+      "A18.01",
+      "A18.0"
+    ]
+  },
+  {
+    "text": "biến chứng thuyên tắc phổi hai bên  - nhiễm trùng chi dưới bên phải do Enterococcus kháng vancomycin",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      308,
+      408
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A00.0",
+      "A00.1",
+      "A02.29",
+      "A02.2"
+    ]
+  },
+  {
+    "text": "Đã phẫu thuật cắt cụt chân trái trên gối và chân phải dưới gối",
+    "type": "THUỐC",
+    "position": [
+      425,
+      487
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nổi mẩn ở vùng lưng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      632,
+      651
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vùng lưng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      642,
+      651
+    ],
+    "assertions": []
+  },
+  {
+    "text": "suy giảm chức năng gan",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1387,
+      1409
+    ],
+    "assertions": [],
+    "candidates": [
+      "B15.0",
+      "B15.9",
+      "B16.0"
+    ]
+  },
+  {
+    "text": "nổi mề đay",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1411,
+      1421
+    ],
+    "assertions": [],
+    "candidates": [
+      "L50.0",
+      "L50.1",
+      "L50.2"
+    ]
+  },
+  {
+    "text": "bệnh vảy nến",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1423,
+      1435
+    ],
+    "assertions": [],
+    "candidates": [
+      "L40.0",
+      "L40.1",
+      "L40.4"
+    ]
+  },
+  {
+    "text": "tác dụng phụ của một số loại thuốc chữa bệnh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1437,
+      1481
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

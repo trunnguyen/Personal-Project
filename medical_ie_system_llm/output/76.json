@@ -1,0 +1,143 @@
+[
+  {
+    "text": "MÀY đay VÔ CĂN",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      267,
+      281
+    ],
+    "assertions": [],
+    "candidates": [
+      "L50.1",
+      "D72.110",
+      "D72.1",
+      "D89.42",
+      "D89.4"
+    ]
+  },
+  {
+    "text": "MÀY đay MẠN",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      365,
+      376
+    ],
+    "assertions": [],
+    "candidates": [
+      "A06.1",
+      "A24.2",
+      "B18.0"
+    ]
+  },
+  {
+    "text": "tế bào một nhân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      435,
+      450
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bạch huyết T",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      463,
+      475
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đại thực bào",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      479,
+      491
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tế bào cột sống tăng lượng hạ bì",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      615,
+      647
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Quảng cáo quảng cáo thiết bị thương mại miễn phí dịch sinh học",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      702,
+      764
+    ],
+    "assertions": []
+  },
+  {
+    "text": "***************",
+    "type": "THUỐC",
+    "position": [
+      1240,
+      1255
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "hệ sau không gây buồn ngủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1263,
+      1288
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đơn hàng đầu sau đó đến",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1292,
+      1315
+    ],
+    "assertions": []
+  },
+  {
+    "text": "***************",
+    "type": "THUỐC",
+    "position": [
+      1316,
+      1331
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "********* bậc thấp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1345,
+      1363
+    ],
+    "assertions": []
+  },
+  {
+    "text": "cách ngày hoặc hàng ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1364,
+      1388
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giảm dần chậm 2,5 – 5mg mỗi 2-3 tuần",
+    "type": "THUỐC",
+    "position": [
+      1392,
+      1428
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -1,0 +1,144 @@
+[
+  {
+    "text": "bệnh rụng tóc từng mảng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      30,
+      53
+    ],
+    "assertions": []
+  },
+  {
+    "text": "05 năm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      102,
+      108
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I10",
+      "O10.011",
+      "O10.0",
+      "O10.012"
+    ]
+  },
+  {
+    "text": "Liệu pháp **************",
+    "type": "THUỐC",
+    "position": [
+      559,
+      583
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Tiêm ************** nội thương tổn",
+    "type": "THUỐC",
+    "position": [
+      584,
+      618
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "rụng tóc từng vùng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      639,
+      657
+    ],
+    "assertions": []
+  },
+  {
+    "text": "diện tích thương tổn dưới 50% diện tích da đầu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      662,
+      708
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kem **************************",
+    "type": "THUỐC",
+    "position": [
+      824,
+      854
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "************************************",
+    "type": "THUỐC",
+    "position": [
+      878,
+      914
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "rụng tóc toàn bộ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      948,
+      964
+    ],
+    "assertions": []
+  },
+  {
+    "text": "rụng tóc toàn thể",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      970,
+      987
+    ],
+    "assertions": []
+  },
+  {
+    "text": "2,5g ********************e có bao phim che phủ",
+    "type": "THUỐC",
+    "position": [
+      1016,
+      1062
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "diphenylcyclopropenone (diphencyprone)",
+    "type": "THUỐC",
+    "position": [
+      1284,
+      1322
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "dinitrochlorobenzene",
+    "type": "THUỐC",
+    "position": [
+      1326,
+      1346
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "PUVA",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1592,
+      1596
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

@@ -9,6 +9,15 @@
     "assertions": []
   },
   {
+    "text": "chảy máu chân răng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      74,
+      92
+    ],
+    "assertions": []
+  },
+  {
     "text": "miệng thấy hơi thở mùi khó chịu",
     "type": "TRIỆU_CHỨNG",
     "position": [
@@ -18,10 +27,10 @@
     "assertions": []
   },
   {
-    "text": "mảng bám quanh răng",
+    "text": "thấy nhiều mảng bám quanh răng",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      147,
+      136,
       166
     ],
     "assertions": []
@@ -30,8 +39,17 @@
     "text": "Vệ sinh răng miệng kém",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      384,
-      406
+      364,
+      386
+    ],
+    "assertions": []
+  },
+  {
+    "text": "hôi miệng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      455,
+      464
     ],
     "assertions": []
   },
@@ -39,8 +57,8 @@
     "text": "Viêm quanh răng",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      613,
-      628
+      593,
+      608
     ],
     "assertions": [],
     "candidates": []
@@ -49,52 +67,88 @@
     "text": "Viêm nha chu",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      712,
-      724
+      692,
+      704
     ],
     "assertions": [],
     "candidates": []
   },
   {
     "text": "Thiếu canxi và vitamin",
-    "type": "TRIỆU_CHỨNG",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      997,
-      1019
+      977,
+      999
     ],
-    "assertions": []
+    "assertions": [],
+    "candidates": []
   },
   {
     "text": "Tiểu đường",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      1173,
-      1183
+      1153,
+      1163
     ],
     "assertions": [],
-    "candidates": [
-      "E08.00",
-      "E08.0",
-      "E08.01",
-      "E08.10",
-      "E08.1"
-    ]
+    "candidates": []
   },
   {
-    "text": "Tác dụng phụ của thuốc",
-    "type": "TRIỆU_CHỨNG",
+    "text": "Kháng histamin H1",
+    "type": "THUỐC",
     "position": [
-      1475,
-      1497
+      1570,
+      1587
     ],
-    "assertions": []
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thuốc chống trầm cảm",
+    "type": "THUỐC",
+    "position": [
+      1589,
+      1609
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thuốc lợi tiểu",
+    "type": "THUỐC",
+    "position": [
+      1611,
+      1625
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thuốc kháng sinh",
+    "type": "THUỐC",
+    "position": [
+      1627,
+      1643
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thuốc chống nôn",
+    "type": "THUỐC",
+    "position": [
+      1645,
+      1660
+    ],
+    "assertions": [],
+    "candidates": []
   },
   {
     "text": "Hút thuốc lá",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      1685,
-      1697
+      1665,
+      1677
     ],
     "assertions": []
   },
@@ -102,8 +156,8 @@
     "text": "bệnh mạch máu ngoại biên",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      1850,
-      1874
+      1830,
+      1854
     ],
     "assertions": [],
     "candidates": []
@@ -112,8 +166,8 @@
     "text": "bệnh phổi tắc nghẽn mạn tính",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      1881,
-      1909
+      1861,
+      1889
     ],
     "assertions": [],
     "candidates": []
@@ -122,8 +176,8 @@
     "text": "Ngưng thở khi ngủ do tắc nghẽn đang dùng BiPAP",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      1916,
-      1962
+      1896,
+      1942
     ],
     "assertions": [],
     "candidates": []
@@ -132,8 +186,28 @@
     "text": "Ung thư biểu mô tế bào vảy xâm nhập của dương vật",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      1969,
-      2018
+      1949,
+      1998
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "biệt hóa kém",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1998,
+      2010
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "sau cắt bao quy đầu với bờ diện cắt dương tính",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2012,
+      2058
     ],
     "assertions": [],
     "candidates": []
@@ -142,8 +216,8 @@
     "text": "Uống trà gừng và mật ong",
     "type": "THUỐC",
     "position": [
-      2117,
-      2141
+      2097,
+      2121
     ],
     "assertions": [],
     "candidates": []
@@ -152,8 +226,8 @@
     "text": "Trà đinh hương",
     "type": "THUỐC",
     "position": [
-      2226,
-      2240
+      2206,
+      2220
     ],
     "assertions": [],
     "candidates": []
@@ -162,8 +236,8 @@
     "text": "bào láng gốc răng",
     "type": "THUỐC",
     "position": [
-      2365,
-      2382
+      2343,
+      2360
     ],
     "assertions": [],
     "candidates": []
@@ -172,8 +246,8 @@
     "text": "Ghép mô mềm ở vòm họng",
     "type": "THUỐC",
     "position": [
-      2462,
-      2484
+      2440,
+      2462
     ],
     "assertions": [],
     "candidates": []

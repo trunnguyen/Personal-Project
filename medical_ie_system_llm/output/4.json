@@ -1,0 +1,274 @@
+[
+  {
+    "text": "Tái phát buồn nôn và tiêu chảy cách đây vài năm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      64,
+      111
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Nôn ra máu 2 tuần sau tập viêm dạ dày ruột do virus",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      118,
+      169
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Nôn ra máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      118,
+      128
+    ],
+    "assertions": []
+  },
+  {
+    "text": "viêm dạ dày ruột do virus",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      144,
+      169
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A08.4",
+      "A09",
+      "A83.8"
+    ]
+  },
+  {
+    "text": "Nôn ra máu trong 2 ngày qua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      176,
+      203
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "hội chứng ruột kích thích",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      226,
+      251
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K58.2",
+      "K58.8",
+      "K58.0"
+    ]
+  },
+  {
+    "text": "Nội soi (cách đây vài năm, phát hiện loét tá tràng)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      353,
+      404
+    ]
+  },
+  {
+    "text": "Nội soi (cho thấy nhiều loét tá tràng và hồi tràng)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      411,
+      462
+    ]
+  },
+  {
+    "text": "nội soi (Viêm thực quản độ C, loét thực quản dưới 6 mm có điểm sắc tố, nhiều loét nông sạch đáy ở tá tràng và hồi tràng sớm)",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      469,
+      593
+    ]
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      625,
+      635
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "7646",
+      "283742",
+      "198051"
+    ]
+  },
+  {
+    "text": "cryptosporidium",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1649,
+      1664
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Ăn uống kém",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1911,
+      1922
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nausea",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1930,
+      1936
+    ],
+    "assertions": []
+  },
+  {
+    "text": "diarrhea",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1943,
+      1951
+    ],
+    "assertions": []
+  },
+  {
+    "text": "abdominal pain",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1958,
+      1972
+    ],
+    "assertions": []
+  },
+  {
+    "text": "levothyroxine",
+    "type": "THUỐC",
+    "position": [
+      2704,
+      2717
+    ],
+    "assertions": [],
+    "candidates": [
+      "10582",
+      "40144",
+      "93252"
+    ]
+  },
+  {
+    "text": "75 microgam/ngày",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2727,
+      2743
+    ]
+  },
+  {
+    "text": "Berlthyrox",
+    "type": "THUỐC",
+    "position": [
+      2767,
+      2777
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "100 microgam",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2794,
+      2806
+    ]
+  },
+  {
+    "text": "100 miligam",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2822,
+      2833
+    ]
+  },
+  {
+    "text": "hormone tuyến giáp tổng hợp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2854,
+      2881
+    ],
+    "assertions": []
+  },
+  {
+    "text": "trạng thái bình giáp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      3019,
+      3039
+    ],
+    "assertions": []
+  },
+  {
+    "text": "*************",
+    "type": "THUỐC",
+    "position": [
+      3226,
+      3239
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Viêm thực quản độ C ở thực quản dưới",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3509,
+      3545
+    ],
+    "assertions": [],
+    "candidates": [
+      "B37.81",
+      "B37.8",
+      "K20.0",
+      "K20.80",
+      "K20.8"
+    ]
+  },
+  {
+    "text": "Loét loét thực quản 6 mm có điểm sắc tố",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3552,
+      3591
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "Nhiều loét sạch đáy loét ở tá tràng kéo dài từ hành tá tràng đến hồi tràng sớm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3598,
+      3676
+    ],
+    "assertions": [],
+    "candidates": []
+  }
+]

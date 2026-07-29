@@ -1,0 +1,213 @@
+[
+  {
+    "text": "Đã thực hiện phẫu thuật cắt bỏ ống dẫn mật chung",
+    "type": "THUỐC",
+    "position": [
+      62,
+      110
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "cắt bỏ một phần thùy gan bên trái",
+    "type": "THUỐC",
+    "position": [
+      112,
+      145
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "nối mật tụy bằng ống dẫn hồi tràng (RNY hepaticojejunostomy)",
+    "type": "THUỐC",
+    "position": [
+      149,
+      209
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "ung thư biểu mô tế bào mật không thể cắt bỏ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      238,
+      281
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C24.0",
+      "C17.2",
+      "C25.3"
+    ]
+  },
+  {
+    "text": "Đã thực hiện cholangiogram",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1237,
+      1263
+    ]
+  },
+  {
+    "text": "cholangiogram",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1250,
+      1263
+    ]
+  },
+  {
+    "text": "tắc nghẽn kéo dài gần chỗ nối mật tụy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1289,
+      1326
+    ]
+  },
+  {
+    "text": "ảnh hưởng đến ống dẫn trước và sau bên phải",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1328,
+      1371
+    ]
+  },
+  {
+    "text": "được tăng kích cỡ từ 8.5fr lên 10.2 fr",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1402,
+      1440
+    ]
+  },
+  {
+    "text": "Đã thực hiện sinh thiết và lấy mẫu bằng bàn chải",
+    "type": "THUỐC",
+    "position": [
+      1465,
+      1513
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "lấy mẫu bằng bàn chải cho thấy tế bào bất thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1541,
+      1589
+    ]
+  },
+  {
+    "text": "tế bào bất thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1572,
+      1589
+    ]
+  },
+  {
+    "text": "đáng ngại cho ung thư biểu mô tuyến",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1591,
+      1626
+    ]
+  },
+  {
+    "text": "được đặt stent thành vách vĩnh viễn",
+    "type": "THUỐC",
+    "position": [
+      1721,
+      1756
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "được đặt 3 stent thành vách vĩnh viễn",
+    "type": "THUỐC",
+    "position": [
+      1773,
+      1810
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": []
+  },
+  {
+    "text": "đặt 3 stent thành vách vĩnh viễn",
+    "type": "THUỐC",
+    "position": [
+      1778,
+      1810
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "đau khi sờ nắn xung quanh vị trí đặt ống dẫn, đặc biệt là khi hít thở sâu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2011,
+      2084
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tắc nghẽn kéo dài gần chỗ nối mật tụy",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2486,
+      2523
+    ]
+  },
+  {
+    "text": "ảnh hưởng đến ống dẫn trước và sau bên phải",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2525,
+      2568
+    ]
+  },
+  {
+    "text": "Đã thực hiện sinh thiết và lấy mẫu bằng bàn chải",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2651,
+      2699
+    ]
+  },
+  {
+    "text": "tế bào bất thường",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2762,
+      2779
+    ]
+  },
+  {
+    "text": "đáng lo ngại cho ung thư biểu mô tuyến",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      2781,
+      2819
+    ]
+  }
+]

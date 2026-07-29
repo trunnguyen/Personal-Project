@@ -1,0 +1,179 @@
+[
+  {
+    "text": "tự tử",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      41,
+      46
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "trầm cảm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      108,
+      116
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F32.A",
+      "F53.0",
+      "P91.4"
+    ]
+  },
+  {
+    "text": "rối loạn lo âu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      121,
+      135
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "F06.4",
+      "F10.180",
+      "F10.1",
+      "F10.280",
+      "F10.2"
+    ]
+  },
+  {
+    "text": "tổn thương chi dưới",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      179,
+      198
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "sốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      263,
+      266
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "bị bạn bè trêu chọc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      293,
+      312
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "buồn chán",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      314,
+      323
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "uống nhiều rượu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      325,
+      340
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "hút cần sa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      341,
+      351
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "biến chứng thuyên tắc phổi hai bên",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      757,
+      791
+    ],
+    "assertions": [],
+    "candidates": [
+      "A22.1",
+      "B39.1",
+      "B39.2"
+    ]
+  },
+  {
+    "text": "nhiễm trùng chi dưới bên phải do Enterococcus kháng vancomycin",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      795,
+      857
+    ],
+    "assertions": [],
+    "candidates": [
+      "A02.29",
+      "A02.2",
+      "A03.0",
+      "A03.1"
+    ]
+  },
+  {
+    "text": "Điều trị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      862,
+      870
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "phẫu thuật cắt cụt chân trái trên gối",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      877,
+      914
+    ],
+    "assertions": [],
+    "candidates": [
+      "A06.3",
+      "A15.0",
+      "A18.01",
+      "A18.0"
+    ]
+  },
+  {
+    "text": "được chuyển vào khoa tâm thần nội trú",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1626,
+      1663
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  }
+]

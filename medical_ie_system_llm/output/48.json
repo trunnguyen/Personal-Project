@@ -1,0 +1,321 @@
+[
+  {
+    "text": "khi bé đc 20 ngày tuổi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      30,
+      52
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tai phải bé không có lỗ tai",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      72,
+      99
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vẫn có vành tai đầy đủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      101,
+      123
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mình có đưa bé đi khám ở 1 vài nơi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      125,
+      159
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vì bé còn quá nhỏ nên bs chỉ nhìn bên ngoài và đo âm tai còn lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      166,
+      230
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bé nay đã 2 tuổi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      232,
+      248
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nghe nói bình thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      250,
+      270
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mọi sinh hoạt bình thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      272,
+      297
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phát triển đều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      299,
+      313
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bên tai ko có lỗ kia",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      354,
+      374
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vành tai không phát triển đều",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      375,
+      404
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nó nhỏ hơn tai còn lại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      406,
+      428
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bên tai trái thì rất to và vành tai đẹp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      441,
+      480
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mình cũng để ý con xem có phản ứng khi mình gọi không",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      482,
+      535
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bé vẫn nghe bìng thường",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      539,
+      562
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kể cả khi sắp ngủ mình nói nhỏ bé vẫn nghe và mở mắt nhìn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      564,
+      621
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mình rất lo lắng về tai của bé",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      623,
+      653
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sợ sau này sẽ ảnh hưởng đến sự phát triển của bé",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      655,
+      703
+    ],
+    "assertions": []
+  },
+  {
+    "text": "và bé bị trêu chọc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      704,
+      722
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Y học hiện nay đã có nghiên cứu gì về trường hợp như thế này chưa nhủ các bạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      724,
+      801
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mình có cách gì kiểm tra việc nghe của bé thường xuyên để theo dõi không",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      803,
+      875
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Mọi người cho mình xin ý kiến nhé",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      877,
+      910
+    ],
+    "assertions": []
+  },
+  {
+    "text": "dị tật thiểu sản vành tai",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1042,
+      1067
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A18.6",
+      "A50.01",
+      "A50.0",
+      "A50.02"
+    ]
+  },
+  {
+    "text": "tịt ống tai ngoài bẩm sinh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1071,
+      1097
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "B88.3",
+      "C21.8",
+      "C43.20",
+      "C43.2"
+    ]
+  },
+  {
+    "text": "cấu trúc tai trong đảm nhận chức năng thần kinh thính giác",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1112,
+      1170
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A18.6",
+      "C00.3",
+      "C00.4"
+    ]
+  },
+  {
+    "text": "Việc bé phản xạ được âm thanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1206,
+      1235
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Đánh giá tại bệnh viện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1296,
+      1318
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chỉ nghe một bên",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1358,
+      1374
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "con lúng túng khi xác định hướng âm thanh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1386,
+      1427
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ở môi trường ồn ào",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1433,
+      1451
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đo thính lực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1647,
+      1659
+    ]
+  },
+  {
+    "text": "bệnh viện lớn có chuyên khoa Tai mũi họng nhi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1699,
+      1744
+    ]
+  }
+]

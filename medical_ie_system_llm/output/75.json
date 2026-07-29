@@ -1,0 +1,372 @@
+[
+  {
+    "text": "khối u trực tràng với hình ảnh của một u ác trực tràng đáng kể",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      25,
+      87
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C20",
+      "C18.0",
+      "C63.2"
+    ]
+  },
+  {
+    "text": "sinh thiết chỉ cho thấy một u tuyến",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      90,
+      125
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "D13.91",
+      "D13.9",
+      "Z83.710",
+      "Z83.7",
+      "Z83.72"
+    ]
+  },
+  {
+    "text": "đến khám để phân giai đoạn phẫu thuật với tem (viết tắt)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      128,
+      184
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Nấm bẹn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      220,
+      227
+    ],
+    "assertions": [],
+    "candidates": [
+      "L98.412",
+      "L98.4",
+      "L98.413",
+      "L98.414"
+    ]
+  },
+  {
+    "text": "Trichophyton rubrum",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      264,
+      283
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "T. mentagrophytes",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      292,
+      309
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "môi trường ẩm ướt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      350,
+      367
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thời tiết nóng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      369,
+      383
+    ],
+    "assertions": []
+  },
+  {
+    "text": "quần áo ướt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      385,
+      396
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chứng béo phì",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      406,
+      419
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nếp gấp da",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      432,
+      442
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điều trị nấm bẹn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      482,
+      498
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nấm bẹn",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      491,
+      498
+    ],
+    "assertions": [],
+    "candidates": [
+      "L98.412",
+      "L98.4",
+      "L98.413",
+      "L98.414"
+    ]
+  },
+  {
+    "text": "thuốc kháng nấm dạng bôi",
+    "type": "THUỐC",
+    "position": [
+      521,
+      545
+    ],
+    "assertions": [],
+    "candidates": [
+      "91348",
+      "91349",
+      "92752"
+    ]
+  },
+  {
+    "text": "bác sĩ da liễu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      579,
+      593
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điều trị từ 1-4 tuần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      609,
+      629
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lây nhiễm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      666,
+      675
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tái phát",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      682,
+      690
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      855,
+      861
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bột",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      878,
+      881
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thay quần lót",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      936,
+      949
+    ],
+    "assertions": []
+  },
+  {
+    "text": "quần lót",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      941,
+      949
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giặt đồ thể thao",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1038,
+      1054
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đồ thể thao",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1043,
+      1054
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đồ lót vừa mặc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1093,
+      1107
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đồ lót quá chật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1124,
+      1139
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ma sát",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1144,
+      1150
+    ],
+    "assertions": []
+  },
+  {
+    "text": "da vùng bẹn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1158,
+      1169
+    ],
+    "assertions": []
+  },
+  {
+    "text": "da vùng bẹn tổn thương",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1158,
+      1180
+    ],
+    "assertions": []
+  },
+  {
+    "text": "vi nấm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1234,
+      1240
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đồ dùng cá nhân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1268,
+      1283
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mượn áo quần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1310,
+      1322
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khăn tắm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1324,
+      1332
+    ],
+    "assertions": []
+  },
+  {
+    "text": "trực tiếp đến khám",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1446,
+      1464
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tư vấn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1519,
+      1525
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điều trị triệt để",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1529,
+      1546
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiền mất tật mang",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1563,
+      1580
+    ],
+    "assertions": []
+  }
+]

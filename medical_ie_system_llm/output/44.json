@@ -1,0 +1,270 @@
+[
+  {
+    "text": "tăng men gan",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      31,
+      43
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tăng bilirubin máu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      48,
+      66
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ast 421",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      68,
+      75
+    ]
+  },
+  {
+    "text": "alt 336",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      77,
+      84
+    ]
+  },
+  {
+    "text": "alp 185",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      86,
+      93
+    ]
+  },
+  {
+    "text": "bilirubin toàn phần 0.9",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      95,
+      118
+    ]
+  },
+  {
+    "text": "âm tính siêu âm bụng có doppler",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      121,
+      152
+    ]
+  },
+  {
+    "text": "âm tính chụp hida",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      155,
+      172
+    ]
+  },
+  {
+    "text": "Chưa từng xét nghiệm nồng độ acetaminophen",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      175,
+      217
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Chưa từng dùng nac",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      220,
+      238
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ercp cho thấy túi mật giãn nở rõ rệt nhưng không có sỏi hoặc bệnh lý khác",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      277,
+      350
+    ],
+    "assertions": []
+  },
+  {
+    "text": "túi mật giãn nở rõ rệt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      291,
+      313
+    ],
+    "assertions": []
+  },
+  {
+    "text": "túi mật giãn nở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      291,
+      306
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đã tống ra một viên sỏi mật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      393,
+      420
+    ],
+    "assertions": []
+  },
+  {
+    "text": "MÀY đay VÔ CĂN",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      618,
+      632
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "L50.1",
+      "D72.110",
+      "D72.1",
+      "D89.42",
+      "D89.4"
+    ]
+  },
+  {
+    "text": "MÀY đay MẠN",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      716,
+      727
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "A06.1",
+      "A24.2",
+      "B18.0"
+    ]
+  },
+  {
+    "text": "tế bào một nhân",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      786,
+      801
+    ],
+    "assertions": []
+  },
+  {
+    "text": "bạch huyết T",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      814,
+      826
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đại thực bào",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      830,
+      842
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tế bào cột sống tăng lượng hạ bì",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      966,
+      998
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Quảng cáo quảng cáo thiết bị thương mại miễn phí dịch sinh học",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1053,
+      1115
+    ],
+    "assertions": []
+  },
+  {
+    "text": "***************",
+    "type": "THUỐC",
+    "position": [
+      1591,
+      1606
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "có thể hệ sau không gây buồn ngủ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1607,
+      1639
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đơn hàng đầu sau đó đến",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1643,
+      1666
+    ],
+    "assertions": []
+  },
+  {
+    "text": "***************",
+    "type": "THUỐC",
+    "position": [
+      1667,
+      1682
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "có thể hệ 1",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1683,
+      1694
+    ],
+    "assertions": []
+  },
+  {
+    "text": "********* bậc thấp cách ngày hoặc hàng ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1696,
+      1739
+    ],
+    "assertions": []
+  },
+  {
+    "text": "giảm dần chậm 2,5 – 5mg mỗi 2-3 tuần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1743,
+      1779
+    ],
+    "assertions": []
+  }
+]

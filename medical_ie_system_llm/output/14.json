@@ -182,34 +182,69 @@
     "text": "bệnh lý mày đay vô căn",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      1849,
-      1871
+      1776,
+      1798
     ],
     "assertions": [
       "isHistorical"
     ],
-    "candidates": [
-      "L50.0",
-      "L50.1",
-      "L50.2"
-    ]
+    "candidates": []
   },
   {
-    "text": "**********",
+    "text": "điều trị triệu chứng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1999,
+      2019
+    ],
+    "assertions": []
+  },
+  {
+    "text": "****************",
     "type": "THUỐC",
     "position": [
-      2307,
-      2317
+      2199,
+      2215
     ],
     "assertions": [],
     "candidates": []
   },
   {
-    "text": "thể hệ sau không gây buồn ngủ là lựa chọn hàng đầu sau đó đến **************** thể hệ 1",
+    "text": "thể hệ sau không gây buồn ngủ",
     "type": "THUỐC",
     "position": [
-      2324,
-      2424
+      2216,
+      2245
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "thể hệ 1",
+    "type": "THUỐC",
+    "position": [
+      2295,
+      2303
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "corticoid liều thấp cách ngày hoặc hàng ngày",
+    "type": "THUỐC",
+    "position": [
+      2305,
+      2349
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "giảm liều chậm 2,5 – 5mg mỗi 2-3 tuần",
+    "type": "THUỐC",
+    "position": [
+      2353,
+      2390
     ],
     "assertions": [],
     "candidates": []

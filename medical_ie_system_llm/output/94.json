@@ -1,0 +1,265 @@
+[
+  {
+    "text": "chèn ép tim",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      29,
+      40
+    ]
+  },
+  {
+    "text": "Viêm hang vị sung huyết",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      43,
+      66
+    ],
+    "assertions": [],
+    "candidates": [
+      "K25.0",
+      "K25.1",
+      "K25.2"
+    ]
+  },
+  {
+    "text": "đau bụng cồn cào",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      184,
+      200
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ợ hơi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      210,
+      215
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ợ chua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      217,
+      223
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      244,
+      252
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      249,
+      252
+    ],
+    "assertions": []
+  },
+  {
+    "text": "người bệnh",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      476,
+      486
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thăm khám chuyên khoa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      496,
+      517
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nội soi dạ dày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      519,
+      533
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tuân thủ tuyệt đối sự chỉ dẫn của bác sĩ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      707,
+      747
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không được bỏ thuốc giữa chừng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      774,
+      804
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không được tự ý tăng giảm liều lượng thuốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      814,
+      856
+    ],
+    "assertions": []
+  },
+  {
+    "text": "người bị viêm sung huyết hang vị dạ dày",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      900,
+      939
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K25.0",
+      "K25.1",
+      "K25.2"
+    ]
+  },
+  {
+    "text": "sản phẩm từ thiên nhiên",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      955,
+      978
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nghệ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      983,
+      987
+    ],
+    "assertions": []
+  },
+  {
+    "text": "mật ong",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      989,
+      996
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chế độ ăn uống khoa học",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1040,
+      1063
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kiêng ăn các thức ăn có vị chua",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1080,
+      1111
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không uống rượu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1155,
+      1170
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không hút thuốc lá",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1189,
+      1207
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Hạn chế uống cà phê",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1220,
+      1239
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ăn chậm",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1254,
+      1261
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nhai kỹ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1263,
+      1270
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ăn uống điều độ đúng giờ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1272,
+      1296
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đủ bữa",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1298,
+      1304
+    ],
+    "assertions": []
+  },
+  {
+    "text": "không ăn quá no",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1306,
+      1321
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chế độ tập luyện phù hợp",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1349,
+      1373
+    ],
+    "assertions": []
+  }
+]

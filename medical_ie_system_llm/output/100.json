@@ -1,55 +1,70 @@
 [
   {
-    "text": "mang thai được 22 tuần",
+    "text": "mang thai được 22 tuần",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      60,
-      84
+      55,
+      77
     ],
     "assertions": []
   },
   {
-    "text": "nguy cơ tiền sản giật cao",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "text": "nguy cơ tiền sản giật cao",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      149,
-      177
+      131,
+      156
+    ],
+    "assertions": [],
+    "candidates": [
+      "O11.1",
+      "O11.2",
+      "O11.3"
     ]
   },
   {
     "text": "************",
     "type": "THUỐC",
     "position": [
-      202,
-      214
+      178,
+      190
     ],
     "assertions": [],
     "candidates": []
   },
   {
-    "text": "cục máu đông",
+    "text": "mũi em thường xuyên có cục máu đông",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      280,
-      294
+      222,
+      257
     ],
     "assertions": []
   },
   {
-    "text": "đi tiêu ra máu",
+    "text": "đi tiêu ra máu",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      309,
-      324
+      269,
+      283
     ],
     "assertions": []
   },
   {
-    "text": "tác dụng phụ của thuốc",
+    "text": "người em nóng",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      371,
-      398
+      305,
+      318
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tác dụng phụ của thuốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      326,
+      348
     ],
     "assertions": []
   },
@@ -57,18 +72,18 @@
     "text": "************",
     "type": "THUỐC",
     "position": [
-      522,
-      534
+      462,
+      474
     ],
     "assertions": [],
     "candidates": []
   },
   {
-    "text": "tiền sản giật",
+    "text": "sản phụ có nguy cơ tiền sản giật cao",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      584,
-      597
+      505,
+      541
     ],
     "assertions": [
       "isHistorical"
@@ -80,20 +95,148 @@
     ]
   },
   {
+    "text": "phòng ngừa tiền sản giật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      545,
+      569
+    ],
+    "assertions": []
+  },
+  {
+    "text": "biến chứng liên quan đến tiền sản giật",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      579,
+      617
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thuốc có tác dụng chống đông máu",
+    "type": "THUỐC",
+    "position": [
+      641,
+      673
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
     "text": "chảy máu",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      777,
+      717,
+      725
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tác dụng phụ của *******",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      761,
       785
     ],
     "assertions": []
   },
   {
-    "text": "đại tiện ra máu đỏ tươi gián đoạn",
+    "text": "đi khám sớm nhất có thể",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      1219,
-      1252
+      913,
+      936
+    ],
+    "assertions": []
+  },
+  {
+    "text": "liệt kê các triệu chứng  này",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      940,
+      968
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Bác sĩ chuyên khoa",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      973,
+      991
+    ],
+    "assertions": [],
+    "candidates": []
+  },
+  {
+    "text": "so sánh nguy cơ",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1003,
+      1018
+    ],
+    "assertions": []
+  },
+  {
+    "text": "lợi ích của việc tiếp tục sử dụng aspirin",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1020,
+      1061
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiếp tục sử dụng aspirin",
+    "type": "THUỐC",
+    "position": [
+      1037,
+      1061
+    ],
+    "assertions": [],
+    "candidates": [
+      "1191",
+      "197447",
+      "198464"
+    ]
+  },
+  {
+    "text": "ngưng dùng thuốc",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1095,
+      1111
+    ],
+    "assertions": []
+  },
+  {
+    "text": "2. Bệnh sử hiện tại",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1115,
+      1134
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "3 ngày đại tiện ra máu đỏ tươi gián đoạn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1152,
+      1192
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "3 ngày",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1152,
+      1158
     ],
     "assertions": [
       "isHistorical"
