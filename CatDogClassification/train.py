@@ -32,7 +32,7 @@ def main():
     plot_history(history)
 
     final_loss, final_acc = evaluate(model, val_loader, device)
-    logger.info(f"Final loss (best model: {final_loss:.4f}, final accuracy: {final_acc:.2f}%")
+    logger.info(f"Final loss (best model): {final_loss:.4f}, final accuracy: {final_acc:.2f}%")
 
     visualize_predictions(model, val_loader, device ,class_names=class_names)
 

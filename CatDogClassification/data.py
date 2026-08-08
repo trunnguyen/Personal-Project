@@ -24,7 +24,7 @@ inference_transform = valid_transform
 
 #Load train/val datasets and return their DataLoaders
 def get_dataloaders(train_dir: str ='./data/train',
-                    valid_dir: str = './data/train',
+                    valid_dir: str = './data/valid',
                     batch_size: int = 64):
 
     train_dataset = datasets.ImageFolder(root=train_dir, transform=train_transform)

@@ -54,8 +54,8 @@ def train(model, train_loader, val_loader, device,
         history['train_acc'].append(epoch_acc)
 
         val_loss, val_acc = evaluate(model, val_loader, device, criterion)
-        history['val_loss'].append(epoch_loss)
-        history['val_acc'].append(epoch_acc)
+        history['val_loss'].append(val_loss)
+        history['val_acc'].append(val_acc)
 
         current_lr = optimizer.param_groups[0]['lr']
         logger.info(
@@ -69,7 +69,7 @@ def train(model, train_loader, val_loader, device,
 
         if val_loss < best_val_loss:
             best_val_loss = val_loss
-            best_val_acc = epoch_acc
+            best_val_acc = val_acc
             epochs_no_improvement = 0
             torch.save(model.state_dict(), checkpoint_path)
             logger.debug(f" Best model saved (val_loss= {val_loss:.4f}), val_acc= {val_acc:.2f}%)")
