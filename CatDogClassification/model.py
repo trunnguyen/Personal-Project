@@ -52,7 +52,7 @@ class DogCatCNNv2(nn.Module):
 
 def load_model(checkpoint_path: str, device: torch.device, model_cls=DogCatCNN):
     #Load a saved Model
-    model = model_cls
+    model = model_cls()
     model.load_state_dict(torch.load(checkpoint_path, map_location=device))
     model.to(device)
     model.eval()
