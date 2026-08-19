@@ -1,7 +1,0 @@
-pandas
-numpy
-rapidfuzz
-tqdm
-pyyaml
-python-dotenv
-pyahocorasick
