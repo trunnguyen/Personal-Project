@@ -1,89 +1,294 @@
-💸 Financial Fraud Detection System
-An end-to-end Machine Learning solution designed to identify fraudulent transactions in financial datasets. This project focuses on handling imbalanced classification and deploying a reproducible pipeline for real-time inference.
+# Financial Fraud Detection System
 
-🚀 Features
-High-Precision Classification: Achieved an accuracy of 94.7% using ensemble learning methods.
+An end-to-end machine learning application for detecting potentially fraudulent financial transactions. The project covers data exploration, feature engineering, preprocessing, model training, evaluation, and deployment through a Streamlit application.
 
-Automated Data Pipeline: Implements a custom preprocessing layer for scaling numerical values and encoding categorical transaction types.
+## Project Overview
 
-Real-time Prediction UI: An interactive Streamlit dashboard allowing users to input transaction details and receive instant risk assessments.
+This project uses transaction data to build a classification pipeline for identifying potentially fraudulent transactions.
 
-Exploratory Data Analysis (EDA): Comprehensive Jupyter Notebook covering data distributions, correlation analysis, and model evaluation metrics.
+The system analyzes:
 
-🧠 Architecture
-Preprocessing: Handles feature engineering for transaction types (PAYMENT, TRANSFER, etc.) and balances using Scikit-Learn's ColumnTransformer.
+- Transaction type
+- Transaction amount
+- Sender balance before and after the transaction
+- Receiver balance before and after the transaction
+- Engineered balance-difference features
 
-Model: Utilizes a Scikit-Learn Pipeline featuring XGBoost and Random Forest to capture complex fraud patterns.
+The project focuses on building a reproducible machine learning pipeline and deploying it as an interactive application.
 
-Inference: Decoupled logic using a dedicated src/processing.py to ensure feature consistency between training and deployment.
+## Key Features
 
-UI Layer: Built with Streamlit for accessible and clear visualization of model results.
+- Exploratory data analysis of transaction and fraud patterns
+- Feature engineering for sender and receiver balance differences
+- Numerical feature standardization
+- Categorical feature encoding
+- Class-balanced Logistic Regression
+- Stratified train/test split
+- Precision, recall, F1-score, and accuracy evaluation
+- Confusion matrix visualization
+- Fraud probability estimation
+- Input validation and range checking
+- Serialized Scikit-learn prediction pipeline
+- Interactive Streamlit application
 
-📊 Model Evaluation
-The model was evaluated using a 20% hold-out test set. Because fraud detection is a highly imbalanced problem (few fraud cases compared to millions of legitimate ones), we focused on metrics beyond simple accuracy.
+## Machine Learning Pipeline
 
-Performance Metrics
-Accuracy: 94.72%
+```text
+Transaction Data
+       │
+       ▼
+Data Exploration
+       │
+       ▼
+Feature Engineering
+       │
+       ├── balanceDiffOrig
+       └── balanceDiffDest
+       │
+       ▼
+Preprocessing
+       │
+       ├── StandardScaler
+       └── OneHotEncoder
+       │
+       ▼
+Logistic Regression
+(class_weight="balanced")
+       │
+       ▼
+Model Evaluation
+       │
+       ├── Precision
+       ├── Recall
+       ├── F1-score
+       ├── Accuracy
+       └── Confusion Matrix
+       │
+       ▼
+Serialized Pipeline
+       │
+       ▼
+Streamlit Application
+```
 
-Algorithms: XGBoost & Random Forest Ensemble.
+## Feature Engineering
 
-Optimization: The model is specifically tuned to recognize patterns in TRANSFER and CASH_OUT transaction types, which typically carry the highest fraud risk.
+Two additional features are calculated from the transaction balances:
 
-Key Insights
-Feature Importance: Transaction amount and the discrepancy between oldbalanceOrg and newbalanceOrig were the strongest predictors of fraudulent activity.
+### Sender Balance Difference
 
-Handling Imbalance: The pipeline effectively manages minority class detection to ensure fraudulent activities are flagged even when they represent less than 1% of the total data.
+```text
+balanceDiffOrig = oldbalanceOrg - newbalanceOrig
+```
 
-🛠 Tech Stack
-Machine Learning: Scikit-Learn, XGBoost
+### Receiver Balance Difference
 
-Data Processing: Pandas, NumPy
+```text
+balanceDiffDest = oldbalanceDest - newbalanceDest
+```
 
-Visualization: Matplotlib, Seaborn
+These features are generated consistently during both model training and application-time prediction.
 
-Deployment: Streamlit, Joblib
+## Model Training
 
-📂 Project Structure
-Plaintext
-Fraud_Detection
+The project uses a Scikit-learn `Pipeline` combining preprocessing and classification.
+
+### Numerical Features
+
+- `amount`
+- `oldbalanceOrg`
+- `newbalanceOrig`
+- `oldbalanceDest`
+- `newbalanceDest`
+- `balanceDiffOrig`
+- `balanceDiffDest`
+
+Numerical features are standardized using `StandardScaler`.
+
+### Categorical Features
+
+Transaction type is encoded using `OneHotEncoder`.
+
+### Classifier
+
+The final classifier is:
+
+**Logistic Regression with balanced class weights**
+
+```python
+LogisticRegression(
+    class_weight="balanced",
+    max_iter=1000,
+    random_state=42
+)
+```
+
+Using balanced class weights helps account for the class imbalance commonly found in fraud detection datasets.
+
+## Model Evaluation
+
+The model is evaluated using a stratified 70/30 train-test split.
+
+Evaluation metrics include:
+
+- Precision
+- Recall
+- F1-score
+- Accuracy
+- Confusion Matrix
+
+Precision, recall, and F1-score are included alongside accuracy because fraud detection involves an imbalanced classification problem where accuracy alone may not provide a complete picture of model performance.
+
+## 🖥Streamlit Application
+
+The trained pipeline is serialized using Joblib and loaded by the Streamlit application.
+
+The application allows users to enter:
+
+- Transaction type
+- Transaction amount
+- Sender balances
+- Receiver balances
+
+The application then:
+
+1. Validates the input values.
+2. Calculates the engineered features.
+3. Passes the transaction through the trained pipeline.
+4. Predicts whether the transaction is potentially fraudulent.
+5. Displays the model's estimated fraud probability.
+
+### Input Validation
+
+The application includes basic validation to prevent unrealistic inputs, including:
+
+- Negative financial values
+- Values exceeding the observed dataset ranges
+- Transaction amounts greater than the sender's available balance for applicable transaction types
+
+Validation warnings are shown before a prediction is made.
+
+## Technologies
+
+### Programming & Data Processing
+
+- Python
+- Pandas
+- NumPy
+
+### Machine Learning
+
+- Scikit-learn
+- Logistic Regression
+
+### Visualization
+
+- Matplotlib
+- Seaborn
+
+### Deployment
+
+- Streamlit
+- Joblib
+
+## Project Structure
+
+```text
+Fraud Detection/
 │
-├── src
-│   └── processing.py       # Data formatting and input preparation logic
+├── DEMO/
+│   ├── prediction.png
+│   ├── validation.png
+│   └── input_validation.png
 │
-├── models
-│   └── fraud_detection_pipeline.pkl  # Serialized ML pipeline
+├── models/
+│   └── fraud_detection_pipeline.pkl
 │
-├── notebooks
-│   └── analysis_model.ipynb # EDA, training, and evaluation
+├── notebooks/
+│   └── analysis_model.ipynb
 │
-├── app.py                  # Streamlit web application
-├── requirements.txt        # Project dependencies
+├── src/
+│   ├── __init__.py
+│   └── processing.py
+│
+├── app.py
+├── requirements.txt
 └── README.md
-⚙️ Installation
-1. Clone the repository
+```
 
-Bash
+## 🖼️ Application Demo
+
+### Normal Prediction
+
+![Fraud Detection Prediction](DEMO/prediction.png)
+
+### Transaction Validation
+
+![Transaction Validation](DEMO/validation.png)
+
+### Input Range Protection
+
+![Input Range Validation](DEMO/input_validation.png)
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/trunnguyen/Personal-Project.git
 cd "Fraud Detection"
-2. Set up virtual environment
+```
 
-Bash
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# Mac/Linux:
-source venv/bin/activate
-3. Install dependencies
+### 2. Create a virtual environment
 
-Bash
+```bash
+python -m venv .venv
+```
+
+Activate it on Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
-▶️ Run the Application
-To launch the dashboard, run the following command from the project root:
+```
 
-Bash
+## Run the Application
+
+```bash
 streamlit run app.py
-🖼 Demo
-![Demo](DEMO.png)
+```
 
-👨‍💻 Author
-Nguyễn Minh Trung Data Science Student – Văn Lang University
+The application will open in your browser.
+
+## Project Workflow
+
+The complete workflow is:
+
+```text
+Data
+ ↓
+Exploratory Analysis
+ ↓
+Feature Engineering
+ ↓
+Preprocessing Pipeline
+ ↓
+Model Training
+ ↓
+Model Evaluation
+ ↓
+Model Serialization
+ ↓
+Streamlit Deployment
+```
+
+## Author
+
+**Nguyễn Minh Trung**
+
+Data Science Student — Văn Lang University

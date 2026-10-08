@@ -1,25 +1,47 @@
-.env
-*.env
-secrets.json
-
-venv/
-.venv/
+# Virtual environments
 env/
-ENV/
-pyenv.cfg
-.pytest_cache/
+venv/
+myenv/
+Multimodal_emotion_recognition/env/
+autonomous_job_finder/src/agent/env
+Multimodal_emotion_recognition
 
-**/__pycache__/
-*.py[cod]
-*$py.class
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large binaries
+*.dll
+*.pyd
+*.lib
+
+# Data files
+*.csv
+*.tsv
+*.parquet
+*.h5
+
+Data/
+# Jupyter checkpoints
 .ipynb_checkpoints/
 
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
+# Logs
+*.log
 
-Data/AIML Dataset.csv
+*.pth
+*.zip
+logs/
+data/
+
+# Exceptions: keep job hunter tracked files
+!autonomous_job_finder/data/
+!autonomous_job_finder/data/jobs.db
+!autonomous_job_finder/data/jobs.csv
+!autonomous_job_finder/data/classifier.pkl
+!autonomous_job_finder/data/job_history.log
+
