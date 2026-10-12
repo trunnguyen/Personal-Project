@@ -2,9 +2,10 @@
 *.env
 secrets.json
 
-venv/
-.venv/
-env/
+.env
+env
+*.env
+job_finder_userbased/src/agent/env
 ENV/
 pyenv.cfg
 .pytest_cache/
