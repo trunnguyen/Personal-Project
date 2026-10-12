@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  agent_backend:
+    build: .
+    command: python main.py
+    volumes:
+      - ./data:/app/data
+      -
+  dashboard_ui:
+    build: .
+    command: streamlit run dashboard/app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data

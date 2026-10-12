@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 900px; margin: 30px auto; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        th, td { border: 1px solid #444; padding: 8px; text-align: left; font-size: 0.9em; }
+        th { background: #333; }
+        .hash { font-family: monospace; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+
+    <h2>Security Events (last 50)</h2>
+    <table>
+        <tr><th>Time</th><th>Type</th><th>User Hash</th><th>Detail</th></tr>
+        {% for event in security_events %}
+        <tr>
+            <td>{{ event.timestamp }}</td>
+            <td>{{ event.event_type }}</td>
+            <td class="hash">{{ event.email_hash[:12] }}...</td>
+            <td>{{ event.detail }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>User Activity (last 50)</h2>
+    <table>
+        <tr><th>Time</th><th>Action</th><th>User Hash</th><th>Detail</th></tr>
+        {% for a in activity %}
+        <tr>
+            <td>{{ a.timestamp }}</td>
+            <td>{{ a.action }}</td>
+            <td class="hash">{{ a.email_hash[:12] }}...</td>
+            <td>{{ a.detail }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 700px; margin: 30px auto; }
+        .job-card { border: 1px solid #444; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+        .job-title { font-size: 1.2em; font-weight: bold; }
+        .eligible { color: #4CAF50; }
+        .not-eligible { color: #FFA726; }
+        .status-msg { padding: 10px; background: #333; border-radius: 4px; margin-bottom: 15px; }
+        button { padding: 8px 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <p>Welcome, {{ user_name }} | Major: {{ user_major }} | Looking for: {{ user_job_title }}</p>
+
+    <form method="POST" id="find-jobs-form" onsubmit="handleFindJobs()">
+        <input type="hidden" name="action" value="find_jobs">
+        <button type="submit" id="find-jobs-btn">Find Jobs</button>
+    </form>
+
+    <form method="POST" style="display: inline;">
+        <input type="hidden" name="action" value="recheck_eligibility">
+        <button type="submit">Re-check Eligibility (Dev)</button>
+    </form>
+
+    <form method="POST" style="display: inline;">
+        <input type="hidden" name="action" value="follow_search">
+        <button type="submit">
+            {% if followed_search and followed_search.is_active == 1 %}
+                Stop Following This Search
+            {% else %}
+                Follow This Search
+            {% endif %}
+        </button>
+    </form>
+
+    {% if followed_search and followed_search.is_active == 1 %}
+    <form method="POST" action="/dashboard/simulate-run" id="simulate-form" onsubmit="handleSimulate()" style="display: inline;">
+        <button type="submit" id="simulate-btn">Simulate Tuesday/Friday Run</button>
+    </form>
+
+    <form method="POST" style="display: inline;">
+        <input type="hidden" name="action" value="train_model">
+        <button type="submit">Train Personalized Model</button>
+    </form>
+
+    <p style="color: #999; font-size: 0.9em;">Last checked: {{ followed_search.last_checked }}</p>
+    {% endif %}
+
+    <p id="status-text" style="display: none; color: #999;">
+        Working... scraping LinkedIn, scoring, and checking eligibility. This can take a few minutes — please don't close this page.
+    </p>
+
+    <script>
+        function handleFindJobs() {
+            document.getElementById('find-jobs-btn').disabled = true;
+            document.getElementById('find-jobs-btn').style.opacity = '0.5';
+            document.getElementById('status-text').style.display = 'block';
+        }
+    </script>
+
+    <script>
+        function handleSimulate() {
+            document.getElementById('simulate-btn').disabled = true;
+            document.getElementById('simulate-btn').style.opacity = '0.5';
+            document.getElementById('status-text').style.display = 'block';
+        }
+    </script>
+
+    {% if status_message %}
+        <div class="status-msg">{{ status_message }}</div>
+    {% endif %}
+
+    {% if searched_keywords %}
+        <p>Searched for: {{ searched_keywords }}</p>
+    {% endif %}
+
+        <p>Showing the top {{ jobs|length }} of {{ total_scored }} scored jobs.</p>
+    <hr>
+
+    {% for job in jobs %}
+        <div class="job-card">
+            <div class="job-title">{{ job.title }}</div>
+            <p>Company: {{ job.company }} | Location: {{ job.location }}</p>
+            <p>Match Score: {{ "%.2f"|format(job.ai_score * 100) }}%</p>
+            <p><a href="{{ job.job_url }}" target="_blank">View Job Posting</a></p>
+
+            {% if job.eligibility_checked == 1 %}
+                {% if job.is_eligible == 1 %}
+                    <p class="eligible">Eligible — {{ job.field_match_reason }}</p>
+                {% else %}
+                    <p class="not-eligible">⚠May not be eligible — {{ job.field_match_reason }}</p>
+                {% endif %}
+            {% endif %}
+
+            <form method="POST">
+                <input type="hidden" name="action" value="toggle_interest">
+                <input type="hidden" name="job_id" value="{{ job.id }}">
+                {% if job.is_applied == 0 %}
+                    <input type="hidden" name="new_status" value="1">
+                    <button type="submit">Interested</button>
+                {% else %}
+                    <input type="hidden" name="new_status" value="0">
+                    <button type="submit">Not Interested</button>
+                {% endif %}
+            </form>
+        </div>
+    {% endfor %}
+</body>
+</html>
