@@ -1,6 +1,7 @@
 import ollama
 import json
 from src.utils.logger import logger
+import re
 
 
 def build_keyword_prompt(major, job_title):
