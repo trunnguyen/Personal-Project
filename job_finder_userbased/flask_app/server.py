@@ -9,6 +9,7 @@ if PROJECT_ROOT not in sys.path:
 
 from flask import Flask, request, redirect, url_for, render_template, session
 from flask_session import Session
+from flask_wtf.csrf import  CSRFProtect, CSRFError
 import re
 import asyncio
 import sqlite3
@@ -17,7 +18,7 @@ from dotenv import load_dotenv
 import hmac
 
 load_dotenv()
-
+from src.utils.time_utils import posted_label
 from src.auth.user_session import get_user_data_paths
 from src.utils.db_manager import JobDB
 from src.analytics.job_recommender import Recommender
@@ -50,10 +51,6 @@ if not ADMIN_PASSWORD or ADMIN_PASSWORD == "changeme":
 
 if DEV_SKIP_OTP:
     print("WARNING: DEV_SKIP_OTP is ON. OTP verification is bypassed. Local testing only.")
-
-PROJECT_ROOT = str(Path(__file__).resolve().parents[1])
-if PROJECT_ROOT not in sys.path:
-    sys.path.append(PROJECT_ROOT)
 
 def validate_inputs(name, major, job_title, email):
     field_errors = {}
@@ -91,7 +88,21 @@ app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=30)
 app.config['SESSION_COOKIE_HTTPONLY'] = True
 app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 app.config['SESSION_COOKIE_SECURE'] = os.getenv("COOKIE_SECURE", "false").lower() == "true"
+app.config['WTF_CSRF_TIME_LIMIT'] = None
 Session(app)
+
+csrf = CSRFProtect(app)
+
+@app.errorhandler(CSRFError)
+def handle_csrf_error(e):
+    log_security_event(
+        "csrf_failed",
+        get_user_db_id(session['user_email'] if session.get('user_email') else "anonymous"),
+        f"{request.method} {request.full_path} {e.description}",
+    )
+    return ("Your session expired or the request was not valid. "
+            "GO back, refresh the page, and try again."), 400
+
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -232,6 +243,8 @@ def dashboard():
         for job in top_jobs:
             if job.get('eligibility_checked', 0) == 0:
                 description = asyncio.run(fetch_job_description(job['job_url']))
+                if not description:
+                    continue
                 result = check_eligibility(
                     title=job['title'],
                     company=job['company'],
@@ -323,7 +336,11 @@ def dashboard():
     jobs = db.get_all_jobs()
     scored_jobs = [j for j in jobs if j.get('ai_score', 0.0) > 0]
     scored_jobs = sorted(scored_jobs, key=lambda x: x['ai_score'], reverse=True)
+    #total_scored = len(scored_jobs)
+    #display_jobs = scored_jobs[:10]
 
+    for j in scored_jobs:
+        j['posted_label'] = posted_label(j.get('time_posted'), j.get('date_found'))
 
     return render_template(
         "dashboard.html",
@@ -385,6 +402,8 @@ def simulate_run():
     for job in top_jobs:
         if job.get('eligibility_checked', 0) == 0:
             description = asyncio.run(fetch_job_description(job['job_url']))
+            if not description:
+                continue
             result = check_eligibility(
                 title=job['title'],
                 company=job['company'],

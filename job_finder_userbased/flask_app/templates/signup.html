@@ -46,6 +46,7 @@
     <h1>Job Recommender - Sign Up</h1>
 
     <form method="POST">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         <input type="hidden" name="action" value="signup">
 
         <label>Name:</label>
@@ -71,6 +72,7 @@
     <div class="modal-overlay">
         <div class="modal-box">
             <form method="POST" style="display: inline;">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                 <input type="hidden" name="action" value="cancel_verify">
                 <button type="submit" class="exit-button">&times;</button>
             </form>
@@ -79,6 +81,7 @@
             <p>Sent to {{ pending_email }}</p>
 
             <form method="POST">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                 <input type="hidden" name="action" value="verify">
                 <input type="text" name="otp_code" placeholder="6-digit code">
                 {% if field_errors.otp %}<div class="error">{{ field_errors.otp }}</div>{% endif %}

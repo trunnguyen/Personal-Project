@@ -17,16 +17,19 @@
     <p>Welcome, {{ user_name }} | Major: {{ user_major }} | Looking for: {{ user_job_title }}</p>
 
     <form method="POST" id="find-jobs-form" onsubmit="handleFindJobs()">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         <input type="hidden" name="action" value="find_jobs">
         <button type="submit" id="find-jobs-btn">Find Jobs</button>
     </form>
 
     <form method="POST" style="display: inline;">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         <input type="hidden" name="action" value="recheck_eligibility">
         <button type="submit">Re-check Eligibility (Dev)</button>
     </form>
 
     <form method="POST" style="display: inline;">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         <input type="hidden" name="action" value="follow_search">
         <button type="submit">
             {% if followed_search and followed_search.is_active == 1 %}
@@ -39,10 +42,12 @@
 
     {% if followed_search and followed_search.is_active == 1 %}
     <form method="POST" action="/dashboard/simulate-run" id="simulate-form" onsubmit="handleSimulate()" style="display: inline;">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         <button type="submit" id="simulate-btn">Simulate Tuesday/Friday Run</button>
     </form>
 
     <form method="POST" style="display: inline;">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         <input type="hidden" name="action" value="train_model">
         <button type="submit">Train Personalized Model</button>
     </form>
@@ -78,7 +83,7 @@
         <p>Searched for: {{ searched_keywords }}</p>
     {% endif %}
 
-        <p>Showing the top {{ jobs|length }} of {{ total_scored }} scored jobs.</p>
+            <p>{{ total_scored }} scored jobs. Eligibility is checked for the 10 highest scores.</p>
     <hr>
 
     {% for job in jobs %}
@@ -86,6 +91,9 @@
             <div class="job-title">{{ job.title }}</div>
             <p>Company: {{ job.company }} | Location: {{ job.location }}</p>
             <p>Match Score: {{ "%.2f"|format(job.ai_score * 100) }}%</p>
+            {% if job.posted_label %}
+                <p>Posted: {{ job.posted_label }}</p>
+            {% endif %}
             <p><a href="{{ job.job_url }}" target="_blank">View Job Posting</a></p>
 
             {% if job.eligibility_checked == 1 %}
@@ -94,9 +102,12 @@
                 {% else %}
                     <p class="not-eligible">⚠May not be eligible — {{ job.field_match_reason }}</p>
                 {% endif %}
+            {% else %}
+                <p style="color: #999;">Eligibility not checked</p>
             {% endif %}
 
             <form method="POST">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                 <input type="hidden" name="action" value="toggle_interest">
                 <input type="hidden" name="job_id" value="{{ job.id }}">
                 {% if job.is_applied == 0 %}

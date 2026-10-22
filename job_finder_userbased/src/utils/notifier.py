@@ -11,6 +11,7 @@ if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
 from src.utils.logger import logger
+from src.utils.time_utils import posted_label
 
 dotenv.load_dotenv()
 
@@ -86,6 +87,7 @@ class Notifier():
             <div style="padding: 15px; border: 1px solid #ddd; margin-bottom: 15px; border-radius: 5px; font-family: Arial, sans-serif;">
                 <h3 style="margin-top: 0; color: #333;">{job['title']} at <span style="color: #0066cc;">{job['company']}</span></h3>
                 <p><strong>Location:</strong> {job['location']} | <strong>Match Score:</strong> {job['ai_score']:.2%}</p>
+                                <p>Posted: {posted_label(job.get('time_posted'), job.get('date_found')) or 'N/A'}</p>
                 {eligibility_note}
                 <p style="margin-bottom: 15px;">
                     <a href="{job['job_url']}" target="_blank" style="color: #0066cc; text-decoration: none; font-weight: bold;">[View Original Job Posting]</a>
