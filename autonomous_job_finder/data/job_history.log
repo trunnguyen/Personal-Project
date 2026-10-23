@@ -8285,3 +8285,37 @@ Code context:
 2026-10-22 05:54:47,852 - src.utils.logger - INFO - Ranking and Filtering Jobs
 2026-10-22 05:54:49,782 - src.utils.logger - INFO - Threshold: 0.5 (trained) | High matches since 2026-10-20 05:47:53: 2
 2026-10-22 05:54:49,783 - src.utils.logger - INFO - Daily crawl complete. Database updated unitl next schedule
+2026-10-23 05:53:00,549 - sentence_transformers.base.model - INFO - No device provided, using cpu
+2026-10-23 05:53:00,615 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-10-23 05:53:00,633 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-23 05:53:00,635 - sentence_transformers.base.model - INFO - Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-10-23 05:53:01,027 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-23 05:53:01,047 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-23 05:53:01,092 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-23 05:53:01,094 - src.utils.logger - INFO - Model successfully loaded from /home/runner/work/Personal-Project/Personal-Project/autonomous_job_finder/data/classifier.pkl
+2026-10-23 05:53:01,100 - src.utils.logger - INFO - LangGraph Node [Scrape]: Triggering Crawler
+2026-10-23 05:53:01,100 - src.utils.logger - INFO - Starting crawler
+2026-10-23 05:54:02,937 - src.utils.logger - ERROR - Crawl Status: FAILED | Problem: Unexpected error in _crawl_web at line 1025 in _crawl_web (../../../../../../opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/crawl4ai/async_crawler_strategy.py):
+Error: Wait condition failed: Timeout after 60000ms waiting for selector 'ul.jobs-search__results-list'
+
+Code context:
+1020                       timeout = config.wait_for_timeout if config.wait_for_timeout is not None else config.page_timeout
+1021                       await self.smart_wait(
+1022                           page, config.wait_for, timeout=timeout
+1023                       )
+1024                   except Exception as e:
+1025 →                     raise RuntimeError(f"Wait condition failed: {str(e)}")
+1026   
+1027               # Handle virtual scroll if configured (after wait_for so container exists)
+1028               if config.virtual_scroll_config:
+1029                   await self._handle_virtual_scroll(page, config.virtual_scroll_config)
+1030   
+2026-10-23 05:54:02,937 - src.utils.logger - INFO - End Crawler
+2026-10-23 05:54:03,003 - src.utils.logger - INFO - Ranking and Filtering Jobs
+2026-10-23 05:54:03,005 - src.utils.logger - INFO - No unscored jobs found
+2026-10-23 05:54:03,008 - src.utils.logger - INFO - Threshold: 0.5 (trained) | High matches since 2026-10-20 05:47:53: 2
+2026-10-23 05:54:03,008 - src.utils.logger - INFO - Reporting day! Dispatching 2 curated mathcing roles.
+2026-10-23 05:54:03,009 - src.utils.logger - INFO - LangGraph Node [Alert]: Triggering Alerter
+2026-10-23 05:54:03,009 - src.utils.logger - INFO - High-Relevance Positions Found
+2026-10-23 05:54:03,748 - src.utils.logger - INFO - Email notification successfully sent.
+2026-10-23 05:54:03,750 - src.utils.logger - INFO - Report sent for 2 jobs. Last reported date updated.
