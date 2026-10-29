@@ -8405,3 +8405,20 @@ Code context:
 2026-10-28 06:45:52,234 - src.utils.logger - INFO - Ranking and Filtering Jobs
 2026-10-28 06:45:52,819 - src.utils.logger - INFO - Threshold: 0.5 (trained) | High matches since 2026-10-27 06:07:22: 0
 2026-10-28 06:45:52,819 - src.utils.logger - INFO - Daily crawl complete. Database updated unitl next schedule
+2026-10-29 06:53:04,983 - sentence_transformers.base.model - INFO - No device provided, using cpu
+2026-10-29 06:53:05,076 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-10-29 06:53:05,111 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-29 06:53:05,113 - sentence_transformers.base.model - INFO - Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-10-29 06:53:05,310 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-29 06:53:05,349 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-29 06:53:05,415 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-29 06:53:05,416 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-29 06:53:05,418 - src.utils.logger - INFO - Model successfully loaded from /home/runner/work/Personal-Project/Personal-Project/autonomous_job_finder/data/classifier.pkl
+2026-10-29 06:53:05,423 - src.utils.logger - INFO - LangGraph Node [Scrape]: Triggering Crawler
+2026-10-29 06:53:05,423 - src.utils.logger - INFO - Starting crawler
+2026-10-29 06:53:12,486 - src.utils.logger - INFO - Crawler ran successfully | Time : 6.39 seconds
+2026-10-29 06:53:15,492 - src.utils.logger - INFO - Data Sync: found 58 total jobs. 19 new jobs saved to .db and .csv
+2026-10-29 06:53:15,493 - src.utils.logger - INFO - End Crawler
+2026-10-29 06:53:15,580 - src.utils.logger - INFO - Ranking and Filtering Jobs
+2026-10-29 06:53:16,576 - src.utils.logger - INFO - Threshold: 0.5 (trained) | High matches since 2026-10-27 06:07:22: 1
+2026-10-29 06:53:16,577 - src.utils.logger - INFO - Daily crawl complete. Database updated unitl next schedule
