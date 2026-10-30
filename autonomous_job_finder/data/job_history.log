@@ -8422,3 +8422,23 @@ Code context:
 2026-10-29 06:53:15,580 - src.utils.logger - INFO - Ranking and Filtering Jobs
 2026-10-29 06:53:16,576 - src.utils.logger - INFO - Threshold: 0.5 (trained) | High matches since 2026-10-27 06:07:22: 1
 2026-10-29 06:53:16,577 - src.utils.logger - INFO - Daily crawl complete. Database updated unitl next schedule
+2026-10-30 06:56:52,788 - sentence_transformers.base.model - INFO - No device provided, using cpu
+2026-10-30 06:56:52,976 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-10-30 06:56:53,082 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-30 06:56:53,085 - sentence_transformers.base.model - INFO - Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-10-30 06:56:53,280 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-30 06:56:53,387 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-30 06:56:53,510 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-30 06:56:53,512 - src.utils.logger - INFO - Model successfully loaded from /home/runner/work/Personal-Project/Personal-Project/autonomous_job_finder/data/classifier.pkl
+2026-10-30 06:56:53,516 - src.utils.logger - INFO - LangGraph Node [Scrape]: Triggering Crawler
+2026-10-30 06:56:53,516 - src.utils.logger - INFO - Starting crawler
+2026-10-30 06:56:59,907 - src.utils.logger - INFO - Crawler ran successfully | Time : 5.90 seconds
+2026-10-30 06:57:03,282 - src.utils.logger - INFO - Data Sync: found 60 total jobs. 34 new jobs saved to .db and .csv
+2026-10-30 06:57:03,282 - src.utils.logger - INFO - End Crawler
+2026-10-30 06:57:03,348 - src.utils.logger - INFO - Ranking and Filtering Jobs
+2026-10-30 06:57:04,431 - src.utils.logger - INFO - Threshold: 0.5 (trained) | High matches since 2026-10-27 06:07:22: 2
+2026-10-30 06:57:04,432 - src.utils.logger - INFO - Reporting day! Dispatching 2 curated mathcing roles.
+2026-10-30 06:57:04,432 - src.utils.logger - INFO - LangGraph Node [Alert]: Triggering Alerter
+2026-10-30 06:57:04,433 - src.utils.logger - INFO - High-Relevance Positions Found
+2026-10-30 06:57:05,816 - src.utils.logger - INFO - Email notification successfully sent.
+2026-10-30 06:57:05,945 - src.utils.logger - INFO - Report sent for 2 jobs. Last reported date updated.
